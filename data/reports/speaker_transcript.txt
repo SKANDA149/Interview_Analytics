@@ -1,0 +1,282 @@
+[0.0s - 3.0s] INTERVIEWER:
+  yes, gauri. tell me something about you.
+
+[4.4s - 124.8s] CANDIDATE:
+  thank you for allowing me to introduce myself. my name is gaurish ramadi. i am from rajasthan. i am doing computer science engineering from gitaanjali institute of technical studies. i secured 9 .2 cgpa in 10 standard, 73 .4 cg percentage and 12 standard. and currently in engineering, my aggregate score is 77 percentage. computer science is omnipresent. that is, it is present in every field. and hence, i have invested these last 3 .5 almost years in developing my software skills. my technical skills include the programming in python, java, c, c++ databases. i am also familiar with web development, kubernetes, docker, ansible, etc. so, these are all my technical skills. and i've also used these skills to build several projects, which include user management project and attendance management project. i've also participated in smart india hackathons, of which in one, we also got to the finals. these are all my technical skills. coming to my extracurricular activities, i love to dance, particularly semi -classical dance. i also like to read, write and paint. i have been the student editor of our college's newsletter, bits and bites. and currently, i am one of the cultural heads of our students' club. so, i have also participated in several donation camps. several donation camps as i am a member of the rotary club of apple. i consider myself as a very focused person. and i always work towards my goals in a very efficient manner. i am a team player and very optimistic in tough times. and lastly, i would like to say that, why not start the journey of my success by the success of joining tcs? thank you so much.
+
+[126.5s - 138.4s] INTERVIEWER:
+  okay. what are the five specific points about tcs, which makes tcs different from other itm instances?
+
+[139.2s - 196.3s] CANDIDATE:
+  sure. firstly, tcs has a brand name. it is a multinational company and it has a very good brand name. and thus, it would give me a good start for my career. secondly, it has a work -life balance. i have talked to many of my friends who are in tcs, and they say that tcs gives a very good work -life balance. so, that is the second point. third point is the colleagues there are very futuristic in their skills. so, there is a lot to learn from them. fourthly, as tcs is a multinational company, i would like to, i would have the chance to even go abroad and meet people of different nationalities. and lastly, as tcs has been in the industry for almost 150 years, so it gives me a sense of job security to some extent.
+
+[197.0s - 200.0s] INTERVIEWER:
+  okay. what are the ethical values tcs have?
+
+[201.4s - 218.0s] CANDIDATE:
+  so, like i said, there is a work -life balance, and it promotes gender equality. there is no discrimination on the basis of that. so, it is very good in ethics overall.
+
+[219.6s - 229.3s] INTERVIEWER:
+  okay. okay, worry. nice talking to you. thank you, sir. thank you very much, sir. colonel adford, sir. to take next part of the interview, right?
+
+[229.9s - 232.7s] CANDIDATE:
+  thank you so much, sir. good afternoon. good afternoon, sir.
+
+[234.7s - 235.7s] INTERVIEWER:
+  all prepared?
+
+[236.4s - 237.0s] CANDIDATE:
+  yes, sir.
+
+[238.1s - 243.5s] INTERVIEWER:
+  okay. tell us which other campus interviews have you appeared for, and what has been the results?
+
+[245.8s - 263.6s] CANDIDATE:
+  so, i have interviewed for lanet, which is an adipur only, and i got selected for it. i also interviewed for gateway industries. i was not selected in the interview. i got to the interview part, but was not selected. so, that's it. i've only given these interviews.
+
+[264.4s - 271.9s] INTERVIEWER:
+  okay. have you analyzed why you didn't get selected for gateway?
+
+[273.4s - 281.3s] CANDIDATE:
+  so, in gateway, i might have not answered the technical questions very well as compared to the other candidates.
+
+[282.7s - 286.7s] INTERVIEWER:
+  okay. so, how have you prepared for the current tcs interview now?
+
+[287.2s - 300.5s] CANDIDATE:
+  so, i have enhanced my technical skills. i have been preparing for the core subjects, and i've been doing coding almost every day. so, i think that i've prepared quite well for tcs.
+
+[302.0s - 306.3s] INTERVIEWER:
+  okay. but, it tell me what are your future plans?
+
+[308.1s - 312.2s] CANDIDATE:
+  for my future plans. so, if i join tcs or otherwise?
+
+[313.5s - 315.0s] INTERVIEWER:
+  what are your future plans?
+
+[315.8s - 334.5s] CANDIDATE:
+  so, i want to join a software company and work for it. and i want to learn as much languages and as much skills as i can. and i also want to achieve great success, so that i'm satisfied with what i've learned.
+
+[335.8s - 342.9s] INTERVIEWER:
+  okay. what do you think are the reasons for youngsters switching over jobs?
+
+[344.8s - 357.5s] CANDIDATE:
+  so, maybe it is a job satisfaction because they enter a company without seeing the background of the company, and then they later find out that the company was not suitable for them.
+
+[359.4s - 371.6s] INTERVIEWER:
+  okay. yes, for you, what are the three important things that one should consider before joining any organization as a pressure?
+
+[373.1s - 403.5s] CANDIDATE:
+  so, firstly, the one should look if there is a lot to learn from the company. i mean, there should be a very steep growing curve in the company. secondly, there should be, like the colleagues and everything, should be very frank, so that they help you in every way. and thirdly, for me, there should be a brand name so that there is a satisfaction that yes, i've achieved a level and now i can go to the next level.
+
+[405.0s - 408.1s] INTERVIEWER:
+  okay, technically, what gives you job satisfaction? so,
+
+[410.4s - 420.1s] CANDIDATE:
+  technically, the latest, i want to work with latest technical skills, like not obsolete technologies, but the latest technologies.
+
+[420.8s - 424.4s] INTERVIEWER:
+  so, how does dcs fit into your requirement?
+
+[425.5s - 439.4s] CANDIDATE:
+  so, dcs changes its technologies according to the needs of the people of the art. so, there is no fixed technology that they use. they use, according to the clients, which is very well.
+
+[440.0s - 444.4s] INTERVIEWER:
+  which are the major clients of dcs? can you name three or four of them?
+
+[446.2s - 449.4s] CANDIDATE:
+  i'm sorry, but i'm not aware of the clients.
+
+[450.8s - 455.9s] INTERVIEWER:
+  okay. sure. anything that you want to ask?
+
+[461.5s - 466.4s] CANDIDATE:
+  so, will i be able to, like, fit in the company? i mean, what do you think?
+
+[469.6s - 471.3s] INTERVIEWER:
+  will you be able to fit into the company?
+
+[471.8s - 472.4s] CANDIDATE:
+  yes, sir.
+
+[473.1s - 483.9s] INTERVIEWER:
+  yeah. as per your own analysis, you said you are a good team player and what requirements you said for a good job. yes. in case you have those qualities, i'm sure you'll be able to fit into.
+
+[485.3s - 488.3s] CANDIDATE:
+  okay, sir. thank you. any more suggestions for me?
+
+[489.6s - 494.2s] INTERVIEWER:
+  no, nothing more. carvin sir will finally give his remarks, right?
+
+[494.3s - 495.6s] CANDIDATE:
+  okay. thank you so much, sir.
+
+[495.8s - 497.5s] INTERVIEWER:
+  all the best, right?
+
+[498.0s - 498.4s] CANDIDATE:
+  thank you, sir.
+
+[498.9s - 499.3s] INTERVIEWER:
+  gauri.
+
+[500.0s - 500.5s] CANDIDATE:
+  yes, sir.
+
+[501.5s - 506.4s] INTERVIEWER:
+  what is your, basically, the aim? you want to go in the software companies or anything more than that?
+
+[507.1s - 510.1s] CANDIDATE:
+  no. so, i want to go in the software companies. that is what i mean.
+
+[510.8s - 516.2s] INTERVIEWER:
+  okay, if you don't want to go for any higher studies or entrepreneurship like?
+
+[517.5s - 529.4s] CANDIDATE:
+  no, so entrepreneurship, no. but higher studies, many of the company's thesis also provides like simultaneously higher studies. so that may also be a very good option.
+
+[531.1s - 552.5s] INTERVIEWER:
+  okay, for example, you have got the offer from tcs. for at the same time, meanwhile getting the better offer than tcs from another organization, which is not a tier one organization, but tier two organization. but the package is just double of what we are offering. then what do you do?
+
+[554.0s - 558.2s] CANDIDATE:
+  uh, so i'd compare both the companies in
+
+[558.2s - 573.3s] INTERVIEWER:
+  terms of the... so, we definitely have told that tcs is the tier one and you've got the offer from tier two. it means you start up for a mid -size company. with the package, for example, we are giving you product, they are giving you a intellect. in that case, what will you do?
+
+[574.1s - 597.8s] CANDIDATE:
+  so, i choose tcs only because tcs is like almost 150 years old companies. so, it has a very good job security. and as i cannot really trust a startup because they are renew in the industry and that's why there might be some trust issues.
+
+[598.3s - 599.9s] INTERVIEWER:
+  so, i guess that's not right for you.
+
+[600.9s - 603.6s] CANDIDATE:
+  so, job security is more important than
+
+[604.3s - 610.1s] INTERVIEWER:
+  salary. if you if you not perform well in the tcs also, you can get the job in security in tcs also.
+
+[610.9s - 617.5s] CANDIDATE:
+  so, but i will perform good and like from may and there will be no complaints from tcs.
+
+[618.3s - 624.9s] INTERVIEWER:
+  okay. yeah, worry.
+
+[625.6s - 626.5s] CANDIDATE:
+  good afternoon, sir.
+
+[628.4s - 630.6s] INTERVIEWER:
+  which domain do you feel comfortable?
+
+[632.4s - 637.8s] CANDIDATE:
+  sir, course, objects, programming, c++, dbn, yes sir.
+
+[639.0s - 643.2s] INTERVIEWER:
+  so, give me a concept to implement snack and ladder.
+
+[644.4s - 649.5s] CANDIDATE:
+  to implement snakes and ladders. using any programming language.
+
+[650.1s - 655.4s] INTERVIEWER:
+  i want to know only concept, not the implementation. okay. i'm giving you the one minute.
+
+[658.6s - 660.9s] CANDIDATE:
+  so, can i write something? yes, yes, yes.
+
+[661.4s - 665.1s] INTERVIEWER:
+  but i need only logic, right? not the coding or port start.
+
+[665.6s - 666.1s] CANDIDATE:
+  okay, sir.
+
+[750.5s - 757.3s] INTERVIEWER:
+  okay. wow, corine.
+
+[759.9s - 760.9s] CANDIDATE:
+  yes, sir. thoda.
+
+[761.9s - 766.1s] INTERVIEWER:
+  so, really, but then i can analyze that you are going in the right direction.
+
+[767.5s - 829.0s] CANDIDATE:
+  okay, sir. so, firstly, we will build like a list, for example, of how many columns are there. for example, i take a list of 50, the maximum we go to 50, and then now we take a dice variable in which we will take a random function with the help of random function. we can derive a number between 1 to 6, and for the first move, if the number random number is 6, then we can move, like we can keep a counter of the player. so, we can increase the counter with the number that comes in the dice, and then we can pre -define the snakes, for example, if we reach 5, then the counter should like increase by 10 blocks. so, the counter will increase by 10 blocks, that is the ladder. and
+
+[829.0s - 848.4s] INTERVIEWER:
+  this way, we can like pre -define the snakes. the next question is, how you will determine whether you have to increment its dice value? means, you want to use it's increasing the counter value, the informer flag, or you have to decrement the counter value in formals there. so, how you will determine it?
+
+[849.3s - 877.5s] CANDIDATE:
+  so, with the help of functions, for example, of the dice value, or that block value, in which the counter is right now, is 5. so, i have assigned 5 already, that 5 is a ladder. so, then it will increase, and for example, if 12 is a snake, then i have already defined that 12, at 12, you need to decrement the value by, for example, 5 or whatever. so, i will pre -define
+
+[878.3s - 880.1s] INTERVIEWER:
+  where you will pre -define these values.
+
+[880.9s - 882.7s] CANDIDATE:
+  so, i can use a dictionary to
+
+[883.7s - 891.3s] INTERVIEWER:
+  like, if i am doing an python, then i can use it. and then if we are using c, then c, c++ java, there if it doesn't have any dictionary.
+
+[894.0s - 905.4s] CANDIDATE:
+  then so, we can, we can use an array of arrays, and then like, make a dictionary with the help of arrays.
+
+[907.0s - 910.2s] INTERVIEWER:
+  okay, yes sir. can we use switch or not there?
+
+[912.5s - 923.8s] CANDIDATE:
+  switch, yes. but so, we can use, but it is too long, like we will have to write the code many times in
+
+[923.8s - 931.0s] INTERVIEWER:
+  switch. one many times we can define a switch in a global, or anywhere, then we can use it.
+
+[931.3s - 937.1s] CANDIDATE:
+  okay, so switch for us, snake and switch for a ladder to separate switches, we can use, yes sir, that we can.
+
+[938.7s - 942.9s] INTERVIEWER:
+  okay, so what do you mean by the encapsulation? is the vianchancer is correct?
+
+[943.9s - 980.9s] CANDIDATE:
+  so, partially it is correct. it is used for data iding, but more data security. so, in a class, it is implemented using access modifiers, like public protected private, and there is a default access specifiers as well. so, using these, we can define the scope of the variables, or the functions. like if it is public, then it can be used all through and if it is protected, then only the subclasses can use it. and if private, then only the current class can use it.
+
+[981.5s - 984.0s] INTERVIEWER:
+  and what do you mean by storage classes?
+
+[987.1s - 991.0s] CANDIDATE:
+  storage classes. so, i am not able to recall. i will.
+
+[994.0s - 1004.2s] INTERVIEWER:
+  okay, worry all the best. okay, thank you so much. explore more and more tcs technical integral questions, right? they are basically mainly from cnc++.
+
+[1005.2s - 1009.9s] CANDIDATE:
+  okay, sir. i will keep that in mind. thank you so much, sir. all the best. thank you, sir.
+
+[1010.9s - 1031.3s] INTERVIEWER:
+  from my side, and the routers are into you, my remark for you, definitely you are the good candidate, that we have already observed many times. technical knowledge, i have not checked. i would not be your head -out department csc, we will check it out. but you can easily connect the process.
+
+[1032.1s - 1035.9s] CANDIDATE:
+  okay, thank you so much, sir. or when
+
+[1035.9s - 1041.7s] INTERVIEWER:
+  you are clear about your thought process, then at least it should be justified when you are giving the interviews.
+
+[1042.2s - 1043.1s] CANDIDATE:
+  yes, sir. sure.
+
+[1044.1s - 1080.6s] INTERVIEWER:
+  that is very important. if they feel that you want to come, but you cannot come, then there is a chance they can drop you. either you are a good candidate or the best. for example, google want to hire somebody or they find the candidate which is having the ability to get a corrode package in an upright, but they have the doubt that no doubt is the best, but they have the doubt that either he will join or not, then might be they can drop. so that kind of condition in the interview, at least it should not be so case.
+
+[1081.4s - 1083.6s] CANDIDATE:
+  okay, i will keep that in mind, so thank
+
+[1083.6s - 1084.6s] INTERVIEWER:
+  you. i will check, right?
+
+[1085.3s - 1085.7s] CANDIDATE:
+  okay, sir.
+
+[1086.7s - 1087.3s] INTERVIEWER:
+  thank you.
+
+[1087.6s - 1088.2s] CANDIDATE:
+  thank you, sir.
+

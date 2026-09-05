@@ -1,0 +1,1962 @@
+{
+    "processing_metadata": {
+        "input_video": "data\\input\\sample.mp4",
+        "input_duration_sec": 1088.67,
+        "total_chunks": 109,
+        "chunk_duration_sec": 10,
+        "total_processing_time_sec": 116.66,
+        "stage_timings": {
+            "ingestion": 0.04,
+            "chunking": 0.01,
+            "audio_extraction": 0.0,
+            "vad": 0.0,
+            "diarization": 0.0,
+            "role_assignment": 0.0,
+            "transcription": 0.01,
+            "alignment": 0.11,
+            "candidate_extraction": 0.0,
+            "speech_analysis": 0.01,
+            "nlp_scoring": 0.25,
+            "visual_analysis": 116.2,
+            "aggregation": 0.02
+        },
+        "n_speakers_configured": 2
+    },
+    "diarization_summary": {
+        "total_speakers": 2,
+        "speakers": [
+            {
+                "role": "INTERVIEWER",
+                "total_speech_sec": 270.7,
+                "segment_count": 161
+            },
+            {
+                "role": "CANDIDATE",
+                "total_speech_sec": 543.0,
+                "segment_count": 189
+            }
+        ]
+    },
+    "candidate_metrics": {
+        "speech": {
+            "total_speech_duration_sec": 543.0,
+            "words_per_minute": 156.7,
+            "total_filler_words": 29,
+            "filler_details": [
+                {
+                    "word": "like",
+                    "timestamp": 80.66
+                },
+                {
+                    "word": "like",
+                    "timestamp": 117.0
+                },
+                {
+                    "word": "so",
+                    "timestamp": 124.36
+                },
+                {
+                    "word": "like",
+                    "timestamp": 177.58
+                },
+                {
+                    "word": "so",
+                    "timestamp": 192.64
+                },
+                {
+                    "word": "like",
+                    "timestamp": 201.78
+                },
+                {
+                    "word": "so",
+                    "timestamp": 230.16
+                },
+                {
+                    "word": "so",
+                    "timestamp": 331.9
+                },
+                {
+                    "word": "like",
+                    "timestamp": 386.98
+                },
+                {
+                    "word": "so",
+                    "timestamp": 392.7
+                },
+                {
+                    "word": "so",
+                    "timestamp": 397.8
+                },
+                {
+                    "word": "like",
+                    "timestamp": 415.86
+                },
+                {
+                    "word": "so",
+                    "timestamp": 495.1
+                },
+                {
+                    "word": "so",
+                    "timestamp": 517.84
+                },
+                {
+                    "word": "like",
+                    "timestamp": 523.84
+                },
+                {
+                    "word": "so",
+                    "timestamp": 527.26
+                },
+                {
+                    "word": "so",
+                    "timestamp": 554.36
+                },
+                {
+                    "word": "like",
+                    "timestamp": 577.88
+                },
+                {
+                    "word": "like",
+                    "timestamp": 613.38
+                },
+                {
+                    "word": "like",
+                    "timestamp": 772.5
+                },
+                {
+                    "word": "like",
+                    "timestamp": 803.48
+                },
+                {
+                    "word": "like",
+                    "timestamp": 821.7
+                },
+                {
+                    "word": "like",
+                    "timestamp": 920.26
+                },
+                {
+                    "word": "so",
+                    "timestamp": 931.6
+                },
+                {
+                    "word": "like",
+                    "timestamp": 955.08
+                },
+                {
+                    "word": "like",
+                    "timestamp": 968.24
+                },
+                {
+                    "word": "so",
+                    "timestamp": 1008.0
+                },
+                {
+                    "word": "so",
+                    "timestamp": 1032.7
+                },
+                {
+                    "word": "so",
+                    "timestamp": 1082.86
+                }
+            ],
+            "total_long_pauses": 1,
+            "total_short_pauses": 121,
+            "longest_pause_sec": 2.18,
+            "average_pause_sec": 0.3,
+            "total_silence_sec": 87.56,
+            "silence_ratio_pct": 16.1
+        },
+        "nlp": {
+            "semantic_score": 41.57,
+            "requirement_score": 30.49,
+            "keyword_score": 20.0,
+            "overall_score": 31.77,
+            "match_level": "Needs Improvement"
+        },
+        "visual": {
+            "face_visibility_pct": 99.4,
+            "presence_pct": 100.0,
+            "partial_visibility_pct": 0.6,
+            "head_posture_score": "N/A",
+            "total_samples": 2672,
+            "scored_samples": 2672,
+            "uncertain_samples": 0,
+            "face_loss_event_count": 0,
+            "longest_continuous_absence_sec": 0.0,
+            "multiple_face_events": 0,
+            "absence_runs": []
+        }
+    },
+    "transcripts": {
+        "full_transcript": "Yes, Gauri. Tell me something about you. Thank you for allowing me to introduce myself. My name is Gaurish Ramadi. I am from Rajasthan. I am doing computer science engineering from Gitaanjali Institute of Technical Studies. I secured 9.2 CGPA in 10 standard, 73.4 CG percentage and 12 standard. And currently in engineering, my aggregate score is 77 percentage. Computer science is omnipresent. That is, it is present in every field. And hence, I have invested these last 3.5 almost years in developing my software skills. My technical skills include the programming in Python, Java, C, C++ databases. I am also familiar with web development, Kubernetes, Docker, Ansible, etc. So, these are all my technical skills. And I've also used these skills to build several projects, which include user management project and attendance management project. I've also participated in smart India hackathons, of which in one, we also got to the finals. These are all my technical skills. Coming to my extracurricular activities, I love to dance, particularly semi-classical dance. I also like to read, write and paint. I have been the student editor of our college's newsletter, Bits and Bites. And currently, I am one of the cultural heads of our students' club. So, I have also participated in several donation camps. Several donation camps as I am a member of the Rotary Club of Apple. I consider myself as a very focused person. And I always work towards my goals in a very efficient manner. I am a team player and very optimistic in tough times. And lastly, I would like to say that, why not start the journey of my success by the success of joining TCS? Thank you so much. Okay. What are the five specific points about TCS, which makes TCS different from other ITM instances? Sure. Firstly, TCS has a brand name. It is a multinational company and it has a very good brand name. And thus, it would give me a good start for my career. Secondly, it has a work-life balance. I have talked to many of my friends who are in TCS, and they say that TCS gives a very good work-life balance. So, that is the second point. Third point is the colleagues there are very futuristic in their skills. So, there is a lot to learn from them. Fourthly, as TCS is a multinational company, I would like to, I would have the chance to even go abroad and meet people of different nationalities. And lastly, as TCS has been in the industry for almost 150 years, so it gives me a sense of job security to some extent. Okay. What are the ethical values TCS have? So, like I said, there is a work-life balance, and it promotes gender equality. There is no discrimination on the basis of that. So, it is very good in ethics overall. Okay. Okay, worry. Nice talking to you. Thank you, sir. Thank you very much, sir. Colonel Adford, sir. To take next part of the interview, right? Thank you so much, sir. Good afternoon. Good afternoon, sir. All prepared? Yes, sir. Okay. Tell us which other campus interviews have you appeared for, and what has been the results? So, I have interviewed for LANET, which is an adipur only, and I got selected for it. I also interviewed for Gateway Industries. I was not selected in the interview. I got to the interview part, but was not selected. So, that's it. I've only given these interviews. Okay. Have you analyzed why you didn't get selected for Gateway? So, in Gateway, I might have not answered the technical questions very well as compared to the other candidates. Okay. So, how have you prepared for the current TCS interview now? So, I have enhanced my technical skills. I have been preparing for the core subjects, and I've been doing coding almost every day. So, I think that I've prepared quite well for TCS. Okay. But, it tell me what are your future plans? For my future plans. So, if I join TCS or otherwise? What are your future plans? So, I want to join a software company and work for it. And I want to learn as much languages and as much skills as I can. And I also want to achieve great success, so that I'm satisfied with what I've learned. Okay. What do you think are the reasons for youngsters switching over jobs? So, maybe it is a job satisfaction because they enter a company without seeing the background of the company, and then they later find out that the company was not suitable for them. Okay. Yes, for you, what are the three important things that one should consider before joining any organization as a pressure? So, firstly, the one should look if there is a lot to learn from the company. I mean, there should be a very steep growing curve in the company. Secondly, there should be, like the colleagues and everything, should be very frank, so that they help you in every way. And thirdly, for me, there should be a brand name so that there is a satisfaction that yes, I've achieved a level and now I can go to the next level. Okay, technically, what gives you job satisfaction? So, technically, the latest, I want to work with latest technical skills, like not obsolete technologies, but the latest technologies. So, how does DCS fit into your requirement? So, DCS changes its technologies according to the needs of the people of the art. So, there is no fixed technology that they use. They use, according to the clients, which is very well. Which are the major clients of DCS? Can you name three or four of them? I'm sorry, but I'm not aware of the clients. Okay. Sure. Anything that you want to ask? So, will I be able to, like, fit in the company? I mean, what do you think? Will you be able to fit into the company? Yes, sir. Yeah. As per your own analysis, you said you are a good team player and what requirements you said for a good job. Yes. In case you have those qualities, I'm sure you'll be able to fit into. Okay, sir. Thank you. Any more suggestions for me? No, nothing more. Carvin sir will finally give his remarks, right? Okay. Thank you so much, sir. All the best, right? Thank you, sir. Gauri. Yes, sir. What is your, basically, the aim? You want to go in the software companies or anything more than that? No. So, I want to go in the software companies. That is what I mean. Okay, if you don't want to go for any higher studies or entrepreneurship like? No, so entrepreneurship, no. But higher studies, many of the company's thesis also provides like simultaneously higher studies. So that may also be a very good option. Okay, for example, you have got the offer from TCS. For at the same time, meanwhile getting the better offer than TCS from another organization, which is not a tier one organization, but tier two organization. But the package is just double of what we are offering. Then what do you do? Uh, so I'd compare both the companies in terms of the... So, we definitely have told that TCS is the tier one and you've got the offer from tier two. It means you start up for a mid-size company. With the package, for example, we are giving you product, they are giving you a intellect. In that case, what will you do? So, I choose TCS only because TCS is like almost 150 years old companies. So, it has a very good job security. And as I cannot really trust a startup because they are renew in the industry and that's why there might be some trust issues. So, I guess that's not right for you. So, job security is more important than salary. If you if you not perform well in the TCS also, you can get the job in security in TCS also. So, but I will perform good and like from May and there will be no complaints from TCS. Okay. Yeah, worry. Good afternoon, sir. Which domain do you feel comfortable? Sir, course, objects, programming, C++, DBN, yes sir. So, give me a concept to implement snack and ladder. To implement snakes and ladders. Using any programming language. I want to know only concept, not the implementation. Okay. I'm giving you the one minute. So, can I write something? Yes, yes, yes. But I need only logic, right? Not the coding or port start. Okay, sir. Okay. Wow, Corine. Yes, sir. Thoda. So, really, but then I can analyze that you are going in the right direction. Okay, sir. So, firstly, we will build like a list, for example, of how many columns are there. For example, I take a list of 50, the maximum we go to 50, and then now we take a dice variable in which we will take a random function with the help of random function. We can derive a number between 1 to 6, and for the first move, if the number random number is 6, then we can move, like we can keep a counter of the player. So, we can increase the counter with the number that comes in the dice, and then we can pre-define the snakes, for example, if we reach 5, then the counter should like increase by 10 blocks. So, the counter will increase by 10 blocks, that is the ladder. And this way, we can like pre-define the snakes. The next question is, how you will determine whether you have to increment its dice value? Means, you want to use it's increasing the counter value, the informer flag, or you have to decrement the counter value in formals there. So, how you will determine it? So, with the help of functions, for example, of the dice value, or that block value, in which the counter is right now, is 5. So, I have assigned 5 already, that 5 is a ladder. So, then it will increase, and for example, if 12 is a snake, then I have already defined that 12, at 12, you need to decrement the value by, for example, 5 or whatever. So, I will pre-define where you will pre-define these values. So, I can use a dictionary to like, if I am doing an Python, then I can use it. And then if we are using C, then C, C++ Java, there if it doesn't have any dictionary. Then so, we can, we can use an array of arrays, and then like, make a dictionary with the help of arrays. Okay, yes sir. Can we use switch or not there? Switch, yes. But so, we can use, but it is too long, like we will have to write the code many times in switch. One many times we can define a switch in a global, or anywhere, then we can use it. Okay, so switch for us, snake and switch for a ladder to separate switches, we can use, yes sir, that we can. Okay, so what do you mean by the encapsulation? Is the Vianchancer is correct? So, partially it is correct. It is used for data iding, but more data security. So, in a class, it is implemented using access modifiers, like public protected private, and there is a default access specifiers as well. So, using these, we can define the scope of the variables, or the functions. Like if it is public, then it can be used all through and if it is protected, then only the subclasses can use it. And if private, then only the current class can use it. And what do you mean by storage classes? Storage classes. So, I am not able to recall. I will. Okay, worry all the best. Okay, thank you so much. Explore more and more TCS technical integral questions, right? They are basically mainly from CNC++. Okay, sir. I will keep that in mind. Thank you so much, sir. All the best. Thank you, sir. From my side, and the routers are into you, my remark for you, definitely you are the good candidate, that we have already observed many times. Technical knowledge, I have not checked. I would not be your head-out department CSC, we will check it out. But you can easily connect the process. Okay, thank you so much, sir. Or when you are clear about your thought process, then at least it should be justified when you are giving the interviews. Yes, sir. Sure. That is very important. If they feel that you want to come, but you cannot come, then there is a chance they can drop you. Either you are a good candidate or the best. For example, Google want to hire somebody or they find the candidate which is having the ability to get a corrode package in an upright, but they have the doubt that no doubt is the best, but they have the doubt that either he will join or not, then might be they can drop. So that kind of condition in the interview, at least it should not be so case. Okay, I will keep that in mind, so thank you. I will check, right? Okay, sir. Thank you. Thank you, sir.",
+        "speaker_labelled_transcript": [
+            {
+                "speaker": "INTERVIEWER",
+                "start": 0.0,
+                "end": 2.98,
+                "text": "yes, gauri. tell me something about you."
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 4.36,
+                "end": 124.76,
+                "text": "thank you for allowing me to introduce myself. my name is gaurish ramadi. i am from rajasthan. i am doing computer science engineering from gitaanjali institute of technical studies. i secured 9 .2 cgpa in 10 standard, 73 .4 cg percentage and 12 standard. and currently in engineering, my aggregate score is 77 percentage. computer science is omnipresent. that is, it is present in every field. and hence, i have invested these last 3 .5 almost years in developing my software skills. my technical skills include the programming in python, java, c, c++ databases. i am also familiar with web development, kubernetes, docker, ansible, etc. so, these are all my technical skills. and i've also used these skills to build several projects, which include user management project and attendance management project. i've also participated in smart india hackathons, of which in one, we also got to the finals. these are all my technical skills. coming to my extracurricular activities, i love to dance, particularly semi -classical dance. i also like to read, write and paint. i have been the student editor of our college's newsletter, bits and bites. and currently, i am one of the cultural heads of our students' club. so, i have also participated in several donation camps. several donation camps as i am a member of the rotary club of apple. i consider myself as a very focused person. and i always work towards my goals in a very efficient manner. i am a team player and very optimistic in tough times. and lastly, i would like to say that, why not start the journey of my success by the success of joining tcs? thank you so much."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 126.5,
+                "end": 138.4,
+                "text": "okay. what are the five specific points about tcs, which makes tcs different from other itm instances?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 139.16,
+                "end": 196.26,
+                "text": "sure. firstly, tcs has a brand name. it is a multinational company and it has a very good brand name. and thus, it would give me a good start for my career. secondly, it has a work -life balance. i have talked to many of my friends who are in tcs, and they say that tcs gives a very good work -life balance. so, that is the second point. third point is the colleagues there are very futuristic in their skills. so, there is a lot to learn from them. fourthly, as tcs is a multinational company, i would like to, i would have the chance to even go abroad and meet people of different nationalities. and lastly, as tcs has been in the industry for almost 150 years, so it gives me a sense of job security to some extent."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 196.98,
+                "end": 199.96,
+                "text": "okay. what are the ethical values tcs have?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 201.42,
+                "end": 218.04,
+                "text": "so, like i said, there is a work -life balance, and it promotes gender equality. there is no discrimination on the basis of that. so, it is very good in ethics overall."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 219.56,
+                "end": 229.28,
+                "text": "okay. okay, worry. nice talking to you. thank you, sir. thank you very much, sir. colonel adford, sir. to take next part of the interview, right?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 229.86,
+                "end": 232.72,
+                "text": "thank you so much, sir. good afternoon. good afternoon, sir."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 234.7,
+                "end": 235.66,
+                "text": "all prepared?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 236.4,
+                "end": 237.02,
+                "text": "yes, sir."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 238.06,
+                "end": 243.52,
+                "text": "okay. tell us which other campus interviews have you appeared for, and what has been the results?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 245.8,
+                "end": 263.64,
+                "text": "so, i have interviewed for lanet, which is an adipur only, and i got selected for it. i also interviewed for gateway industries. i was not selected in the interview. i got to the interview part, but was not selected. so, that's it. i've only given these interviews."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 264.42,
+                "end": 271.86,
+                "text": "okay. have you analyzed why you didn't get selected for gateway?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 273.36,
+                "end": 281.32,
+                "text": "so, in gateway, i might have not answered the technical questions very well as compared to the other candidates."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 282.68,
+                "end": 286.68,
+                "text": "okay. so, how have you prepared for the current tcs interview now?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 287.16,
+                "end": 300.5,
+                "text": "so, i have enhanced my technical skills. i have been preparing for the core subjects, and i've been doing coding almost every day. so, i think that i've prepared quite well for tcs."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 302.0,
+                "end": 306.34,
+                "text": "okay. but, it tell me what are your future plans?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 308.1,
+                "end": 312.2,
+                "text": "for my future plans. so, if i join tcs or otherwise?"
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 313.48,
+                "end": 314.96,
+                "text": "what are your future plans?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 315.78,
+                "end": 334.54,
+                "text": "so, i want to join a software company and work for it. and i want to learn as much languages and as much skills as i can. and i also want to achieve great success, so that i'm satisfied with what i've learned."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 335.78,
+                "end": 342.9,
+                "text": "okay. what do you think are the reasons for youngsters switching over jobs?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 344.8,
+                "end": 357.52,
+                "text": "so, maybe it is a job satisfaction because they enter a company without seeing the background of the company, and then they later find out that the company was not suitable for them."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 359.44,
+                "end": 371.62,
+                "text": "okay. yes, for you, what are the three important things that one should consider before joining any organization as a pressure?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 373.06,
+                "end": 403.48,
+                "text": "so, firstly, the one should look if there is a lot to learn from the company. i mean, there should be a very steep growing curve in the company. secondly, there should be, like the colleagues and everything, should be very frank, so that they help you in every way. and thirdly, for me, there should be a brand name so that there is a satisfaction that yes, i've achieved a level and now i can go to the next level."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 404.96,
+                "end": 408.12,
+                "text": "okay, technically, what gives you job satisfaction? so,"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 410.38,
+                "end": 420.06,
+                "text": "technically, the latest, i want to work with latest technical skills, like not obsolete technologies, but the latest technologies."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 420.76,
+                "end": 424.42,
+                "text": "so, how does dcs fit into your requirement?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 425.48,
+                "end": 439.44,
+                "text": "so, dcs changes its technologies according to the needs of the people of the art. so, there is no fixed technology that they use. they use, according to the clients, which is very well."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 439.96,
+                "end": 444.44,
+                "text": "which are the major clients of dcs? can you name three or four of them?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 446.18,
+                "end": 449.44,
+                "text": "i'm sorry, but i'm not aware of the clients."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 450.84,
+                "end": 455.92,
+                "text": "okay. sure. anything that you want to ask?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 461.48,
+                "end": 466.36,
+                "text": "so, will i be able to, like, fit in the company? i mean, what do you think?"
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 469.58,
+                "end": 471.28,
+                "text": "will you be able to fit into the company?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 471.8,
+                "end": 472.42,
+                "text": "yes, sir."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 473.1,
+                "end": 483.92,
+                "text": "yeah. as per your own analysis, you said you are a good team player and what requirements you said for a good job. yes. in case you have those qualities, i'm sure you'll be able to fit into."
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 485.34,
+                "end": 488.32,
+                "text": "okay, sir. thank you. any more suggestions for me?"
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 489.56,
+                "end": 494.24,
+                "text": "no, nothing more. carvin sir will finally give his remarks, right?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 494.28,
+                "end": 495.56,
+                "text": "okay. thank you so much, sir."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 495.82,
+                "end": 497.46,
+                "text": "all the best, right?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 497.98,
+                "end": 498.44,
+                "text": "thank you, sir."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 498.94,
+                "end": 499.3,
+                "text": "gauri."
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 500.0,
+                "end": 500.5,
+                "text": "yes, sir."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 501.46,
+                "end": 506.36,
+                "text": "what is your, basically, the aim? you want to go in the software companies or anything more than that?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 507.1,
+                "end": 510.14,
+                "text": "no. so, i want to go in the software companies. that is what i mean."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 510.78,
+                "end": 516.24,
+                "text": "okay, if you don't want to go for any higher studies or entrepreneurship like?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 517.48,
+                "end": 529.36,
+                "text": "no, so entrepreneurship, no. but higher studies, many of the company's thesis also provides like simultaneously higher studies. so that may also be a very good option."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 531.1,
+                "end": 552.52,
+                "text": "okay, for example, you have got the offer from tcs. for at the same time, meanwhile getting the better offer than tcs from another organization, which is not a tier one organization, but tier two organization. but the package is just double of what we are offering. then what do you do?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 553.96,
+                "end": 558.16,
+                "text": "uh, so i'd compare both the companies in"
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 558.16,
+                "end": 573.28,
+                "text": "terms of the... so, we definitely have told that tcs is the tier one and you've got the offer from tier two. it means you start up for a mid -size company. with the package, for example, we are giving you product, they are giving you a intellect. in that case, what will you do?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 574.1,
+                "end": 597.78,
+                "text": "so, i choose tcs only because tcs is like almost 150 years old companies. so, it has a very good job security. and as i cannot really trust a startup because they are renew in the industry and that's why there might be some trust issues."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 598.26,
+                "end": 599.86,
+                "text": "so, i guess that's not right for you."
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 600.86,
+                "end": 603.64,
+                "text": "so, job security is more important than"
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 604.32,
+                "end": 610.1,
+                "text": "salary. if you if you not perform well in the tcs also, you can get the job in security in tcs also."
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 610.92,
+                "end": 617.48,
+                "text": "so, but i will perform good and like from may and there will be no complaints from tcs."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 618.3,
+                "end": 624.88,
+                "text": "okay. yeah, worry."
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 625.6,
+                "end": 626.54,
+                "text": "good afternoon, sir."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 628.42,
+                "end": 630.62,
+                "text": "which domain do you feel comfortable?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 632.36,
+                "end": 637.78,
+                "text": "sir, course, objects, programming, c++, dbn, yes sir."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 639.0,
+                "end": 643.18,
+                "text": "so, give me a concept to implement snack and ladder."
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 644.36,
+                "end": 649.5,
+                "text": "to implement snakes and ladders. using any programming language."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 650.08,
+                "end": 655.44,
+                "text": "i want to know only concept, not the implementation. okay. i'm giving you the one minute."
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 658.58,
+                "end": 660.92,
+                "text": "so, can i write something? yes, yes, yes."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 661.42,
+                "end": 665.12,
+                "text": "but i need only logic, right? not the coding or port start."
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 665.56,
+                "end": 666.08,
+                "text": "okay, sir."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 750.46,
+                "end": 757.26,
+                "text": "okay. wow, corine."
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 759.86,
+                "end": 760.92,
+                "text": "yes, sir. thoda."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 761.94,
+                "end": 766.14,
+                "text": "so, really, but then i can analyze that you are going in the right direction."
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 767.48,
+                "end": 829.04,
+                "text": "okay, sir. so, firstly, we will build like a list, for example, of how many columns are there. for example, i take a list of 50, the maximum we go to 50, and then now we take a dice variable in which we will take a random function with the help of random function. we can derive a number between 1 to 6, and for the first move, if the number random number is 6, then we can move, like we can keep a counter of the player. so, we can increase the counter with the number that comes in the dice, and then we can pre -define the snakes, for example, if we reach 5, then the counter should like increase by 10 blocks. so, the counter will increase by 10 blocks, that is the ladder. and"
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 829.04,
+                "end": 848.44,
+                "text": "this way, we can like pre -define the snakes. the next question is, how you will determine whether you have to increment its dice value? means, you want to use it's increasing the counter value, the informer flag, or you have to decrement the counter value in formals there. so, how you will determine it?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 849.28,
+                "end": 877.5,
+                "text": "so, with the help of functions, for example, of the dice value, or that block value, in which the counter is right now, is 5. so, i have assigned 5 already, that 5 is a ladder. so, then it will increase, and for example, if 12 is a snake, then i have already defined that 12, at 12, you need to decrement the value by, for example, 5 or whatever. so, i will pre -define"
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 878.28,
+                "end": 880.1,
+                "text": "where you will pre -define these values."
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 880.88,
+                "end": 882.66,
+                "text": "so, i can use a dictionary to"
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 883.7,
+                "end": 891.32,
+                "text": "like, if i am doing an python, then i can use it. and then if we are using c, then c, c++ java, there if it doesn't have any dictionary."
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 894.0,
+                "end": 905.4,
+                "text": "then so, we can, we can use an array of arrays, and then like, make a dictionary with the help of arrays."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 907.04,
+                "end": 910.24,
+                "text": "okay, yes sir. can we use switch or not there?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 912.46,
+                "end": 923.76,
+                "text": "switch, yes. but so, we can use, but it is too long, like we will have to write the code many times in"
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 923.76,
+                "end": 930.98,
+                "text": "switch. one many times we can define a switch in a global, or anywhere, then we can use it."
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 931.28,
+                "end": 937.14,
+                "text": "okay, so switch for us, snake and switch for a ladder to separate switches, we can use, yes sir, that we can."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 938.68,
+                "end": 942.86,
+                "text": "okay, so what do you mean by the encapsulation? is the vianchancer is correct?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 943.86,
+                "end": 980.86,
+                "text": "so, partially it is correct. it is used for data iding, but more data security. so, in a class, it is implemented using access modifiers, like public protected private, and there is a default access specifiers as well. so, using these, we can define the scope of the variables, or the functions. like if it is public, then it can be used all through and if it is protected, then only the subclasses can use it. and if private, then only the current class can use it."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 981.52,
+                "end": 984.04,
+                "text": "and what do you mean by storage classes?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 987.06,
+                "end": 991.02,
+                "text": "storage classes. so, i am not able to recall. i will."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 994.02,
+                "end": 1004.22,
+                "text": "okay, worry all the best. okay, thank you so much. explore more and more tcs technical integral questions, right? they are basically mainly from cnc++."
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 1005.16,
+                "end": 1009.9,
+                "text": "okay, sir. i will keep that in mind. thank you so much, sir. all the best. thank you, sir."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 1010.88,
+                "end": 1031.34,
+                "text": "from my side, and the routers are into you, my remark for you, definitely you are the good candidate, that we have already observed many times. technical knowledge, i have not checked. i would not be your head -out department csc, we will check it out. but you can easily connect the process."
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 1032.06,
+                "end": 1035.86,
+                "text": "okay, thank you so much, sir. or when"
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 1035.86,
+                "end": 1041.66,
+                "text": "you are clear about your thought process, then at least it should be justified when you are giving the interviews."
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 1042.16,
+                "end": 1043.08,
+                "text": "yes, sir. sure."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 1044.12,
+                "end": 1080.56,
+                "text": "that is very important. if they feel that you want to come, but you cannot come, then there is a chance they can drop you. either you are a good candidate or the best. for example, google want to hire somebody or they find the candidate which is having the ability to get a corrode package in an upright, but they have the doubt that no doubt is the best, but they have the doubt that either he will join or not, then might be they can drop. so that kind of condition in the interview, at least it should not be so case."
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 1081.38,
+                "end": 1083.56,
+                "text": "okay, i will keep that in mind, so thank"
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 1083.56,
+                "end": 1084.64,
+                "text": "you. i will check, right?"
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 1085.26,
+                "end": 1085.72,
+                "text": "okay, sir."
+            },
+            {
+                "speaker": "INTERVIEWER",
+                "start": 1086.66,
+                "end": 1087.26,
+                "text": "thank you."
+            },
+            {
+                "speaker": "CANDIDATE",
+                "start": 1087.6,
+                "end": 1088.22,
+                "text": "thank you, sir."
+            }
+        ],
+        "candidate_only_transcript": "thank you for allowing me to introduce myself. my name is gaurish ramadi. i am from rajasthan. i am doing computer science engineering from gitaanjali institute of technical studies. i secured 9 .2 cgpa in 10 standard, 73 .4 cg percentage and 12 standard. and currently in engineering, my aggregate score is 77 percentage. computer science is omnipresent. that is, it is present in every field. and hence, i have invested these last 3 .5 almost years in developing my software skills. my technical skills include the programming in python, java, c, c++ databases. i am also familiar with web development, kubernetes, docker, ansible, etc. so, these are all my technical skills. and i've also used these skills to build several projects, which include user management project and attendance management project. i've also participated in smart india hackathons, of which in one, we also got to the finals. these are all my technical skills. coming to my extracurricular activities, i love to dance, particularly semi -classical dance. i also like to read, write and paint. i have been the student editor of our college's newsletter, bits and bites. and currently, i am one of the cultural heads of our students' club. so, i have also participated in several donation camps. several donation camps as i am a member of the rotary club of apple. i consider myself as a very focused person. and i always work towards my goals in a very efficient manner. i am a team player and very optimistic in tough times. and lastly, i would like to say that, why not start the journey of my success by the success of joining tcs? thank you so much. sure. firstly, tcs has a brand name. it is a multinational company and it has a very good brand name. and thus, it would give me a good start for my career. secondly, it has a work -life balance. i have talked to many of my friends who are in tcs, and they say that tcs gives a very good work -life balance. so, that is the second point. third point is the colleagues there are very futuristic in their skills. so, there is a lot to learn from them. fourthly, as tcs is a multinational company, i would like to, i would have the chance to even go abroad and meet people of different nationalities. and lastly, as tcs has been in the industry for almost 150 years, so it gives me a sense of job security to some extent. so, like i said, there is a work -life balance, and it promotes gender equality. there is no discrimination on the basis of that. so, it is very good in ethics overall. thank you so much, sir. good afternoon. good afternoon, sir. yes, sir. so, i have interviewed for lanet, which is an adipur only, and i got selected for it. i also interviewed for gateway industries. i was not selected in the interview. i got to the interview part, but was not selected. so, that's it. i've only given these interviews. so, in gateway, i might have not answered the technical questions very well as compared to the other candidates. so, i have enhanced my technical skills. i have been preparing for the core subjects, and i've been doing coding almost every day. so, i think that i've prepared quite well for tcs. for my future plans. so, if i join tcs or otherwise? so, i want to join a software company and work for it. and i want to learn as much languages and as much skills as i can. and i also want to achieve great success, so that i'm satisfied with what i've learned. so, maybe it is a job satisfaction because they enter a company without seeing the background of the company, and then they later find out that the company was not suitable for them. so, firstly, the one should look if there is a lot to learn from the company. i mean, there should be a very steep growing curve in the company. secondly, there should be, like the colleagues and everything, should be very frank, so that they help you in every way. and thirdly, for me, there should be a brand name so that there is a satisfaction that yes, i've achieved a level and now i can go to the next level. technically, the latest, i want to work with latest technical skills, like not obsolete technologies, but the latest technologies. so, dcs changes its technologies according to the needs of the people of the art. so, there is no fixed technology that they use. they use, according to the clients, which is very well. i'm sorry, but i'm not aware of the clients. so, will i be able to, like, fit in the company? i mean, what do you think? yes, sir. okay, sir. thank you. any more suggestions for me? okay. thank you so much, sir. thank you, sir. yes, sir. no. so, i want to go in the software companies. that is what i mean. no, so entrepreneurship, no. but higher studies, many of the company's thesis also provides like simultaneously higher studies. so that may also be a very good option. uh, so i'd compare both the companies in so, i choose tcs only because tcs is like almost 150 years old companies. so, it has a very good job security. and as i cannot really trust a startup because they are renew in the industry and that's why there might be some trust issues. so, job security is more important than so, but i will perform good and like from may and there will be no complaints from tcs. good afternoon, sir. sir, course, objects, programming, c++, dbn, yes sir. to implement snakes and ladders. using any programming language. so, can i write something? yes, yes, yes. okay, sir. yes, sir. thoda. okay, sir. so, firstly, we will build like a list, for example, of how many columns are there. for example, i take a list of 50, the maximum we go to 50, and then now we take a dice variable in which we will take a random function with the help of random function. we can derive a number between 1 to 6, and for the first move, if the number random number is 6, then we can move, like we can keep a counter of the player. so, we can increase the counter with the number that comes in the dice, and then we can pre -define the snakes, for example, if we reach 5, then the counter should like increase by 10 blocks. so, the counter will increase by 10 blocks, that is the ladder. and so, with the help of functions, for example, of the dice value, or that block value, in which the counter is right now, is 5. so, i have assigned 5 already, that 5 is a ladder. so, then it will increase, and for example, if 12 is a snake, then i have already defined that 12, at 12, you need to decrement the value by, for example, 5 or whatever. so, i will pre -define so, i can use a dictionary to then so, we can, we can use an array of arrays, and then like, make a dictionary with the help of arrays. switch, yes. but so, we can use, but it is too long, like we will have to write the code many times in okay, so switch for us, snake and switch for a ladder to separate switches, we can use, yes sir, that we can. so, partially it is correct. it is used for data iding, but more data security. so, in a class, it is implemented using access modifiers, like public protected private, and there is a default access specifiers as well. so, using these, we can define the scope of the variables, or the functions. like if it is public, then it can be used all through and if it is protected, then only the subclasses can use it. and if private, then only the current class can use it. storage classes. so, i am not able to recall. i will. okay, sir. i will keep that in mind. thank you so much, sir. all the best. thank you, sir. okay, thank you so much, sir. or when yes, sir. sure. okay, i will keep that in mind, so thank okay, sir. thank you, sir."
+    },
+    "timeline": [
+        {
+            "chunk_id": "chunk_000",
+            "start_time": 0,
+            "end_time": 10,
+            "candidate_transcript": "thank you for allowing me to introduce myself. my name is gaurish ramadi. i am from",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 5.56,
+            "wpm": 96.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_001",
+            "start_time": 10,
+            "end_time": 20,
+            "candidate_transcript": "rajasthan. i am doing computer science engineering from gitaanjali institute of technical studies. i secured 9 .2 cgpa in 10 standard,",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 11.16,
+            "wpm": 126.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_002",
+            "start_time": 20,
+            "end_time": 30,
+            "candidate_transcript": "73 .4 cg percentage and 12 standard. and currently in engineering, my aggregate score is 77 percentage. computer science is omnipresent. that",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 21.6,
+            "wpm": 132.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_003",
+            "start_time": 30,
+            "end_time": 40,
+            "candidate_transcript": "is, it is present in every field. and hence, i have invested these last 3 .5 almost years in developing my software skills. my technical",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 31.4,
+            "wpm": 150.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_004",
+            "start_time": 40,
+            "end_time": 50,
+            "candidate_transcript": "skills include the programming in python, java, c, c++ databases. i am also familiar with web development, kubernetes,",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 42.7,
+            "wpm": 108.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_005",
+            "start_time": 50,
+            "end_time": 60,
+            "candidate_transcript": "docker, ansible, etc. so, these are all my technical skills. and i've also used these skills to build several projects, which include user",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 52.86,
+            "wpm": 138.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_006",
+            "start_time": 60,
+            "end_time": 70,
+            "candidate_transcript": "management project and attendance management project. i've also participated in smart india hackathons, of which in one, we also got",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 61.74,
+            "wpm": 120.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_007",
+            "start_time": 70,
+            "end_time": 80,
+            "candidate_transcript": "to the finals. these are all my technical skills. coming to my extracurricular activities, i love to dance, particularly semi -classical dance.",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 72.42,
+            "wpm": 132.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_008",
+            "start_time": 80,
+            "end_time": 90,
+            "candidate_transcript": "i also like to read, write and paint. i have been the student editor of our college's newsletter, bits and bites. and currently, i am one of the cultural heads",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 81.48,
+            "wpm": 180.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_009",
+            "start_time": 90,
+            "end_time": 100,
+            "candidate_transcript": "of our students' club. so, i have also participated in several donation camps. several donation camps as",
+            "filler_words": 0,
+            "long_pauses": 1,
+            "silence_sec": 93.54,
+            "wpm": 102.0,
+            "face_visibility_pct": 65.9
+        },
+        {
+            "chunk_id": "chunk_010",
+            "start_time": 100,
+            "end_time": 110,
+            "candidate_transcript": "i am a member of the rotary club of apple. i consider myself as a very focused person. and i always work towards my",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 101.54,
+            "wpm": 144.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_011",
+            "start_time": 110,
+            "end_time": 120,
+            "candidate_transcript": "goals in a very efficient manner. i am a team player and very optimistic in tough times. and lastly, i would like to say that, why not start the journey of",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 111.34,
+            "wpm": 186.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_012",
+            "start_time": 120,
+            "end_time": 130,
+            "candidate_transcript": "my success by the success of joining tcs? thank you so much.",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 121.08,
+            "wpm": 72.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_013",
+            "start_time": 130,
+            "end_time": 140,
+            "candidate_transcript": "sure.",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 139.16,
+            "wpm": 6.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_014",
+            "start_time": 140,
+            "end_time": 150,
+            "candidate_transcript": "firstly, tcs has a brand name. it is a multinational company and it has a very good brand name.",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 141.96,
+            "wpm": 114.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_015",
+            "start_time": 150,
+            "end_time": 160,
+            "candidate_transcript": "and thus, it would give me a good start for my career. secondly, it has a work -life balance. i have talked to many of my friends who are in",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 152.22,
+            "wpm": 180.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_016",
+            "start_time": 160,
+            "end_time": 170,
+            "candidate_transcript": "tcs, and they say that tcs gives a very good work -life balance. so, that is the second point. third point is the colleagues there are very futuristic",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 161.2,
+            "wpm": 168.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_017",
+            "start_time": 170,
+            "end_time": 180,
+            "candidate_transcript": "in their skills. so, there is a lot to learn from them. fourthly, as tcs is a multinational company, i would like to, i would have the chance to even",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 172.54,
+            "wpm": 180.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_018",
+            "start_time": 180,
+            "end_time": 190,
+            "candidate_transcript": "go abroad and meet people of different nationalities. and lastly, as tcs has been",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 181.94,
+            "wpm": 84.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_019",
+            "start_time": 190,
+            "end_time": 200,
+            "candidate_transcript": "in the industry for almost 150 years, so it gives me a sense of job security to some extent.",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 190.22,
+            "wpm": 114.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_020",
+            "start_time": 200,
+            "end_time": 210,
+            "candidate_transcript": "so, like i said, there is a work -life balance, and it promotes gender equality. there is no discrimination",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 202.6,
+            "wpm": 114.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_021",
+            "start_time": 210,
+            "end_time": 220,
+            "candidate_transcript": "on the basis of that. so, it is very good in ethics overall.",
+            "filler_words": 0,
+            "long_pauses": 1,
+            "silence_sec": 214.24,
+            "wpm": 78.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_022",
+            "start_time": 220,
+            "end_time": 230,
+            "candidate_transcript": "thank",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 229.86,
+            "wpm": 6.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_023",
+            "start_time": 230,
+            "end_time": 240,
+            "candidate_transcript": "you so much, sir. good afternoon. good afternoon, sir. yes, sir.",
+            "filler_words": 1,
+            "long_pauses": 1,
+            "silence_sec": 234.92,
+            "wpm": 66.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_024",
+            "start_time": 240,
+            "end_time": 250,
+            "candidate_transcript": "so, i have interviewed for lanet, which is an adipur only,",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 246.06,
+            "wpm": 66.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_025",
+            "start_time": 250,
+            "end_time": 260,
+            "candidate_transcript": "and i got selected for it. i also interviewed for gateway industries. i was not selected in the interview. i got to the interview part, but was",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 251.62,
+            "wpm": 162.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_026",
+            "start_time": 260,
+            "end_time": 270,
+            "candidate_transcript": "not selected. so, that's it. i've only given these interviews.",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 261.1,
+            "wpm": 60.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_027",
+            "start_time": 270,
+            "end_time": 280,
+            "candidate_transcript": "so, in gateway, i might have not answered the technical questions very well as compared to the other",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 274.0,
+            "wpm": 108.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_028",
+            "start_time": 280,
+            "end_time": 290,
+            "candidate_transcript": "candidates. so, i have enhanced my technical",
+            "filler_words": 0,
+            "long_pauses": 1,
+            "silence_sec": 286.4,
+            "wpm": 42.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_029",
+            "start_time": 290,
+            "end_time": 300,
+            "candidate_transcript": "skills. i have been preparing for the core subjects, and i've been doing coding almost every day. so, i think that i've prepared quite well for",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 291.36,
+            "wpm": 156.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_030",
+            "start_time": 300,
+            "end_time": 310,
+            "candidate_transcript": "tcs. for my future plans. so,",
+            "filler_words": 0,
+            "long_pauses": 1,
+            "silence_sec": 308.12,
+            "wpm": 36.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_031",
+            "start_time": 310,
+            "end_time": 320,
+            "candidate_transcript": "if i join tcs or otherwise? so, i want to join a software company and work for it.",
+            "filler_words": 0,
+            "long_pauses": 1,
+            "silence_sec": 314.06,
+            "wpm": 108.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_032",
+            "start_time": 320,
+            "end_time": 330,
+            "candidate_transcript": "and i want to learn as much languages and as much skills as i can. and i also want",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 321.22,
+            "wpm": 114.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_033",
+            "start_time": 330,
+            "end_time": 340,
+            "candidate_transcript": "to achieve great success, so that i'm satisfied with what i've learned.",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 330.46,
+            "wpm": 72.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_034",
+            "start_time": 340,
+            "end_time": 350,
+            "candidate_transcript": "so, maybe it is a job satisfaction because they enter a company without",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 344.88,
+            "wpm": 78.0,
+            "face_visibility_pct": 95.7
+        },
+        {
+            "chunk_id": "chunk_035",
+            "start_time": 350,
+            "end_time": 360,
+            "candidate_transcript": "seeing the background of the company, and then they later find out that the company was not suitable for them.",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 350.0,
+            "wpm": 120.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_036",
+            "start_time": 360,
+            "end_time": 370,
+            "candidate_transcript": "",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 10.0,
+            "wpm": 0.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_037",
+            "start_time": 370,
+            "end_time": 380,
+            "candidate_transcript": "so, firstly, the one should look if there is a lot to learn from the company. i mean, there should",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 374.5,
+            "wpm": 120.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_038",
+            "start_time": 380,
+            "end_time": 390,
+            "candidate_transcript": "be a very steep growing curve in the company. secondly, there should be, like the colleagues and everything,",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 381.02,
+            "wpm": 108.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_039",
+            "start_time": 390,
+            "end_time": 400,
+            "candidate_transcript": "should be very frank, so that they help you in every way. and thirdly, for me, there should be a brand name so that there is a satisfaction that yes,",
+            "filler_words": 2,
+            "long_pauses": 0,
+            "silence_sec": 392.46,
+            "wpm": 180.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_040",
+            "start_time": 400,
+            "end_time": 410,
+            "candidate_transcript": "i've achieved a level and now i can go to the next level.",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 400.64,
+            "wpm": 78.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_041",
+            "start_time": 410,
+            "end_time": 420,
+            "candidate_transcript": "technically, the latest, i want to work with latest technical skills, like not obsolete technologies, but the latest technologies.",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 412.14,
+            "wpm": 114.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_042",
+            "start_time": 420,
+            "end_time": 430,
+            "candidate_transcript": "so, dcs changes its technologies according to the needs of the people",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 425.66,
+            "wpm": 72.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_043",
+            "start_time": 430,
+            "end_time": 440,
+            "candidate_transcript": "of the art. so, there is no fixed technology that they use. they use, according to the clients, which is very well.",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 430.74,
+            "wpm": 132.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_044",
+            "start_time": 440,
+            "end_time": 450,
+            "candidate_transcript": "i'm sorry, but i'm not aware of the clients.",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 446.34,
+            "wpm": 54.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_045",
+            "start_time": 450,
+            "end_time": 460,
+            "candidate_transcript": "",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 10.0,
+            "wpm": 0.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_046",
+            "start_time": 460,
+            "end_time": 470,
+            "candidate_transcript": "so, will i be able to, like, fit in the company? i mean, what do you think?",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 462.52,
+            "wpm": 102.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_047",
+            "start_time": 470,
+            "end_time": 480,
+            "candidate_transcript": "yes, sir.",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 471.98,
+            "wpm": 12.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_048",
+            "start_time": 480,
+            "end_time": 490,
+            "candidate_transcript": "okay, sir. thank you. any more suggestions for me?",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 485.68,
+            "wpm": 54.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_049",
+            "start_time": 490,
+            "end_time": 500,
+            "candidate_transcript": "okay. thank you so much, sir. thank you, sir.",
+            "filler_words": 1,
+            "long_pauses": 1,
+            "silence_sec": 497.1,
+            "wpm": 54.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_050",
+            "start_time": 500,
+            "end_time": 510,
+            "candidate_transcript": "yes, sir. no. so, i want to go in the software companies. that is what i mean.",
+            "filler_words": 0,
+            "long_pauses": 1,
+            "silence_sec": 507.04,
+            "wpm": 102.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_051",
+            "start_time": 510,
+            "end_time": 520,
+            "candidate_transcript": "no, so entrepreneurship, no. but higher studies,",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 517.88,
+            "wpm": 42.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_052",
+            "start_time": 520,
+            "end_time": 530,
+            "candidate_transcript": "many of the company's thesis also provides like simultaneously higher studies. so that may also be a very good option.",
+            "filler_words": 2,
+            "long_pauses": 0,
+            "silence_sec": 521.6,
+            "wpm": 120.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_053",
+            "start_time": 530,
+            "end_time": 540,
+            "candidate_transcript": "",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 10.0,
+            "wpm": 0.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_054",
+            "start_time": 540,
+            "end_time": 550,
+            "candidate_transcript": "",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 10.0,
+            "wpm": 0.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_055",
+            "start_time": 550,
+            "end_time": 560,
+            "candidate_transcript": "uh, so i'd compare both the companies in",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 554.16,
+            "wpm": 48.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_056",
+            "start_time": 560,
+            "end_time": 570,
+            "candidate_transcript": "",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 10.0,
+            "wpm": 0.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_057",
+            "start_time": 570,
+            "end_time": 580,
+            "candidate_transcript": "so, i choose tcs only because tcs is like almost",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 574.14,
+            "wpm": 60.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_058",
+            "start_time": 580,
+            "end_time": 590,
+            "candidate_transcript": "150 years old companies. so, it has a very good job security. and as i cannot really trust a startup",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 581.64,
+            "wpm": 120.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_059",
+            "start_time": 590,
+            "end_time": 600,
+            "candidate_transcript": "because they are renew in the industry and that's why there might be some trust issues.",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 591.06,
+            "wpm": 96.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_060",
+            "start_time": 600,
+            "end_time": 610,
+            "candidate_transcript": "so, job security is more important than",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 601.0,
+            "wpm": 42.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_061",
+            "start_time": 610,
+            "end_time": 620,
+            "candidate_transcript": "so, but i will perform good and like from may and there will be no complaints from tcs.",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 611.06,
+            "wpm": 108.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_062",
+            "start_time": 620,
+            "end_time": 630,
+            "candidate_transcript": "good afternoon, sir.",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 625.8,
+            "wpm": 18.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_063",
+            "start_time": 630,
+            "end_time": 640,
+            "candidate_transcript": "sir, course, objects, programming, c++, dbn, yes sir.",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 634.72,
+            "wpm": 48.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_064",
+            "start_time": 640,
+            "end_time": 650,
+            "candidate_transcript": "to implement snakes and ladders. using any programming language.",
+            "filler_words": 0,
+            "long_pauses": 1,
+            "silence_sec": 646.26,
+            "wpm": 54.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_065",
+            "start_time": 650,
+            "end_time": 660,
+            "candidate_transcript": "so, can i write something?",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 658.66,
+            "wpm": 30.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_066",
+            "start_time": 660,
+            "end_time": 670,
+            "candidate_transcript": "yes, yes, yes. okay, sir.",
+            "filler_words": 0,
+            "long_pauses": 1,
+            "silence_sec": 665.06,
+            "wpm": 30.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_067",
+            "start_time": 670,
+            "end_time": 680,
+            "candidate_transcript": "",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 10.0,
+            "wpm": 0.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_068",
+            "start_time": 680,
+            "end_time": 690,
+            "candidate_transcript": "",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 10.0,
+            "wpm": 0.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_069",
+            "start_time": 690,
+            "end_time": 700,
+            "candidate_transcript": "",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 10.0,
+            "wpm": 0.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_070",
+            "start_time": 700,
+            "end_time": 710,
+            "candidate_transcript": "",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 10.0,
+            "wpm": 0.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_071",
+            "start_time": 710,
+            "end_time": 720,
+            "candidate_transcript": "",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 10.0,
+            "wpm": 0.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_072",
+            "start_time": 720,
+            "end_time": 730,
+            "candidate_transcript": "",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 10.0,
+            "wpm": 0.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_073",
+            "start_time": 730,
+            "end_time": 740,
+            "candidate_transcript": "",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 10.0,
+            "wpm": 0.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_074",
+            "start_time": 740,
+            "end_time": 750,
+            "candidate_transcript": "",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 10.0,
+            "wpm": 0.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_075",
+            "start_time": 750,
+            "end_time": 760,
+            "candidate_transcript": "yes,",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 759.86,
+            "wpm": 6.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_076",
+            "start_time": 760,
+            "end_time": 770,
+            "candidate_transcript": "sir. thoda. okay, sir. so, firstly,",
+            "filler_words": 0,
+            "long_pauses": 1,
+            "silence_sec": 768.68,
+            "wpm": 36.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_077",
+            "start_time": 770,
+            "end_time": 780,
+            "candidate_transcript": "we will build like a list, for example, of how many columns are there. for example, i take",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 771.62,
+            "wpm": 108.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_078",
+            "start_time": 780,
+            "end_time": 790,
+            "candidate_transcript": "a list of 50, the maximum we go to 50, and then now we take a dice variable in which we will take a random function",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 780.8,
+            "wpm": 156.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_079",
+            "start_time": 790,
+            "end_time": 800,
+            "candidate_transcript": "with the help of random function. we can derive a number between 1 to 6, and for the first move, if the number",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 791.82,
+            "wpm": 138.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_080",
+            "start_time": 800,
+            "end_time": 810,
+            "candidate_transcript": "random number is 6, then we can move, like we can keep a counter of the player. so, we can increase the counter with the number that comes",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 801.6,
+            "wpm": 168.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_081",
+            "start_time": 810,
+            "end_time": 820,
+            "candidate_transcript": "in the dice, and then we can pre -define the snakes, for example, if we reach 5, then the counter",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 811.94,
+            "wpm": 120.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_082",
+            "start_time": 820,
+            "end_time": 830,
+            "candidate_transcript": "should like increase by 10 blocks. so, the counter will increase by 10 blocks, that is the ladder. and",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 822.78,
+            "wpm": 114.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_083",
+            "start_time": 830,
+            "end_time": 840,
+            "candidate_transcript": "",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 10.0,
+            "wpm": 0.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_084",
+            "start_time": 840,
+            "end_time": 850,
+            "candidate_transcript": "so, with the help of",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 849.38,
+            "wpm": 30.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_085",
+            "start_time": 850,
+            "end_time": 860,
+            "candidate_transcript": "functions, for example, of the dice value, or that block value, in which the counter is right now, is",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 851.4,
+            "wpm": 114.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_086",
+            "start_time": 860,
+            "end_time": 870,
+            "candidate_transcript": "5. so, i have assigned 5 already, that 5 is a ladder. so, then it will increase, and for example, if 12 is a snake, then",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 862.08,
+            "wpm": 156.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_087",
+            "start_time": 870,
+            "end_time": 880,
+            "candidate_transcript": "i have already defined that 12, at 12, you need to decrement the value by, for example, 5 or whatever. so, i will pre -define",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 871.58,
+            "wpm": 150.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_088",
+            "start_time": 880,
+            "end_time": 890,
+            "candidate_transcript": "so, i can use a dictionary to",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 880.92,
+            "wpm": 42.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_089",
+            "start_time": 890,
+            "end_time": 900,
+            "candidate_transcript": "then so, we can, we can use an array of arrays,",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 894.84,
+            "wpm": 66.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_090",
+            "start_time": 900,
+            "end_time": 910,
+            "candidate_transcript": "and then like, make a dictionary with the help of arrays.",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 901.14,
+            "wpm": 66.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_091",
+            "start_time": 910,
+            "end_time": 920,
+            "candidate_transcript": "switch, yes. but so, we can use, but it is too long,",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 915.0,
+            "wpm": 72.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_092",
+            "start_time": 920,
+            "end_time": 930,
+            "candidate_transcript": "like we will have to write the code many times in",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 920.26,
+            "wpm": 66.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_093",
+            "start_time": 930,
+            "end_time": 940,
+            "candidate_transcript": "okay, so switch for us, snake and switch for a ladder to separate switches, we can use, yes sir, that we can.",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 932.02,
+            "wpm": 132.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_094",
+            "start_time": 940,
+            "end_time": 950,
+            "candidate_transcript": "so, partially it is correct. it is used for data iding, but more data security. so,",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 945.22,
+            "wpm": 96.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_095",
+            "start_time": 950,
+            "end_time": 960,
+            "candidate_transcript": "in a class, it is implemented using access modifiers, like public protected private, and there is a default access specifiers as",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 951.4,
+            "wpm": 126.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_096",
+            "start_time": 960,
+            "end_time": 970,
+            "candidate_transcript": "well. so, using these, we can define the scope of the variables, or the functions. like if it is public, then it",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 963.02,
+            "wpm": 132.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_097",
+            "start_time": 970,
+            "end_time": 980,
+            "candidate_transcript": "can be used all through and if it is protected, then only the subclasses can use it. and if private, then only the current class",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 972.4,
+            "wpm": 150.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_098",
+            "start_time": 980,
+            "end_time": 990,
+            "candidate_transcript": "can use it. storage classes. so, i am not able to recall.",
+            "filler_words": 0,
+            "long_pauses": 1,
+            "silence_sec": 986.92,
+            "wpm": 72.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_099",
+            "start_time": 990,
+            "end_time": 1000,
+            "candidate_transcript": "i will.",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 990.78,
+            "wpm": 12.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_100",
+            "start_time": 1000,
+            "end_time": 1010,
+            "candidate_transcript": "okay, sir. i will keep that in mind. thank you so much, sir. all the best. thank you, sir.",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 1007.0,
+            "wpm": 114.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_101",
+            "start_time": 1010,
+            "end_time": 1020,
+            "candidate_transcript": "",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 10.0,
+            "wpm": 0.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_102",
+            "start_time": 1020,
+            "end_time": 1030,
+            "candidate_transcript": "",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 10.0,
+            "wpm": 0.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_103",
+            "start_time": 1030,
+            "end_time": 1040,
+            "candidate_transcript": "okay, thank you so much, sir. or when",
+            "filler_words": 1,
+            "long_pauses": 0,
+            "silence_sec": 1032.52,
+            "wpm": 48.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_104",
+            "start_time": 1040,
+            "end_time": 1050,
+            "candidate_transcript": "yes, sir. sure.",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 1042.56,
+            "wpm": 18.0,
+            "face_visibility_pct": 100.0
+        },
+        {
+            "chunk_id": "chunk_105",
+            "start_time": 1050,
+            "end_time": 1060,
+            "candidate_transcript": "",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 10.0,
+            "wpm": 0.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_106",
+            "start_time": 1060,
+            "end_time": 1070,
+            "candidate_transcript": "",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 10.0,
+            "wpm": 0.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_107",
+            "start_time": 1070,
+            "end_time": 1080,
+            "candidate_transcript": "",
+            "filler_words": 0,
+            "long_pauses": 0,
+            "silence_sec": 10.0,
+            "wpm": 0.0,
+            "face_visibility_pct": "N/A"
+        },
+        {
+            "chunk_id": "chunk_108",
+            "start_time": 1080,
+            "end_time": 1090,
+            "candidate_transcript": "okay, i will keep that in mind, so thank okay, sir. thank you, sir.",
+            "filler_words": 1,
+            "long_pauses": 2,
+            "silence_sec": 1085.42,
+            "wpm": 84.0,
+            "face_visibility_pct": 100.0
+        }
+    ]
+}

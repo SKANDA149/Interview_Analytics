@@ -1,0 +1,1752 @@
+[
+  {
+    "start": 0.1,
+    "end": 0.8,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1.5,
+    "end": 3.2,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 4.4,
+    "end": 7.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 8.0,
+    "end": 11.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 11.9,
+    "end": 16.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 16.9,
+    "end": 23.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 23.8,
+    "end": 27.8,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 28.3,
+    "end": 36.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 36.7,
+    "end": 39.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 39.6,
+    "end": 44.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 45.1,
+    "end": 46.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 46.2,
+    "end": 49.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 49.5,
+    "end": 51.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 51.9,
+    "end": 53.8,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 54.3,
+    "end": 58.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 58.1,
+    "end": 71.2,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 71.9,
+    "end": 74.2,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 74.4,
+    "end": 77.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 77.8,
+    "end": 82.8,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 83.0,
+    "end": 91.8,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 92.5,
+    "end": 96.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 97.2,
+    "end": 98.2,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 98.4,
+    "end": 103.6,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 104.3,
+    "end": 112.3,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 112.5,
+    "end": 113.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 113.8,
+    "end": 115.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 116.1,
+    "end": 118.1,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 118.5,
+    "end": 121.1,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 121.3,
+    "end": 123.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 124.1,
+    "end": 124.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 125.5,
+    "end": 126.8,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 127.0,
+    "end": 127.8,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 128.0,
+    "end": 128.5,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 129.7,
+    "end": 130.7,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 131.0,
+    "end": 132.2,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 132.7,
+    "end": 133.8,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 134.0,
+    "end": 134.5,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 134.9,
+    "end": 137.4,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 137.6,
+    "end": 138.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 139.9,
+    "end": 141.2,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 141.3,
+    "end": 144.8,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 145.2,
+    "end": 153.5,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 153.8,
+    "end": 156.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 156.6,
+    "end": 159.6,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 159.7,
+    "end": 164.3,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 164.5,
+    "end": 168.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 169.1,
+    "end": 173.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 174.2,
+    "end": 175.2,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 175.4,
+    "end": 180.3,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 180.4,
+    "end": 184.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 184.1,
+    "end": 186.1,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 186.4,
+    "end": 193.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 193.1,
+    "end": 196.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 197.2,
+    "end": 199.5,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 199.7,
+    "end": 200.2,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 201.6,
+    "end": 203.8,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 204.1,
+    "end": 205.6,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 205.7,
+    "end": 210.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 210.3,
+    "end": 212.8,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 213.1,
+    "end": 215.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 215.6,
+    "end": 218.3,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 219.8,
+    "end": 220.4,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 221.2,
+    "end": 222.1,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 222.9,
+    "end": 223.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 223.8,
+    "end": 224.9,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 225.2,
+    "end": 226.3,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 226.7,
+    "end": 227.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 227.8,
+    "end": 229.5,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 229.9,
+    "end": 231.5,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 231.9,
+    "end": 232.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 234.3,
+    "end": 234.8,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 235.3,
+    "end": 236.2,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 236.5,
+    "end": 237.2,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 238.1,
+    "end": 239.0,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 239.4,
+    "end": 243.9,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 244.7,
+    "end": 245.0,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 245.3,
+    "end": 252.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 252.7,
+    "end": 261.2,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 261.5,
+    "end": 264.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 264.4,
+    "end": 266.1,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 267.1,
+    "end": 268.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 268.7,
+    "end": 269.8,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 270.3,
+    "end": 272.1,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 273.7,
+    "end": 278.6,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 278.8,
+    "end": 281.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 282.3,
+    "end": 282.7,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 283.0,
+    "end": 283.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 283.8,
+    "end": 287.1,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 287.5,
+    "end": 300.8,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 302.0,
+    "end": 302.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 303.0,
+    "end": 303.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 303.6,
+    "end": 304.0,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 304.8,
+    "end": 306.7,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 308.3,
+    "end": 310.2,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 310.3,
+    "end": 312.5,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 312.7,
+    "end": 313.1,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 314.0,
+    "end": 315.2,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 315.7,
+    "end": 318.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 318.7,
+    "end": 320.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 320.6,
+    "end": 323.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 324.2,
+    "end": 329.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 329.2,
+    "end": 331.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 332.1,
+    "end": 334.8,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 335.6,
+    "end": 336.8,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 337.0,
+    "end": 338.0,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 338.3,
+    "end": 339.3,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 339.8,
+    "end": 340.8,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 341.5,
+    "end": 343.3,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 345.2,
+    "end": 347.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 347.9,
+    "end": 356.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 357.2,
+    "end": 357.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 359.4,
+    "end": 360.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 361.5,
+    "end": 362.5,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 362.9,
+    "end": 364.1,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 364.2,
+    "end": 364.9,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 365.5,
+    "end": 366.2,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 366.7,
+    "end": 367.4,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 367.9,
+    "end": 369.2,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 369.6,
+    "end": 371.1,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 371.4,
+    "end": 371.9,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 373.1,
+    "end": 376.2,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 376.6,
+    "end": 382.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 382.6,
+    "end": 384.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 385.1,
+    "end": 386.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 387.3,
+    "end": 387.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 387.9,
+    "end": 390.6,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 390.7,
+    "end": 395.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 395.2,
+    "end": 396.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 396.2,
+    "end": 400.3,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 400.4,
+    "end": 403.8,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 404.4,
+    "end": 405.5,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 405.7,
+    "end": 407.8,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 409.9,
+    "end": 415.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 415.9,
+    "end": 417.5,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 418.0,
+    "end": 420.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 421.1,
+    "end": 422.0,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 422.3,
+    "end": 423.8,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 424.0,
+    "end": 424.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 425.6,
+    "end": 431.1,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 431.3,
+    "end": 432.6,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 432.8,
+    "end": 439.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 440.0,
+    "end": 441.8,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 443.2,
+    "end": 444.7,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 446.2,
+    "end": 448.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 448.6,
+    "end": 449.8,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 450.0,
+    "end": 450.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 450.9,
+    "end": 451.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 453.4,
+    "end": 454.7,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 454.9,
+    "end": 456.1,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 459.3,
+    "end": 459.9,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 460.3,
+    "end": 461.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 461.8,
+    "end": 465.1,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 465.4,
+    "end": 466.6,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 467.1,
+    "end": 467.5,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 467.7,
+    "end": 471.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 471.8,
+    "end": 472.5,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 473.2,
+    "end": 476.4,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 476.5,
+    "end": 477.1,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 477.6,
+    "end": 478.8,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 479.3,
+    "end": 480.7,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 481.2,
+    "end": 484.2,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 485.5,
+    "end": 487.8,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 488.0,
+    "end": 488.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 489.4,
+    "end": 493.9,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 494.1,
+    "end": 495.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 495.8,
+    "end": 496.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 497.3,
+    "end": 497.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 498.0,
+    "end": 498.6,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 498.9,
+    "end": 499.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 500.1,
+    "end": 500.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 501.0,
+    "end": 506.5,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 507.2,
+    "end": 510.3,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 510.9,
+    "end": 511.5,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 512.0,
+    "end": 514.7,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 514.9,
+    "end": 516.3,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 517.5,
+    "end": 524.6,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 524.9,
+    "end": 529.6,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 531.1,
+    "end": 533.3,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 534.0,
+    "end": 536.5,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 537.0,
+    "end": 539.3,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 539.6,
+    "end": 540.5,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 541.4,
+    "end": 544.4,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 544.9,
+    "end": 548.3,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 548.7,
+    "end": 551.1,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 551.8,
+    "end": 552.7,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 553.9,
+    "end": 557.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 558.0,
+    "end": 562.0,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 562.3,
+    "end": 564.0,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 564.5,
+    "end": 565.9,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 566.3,
+    "end": 567.5,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 568.0,
+    "end": 570.3,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 570.6,
+    "end": 571.7,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 572.1,
+    "end": 573.3,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 574.2,
+    "end": 577.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 577.6,
+    "end": 578.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 578.5,
+    "end": 578.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 579.1,
+    "end": 579.6,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 579.8,
+    "end": 583.1,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 583.3,
+    "end": 583.6,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 583.7,
+    "end": 586.8,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 586.9,
+    "end": 588.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 588.5,
+    "end": 591.3,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 591.7,
+    "end": 596.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 596.2,
+    "end": 598.1,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 598.2,
+    "end": 600.1,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 600.9,
+    "end": 604.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 604.5,
+    "end": 608.3,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 608.5,
+    "end": 610.2,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 610.9,
+    "end": 613.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 613.9,
+    "end": 616.5,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 616.8,
+    "end": 617.8,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 618.5,
+    "end": 619.4,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 620.1,
+    "end": 621.3,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 623.6,
+    "end": 624.0,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 624.6,
+    "end": 625.2,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 625.8,
+    "end": 626.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 627.2,
+    "end": 627.9,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 628.4,
+    "end": 631.0,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 632.3,
+    "end": 634.6,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 635.5,
+    "end": 637.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 638.7,
+    "end": 639.1,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 639.6,
+    "end": 641.0,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 641.8,
+    "end": 643.4,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 644.7,
+    "end": 646.3,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 646.8,
+    "end": 647.1,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 648.1,
+    "end": 649.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 650.0,
+    "end": 653.0,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 653.8,
+    "end": 654.3,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 654.4,
+    "end": 655.7,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 656.7,
+    "end": 657.1,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 659.0,
+    "end": 661.3,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 661.8,
+    "end": 665.2,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 665.7,
+    "end": 666.2,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 756.8,
+    "end": 757.5,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 760.3,
+    "end": 761.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 761.9,
+    "end": 766.5,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 767.7,
+    "end": 768.3,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 768.8,
+    "end": 772.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 772.2,
+    "end": 774.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 774.3,
+    "end": 775.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 776.5,
+    "end": 781.2,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 781.5,
+    "end": 785.5,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 785.7,
+    "end": 789.8,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 790.2,
+    "end": 793.3,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 793.6,
+    "end": 796.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 796.6,
+    "end": 799.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 799.6,
+    "end": 803.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 803.5,
+    "end": 806.1,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 806.5,
+    "end": 808.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 808.8,
+    "end": 811.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 811.4,
+    "end": 817.6,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 818.1,
+    "end": 821.2,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 821.4,
+    "end": 822.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 822.5,
+    "end": 824.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 824.9,
+    "end": 825.5,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 825.8,
+    "end": 828.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 828.7,
+    "end": 829.5,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 829.6,
+    "end": 837.1,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 837.4,
+    "end": 842.4,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 842.9,
+    "end": 848.4,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 849.4,
+    "end": 852.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 853.1,
+    "end": 854.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 855.0,
+    "end": 857.8,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 858.1,
+    "end": 860.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 860.8,
+    "end": 862.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 863.5,
+    "end": 865.5,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 865.7,
+    "end": 869.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 869.9,
+    "end": 874.5,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 874.7,
+    "end": 876.3,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 876.6,
+    "end": 878.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 878.3,
+    "end": 880.4,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 881.0,
+    "end": 883.1,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 884.0,
+    "end": 891.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 894.0,
+    "end": 896.2,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 898.0,
+    "end": 900.6,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 901.3,
+    "end": 902.1,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 902.7,
+    "end": 905.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 906.9,
+    "end": 907.7,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 907.9,
+    "end": 910.4,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 912.6,
+    "end": 913.2,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 913.7,
+    "end": 914.6,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 915.1,
+    "end": 915.5,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 915.7,
+    "end": 917.5,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 918.3,
+    "end": 920.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 920.4,
+    "end": 923.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 923.6,
+    "end": 928.2,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 928.6,
+    "end": 929.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 929.8,
+    "end": 930.8,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 931.3,
+    "end": 935.8,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 936.1,
+    "end": 937.3,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 938.6,
+    "end": 943.1,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 944.4,
+    "end": 945.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 946.0,
+    "end": 949.6,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 949.7,
+    "end": 954.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 955.0,
+    "end": 958.7,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 958.9,
+    "end": 960.8,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 961.0,
+    "end": 963.8,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 963.9,
+    "end": 966.5,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 966.9,
+    "end": 968.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 968.2,
+    "end": 969.4,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 969.6,
+    "end": 972.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 973.2,
+    "end": 976.6,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 976.9,
+    "end": 980.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 981.9,
+    "end": 984.4,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 986.6,
+    "end": 988.5,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 988.8,
+    "end": 990.3,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 990.7,
+    "end": 991.3,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 992.3,
+    "end": 992.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 994.2,
+    "end": 996.3,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 996.9,
+    "end": 1002.0,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1002.3,
+    "end": 1004.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1005.4,
+    "end": 1006.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 1006.2,
+    "end": 1007.2,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 1007.7,
+    "end": 1009.1,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 1009.4,
+    "end": 1010.0,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 1010.9,
+    "end": 1013.9,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1014.4,
+    "end": 1016.9,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1017.1,
+    "end": 1018.0,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1018.4,
+    "end": 1019.4,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1020.5,
+    "end": 1021.0,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1021.4,
+    "end": 1024.0,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1024.4,
+    "end": 1026.2,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1027.1,
+    "end": 1027.7,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1030.0,
+    "end": 1031.6,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1032.1,
+    "end": 1034.5,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 1035.7,
+    "end": 1038.0,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1038.4,
+    "end": 1041.8,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1042.2,
+    "end": 1043.5,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 1044.5,
+    "end": 1045.4,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1045.6,
+    "end": 1046.5,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1047.0,
+    "end": 1050.1,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1051.1,
+    "end": 1051.9,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1052.2,
+    "end": 1054.0,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1054.5,
+    "end": 1055.2,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1055.5,
+    "end": 1056.7,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1057.1,
+    "end": 1058.9,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1059.7,
+    "end": 1060.3,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1060.5,
+    "end": 1061.7,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1062.1,
+    "end": 1064.3,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1066.0,
+    "end": 1067.3,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1067.6,
+    "end": 1069.0,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1069.4,
+    "end": 1073.1,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1073.7,
+    "end": 1075.3,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1076.1,
+    "end": 1079.8,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1080.2,
+    "end": 1080.8,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1081.5,
+    "end": 1083.2,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 1083.4,
+    "end": 1084.9,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1085.3,
+    "end": 1085.9,
+    "speaker": "CANDIDATE"
+  },
+  {
+    "start": 1086.2,
+    "end": 1087.5,
+    "speaker": "INTERVIEWER"
+  },
+  {
+    "start": 1087.8,
+    "end": 1088.4,
+    "speaker": "CANDIDATE"
+  }
+]

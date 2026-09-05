@@ -1,0 +1,8 @@
+vosk
+ffmpeg-python
+opencv-python
+mediapipe
+sentence-transformers
+psutil
+numpy
+pandas

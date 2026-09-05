@@ -1,0 +1,45 @@
+# Virtual Environment
+venv/
+.venv/
+
+# VS Code
+.vscode/
+
+# Python cache
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Speech models
+models/vosk/
+interview_pipeline/models/vosk/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Generated videos
+data/chunks/
+data/input/
+data/outputs/
+data/youtube_test/
+
+
+# Large media files
+data/*.mp4
+data/*.avi
+data/*.mov
+data/*.wav
+data/*.mp3
+
+# Generated audio
+data/audio/
+
+# Optional: generated JSON outputs
+# data/outputs/
