@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge Interview Analytics Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="brand">
+                <div class="brand-icon">⚡</div>
+                <div>
+                    <h1>Interview Analytics Studio</h1>
+                    <p>Memory-Optimized Edge Multimedia Pipeline v0.3.0</p>
+                </div>
+            </div>
+            <div class="header-badges">
+                <span class="badge badge-edge">🟢 Offline CPU Pipeline Active</span>
+                <span class="badge badge-status">Skip-Logic Enabled</span>
+                <button class="btn btn-secondary" onclick="fetchData()">🔄 Refresh Data</button>
+                <button class="btn btn-primary" onclick="exportReport()">📥 Export CSV</button>
+            </div>
+        </header>
+
+        <!-- KPI Metrics Grid -->
+        <section class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-header">
+                    <span>Average Pacing</span>
+                    <span class="kpi-icon">⏱️</span>
+                </div>
+                <div class="kpi-value" id="kpi-wpm">0 WPM</div>
+                <div class="kpi-subtitle">Words per Minute (Ideal: 120-160)</div>
+            </div>
+
+            <div class="kpi-card">
+                <div class="kpi-header">
+                    <span>Filler Words Detected</span>
+                    <span class="kpi-icon">💬</span>
+                </div>
+                <div class="kpi-value" id="kpi-fillers" style="color: var(--accent-amber);">0</div>
+                <div class="kpi-subtitle">'um', 'uh', 'like', 'so', 'you know'</div>
+            </div>
+
+            <div class="kpi-card">
+                <div class="kpi-header">
+                    <span>Long Hesitations</span>
+                    <span class="kpi-icon">⏸️</span>
+                </div>
+                <div class="kpi-value" id="kpi-pauses" style="color: var(--accent-rose);">0</div>
+                <div class="kpi-subtitle">Silent gaps &gt; 1.5 seconds</div>
+            </div>
+
+            <div class="kpi-card">
+                <div class="kpi-header">
+                    <span>Silence Ratio</span>
+                    <span class="kpi-icon">🔇</span>
+                </div>
+                <div class="kpi-value" id="kpi-silence">0.0s</div>
+                <div class="kpi-subtitle">Total silent audio duration</div>
+            </div>
+
+            <div class="kpi-card">
+                <div class="kpi-header">
+                    <span>Technical Match Score</span>
+                    <span class="kpi-icon">🧠</span>
+                </div>
+                <div class="kpi-value" id="kpi-nlp" style="color: var(--accent-emerald);">0%</div>
+                <div class="kpi-subtitle" id="kpi-nlp-label">Semantic Answer Evaluation</div>
+            </div>
+        </section>
+
+        <!-- Diarization Summary -->
+        <section class="card" id="diarization-card" style="margin-bottom: 1.5rem;">
+            <div class="card-title">
+                <span>Speaker Diarization Summary</span>
+                <span class="pill pill-cyan">WeSpeaker + Agglomerative Clustering</span>
+            </div>
+            <div id="diarization-summary" style="display: flex; gap: 2rem; padding: 0.5rem 0;">
+                <p style="color: var(--text-muted);">Loading diarization data...</p>
+            </div>
+        </section>
+
+        <!-- Main Workspace Grid -->
+        <div class="main-grid">
+            <!-- Left Panel: Interactive Transcript Player -->
+            <div class="card">
+                <div class="card-title">
+                    <span>Speaker-Labelled Transcript & Speech Marker</span>
+                    <span class="pill pill-cyan" id="transcript-count-pill">0 Chunks Processed</span>
+                </div>
+                <div class="transcript-box" id="transcript-container">
+                    <p style="color: var(--text-muted);">Loading interview transcript data...</p>
+                </div>
+            </div>
+
+            <!-- Right Panel: Role / JD NLP Configuration -->
+            <div class="card">
+                <div class="card-title">
+                    <span>NLP Semantic Scoring</span>
+                    <span class="pill pill-emerald">MiniLM Vector Similarity</span>
+                </div>
+                <div class="evaluator-form" style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div>
+                        <label style="font-size: 0.85rem; color: var(--text-muted);">Job Title / Role:</label>
+                        <input class="textarea-input" type="text" id="job-title-input" style="height: 40px;" value="Software Engineer">
+                    </div>
+                    <div>
+                        <label style="font-size: 0.85rem; color: var(--text-muted);">Job Description:</label>
+                        <textarea class="textarea-input" id="job-desc-input" style="height: 70px;">Software engineering role involving problem-solving, system design, coding, and teamwork. The candidate should demonstrate technical competence, communication skills, and cultural fit.</textarea>
+                    </div>
+                    <div>
+                        <label style="font-size: 0.85rem; color: var(--text-muted);">Required Skills / Key Competencies (comma-separated):</label>
+                        <textarea class="textarea-input" id="skills-input" style="height: 45px;">problem solving, communication, teamwork, programming, system design</textarea>
+                    </div>
+                    <div>
+                        <label style="font-size: 0.85rem; color: var(--text-muted);">Additional Expectations / Keywords (optional):</label>
+                        <textarea class="textarea-input" id="additional-input" style="height: 45px;"></textarea>
+                    </div>
+                    
+                    <button class="btn btn-primary" id="analyze-btn" onclick="runAnalysis()">🎯 Analyze Interview</button>
+                    <div id="analysis-status" style="display: none; font-size: 0.85rem; color: var(--accent-cyan); text-align: center;"></div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+                        <div class="score-badge" style="background: var(--bg-card-hover); padding: 0.75rem; border-radius: 6px;">
+                            <div style="font-size: 0.7rem; text-transform: uppercase; opacity: 0.7;">Semantic Similarity</div>
+                            <div style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);" id="score-semantic">--%</div>
+                        </div>
+                        <div class="score-badge" style="background: var(--bg-card-hover); padding: 0.75rem; border-radius: 6px;">
+                            <div style="font-size: 0.7rem; text-transform: uppercase; opacity: 0.7;">Requirement Coverage</div>
+                            <div style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);" id="score-req">--%</div>
+                        </div>
+                        <div class="score-badge" style="background: var(--bg-card-hover); padding: 0.75rem; border-radius: 6px;">
+                            <div style="font-size: 0.7rem; text-transform: uppercase; opacity: 0.7;">Keyword Coverage</div>
+                            <div style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);" id="score-keyword">--%</div>
+                        </div>
+                        <div class="score-badge score-excellent" id="eval-score-box" style="padding: 0.75rem; border-radius: 6px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <div style="font-size: 0.7rem; text-transform: uppercase; opacity: 0.8;">Overall Match</div>
+                            <div style="font-size: 1.4rem; font-weight: 800;" id="eval-score-val">--%</div>
+                            <span class="pill pill-emerald" id="eval-label-val" style="margin-top: 0.25rem;">N/A</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline Chunks Breakdown Table -->
+        <section class="card">
+            <div class="card-title">
+                <span>10-Second Chunk Execution Breakdown</span>
+                <span class="pill pill-cyan">Memory-Optimized Stream Processing</span>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Chunk ID</th>
+                            <th>Transcript Snippet</th>
+                            <th>Filler Words</th>
+                            <th>Long Pauses</th>
+                            <th>Silence (s)</th>
+                            <th>Pacing (WPM)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="timeline-table-body">
+                        <tr>
+                            <td colspan="6" style="text-align: center; color: var(--text-muted);">Loading chunk timeline data...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+# Core ML frameworks (CPU-only)
+# Install with: pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+torch>=2.2.0
+torchaudio>=2.2.0
+
+# Voice Activity Detection
+silero-vad>=5.1.0
+
+# Speaker Embedding (ONNX inference)
+onnxruntime>=1.16.0,<2.0.0
+
+# Speech-to-Text
+faster-whisper>=1.0.0,<2.0.0
+
+# Speaker Clustering
+scikit-learn>=1.3.0,<2.0.0
+
+# NLP Semantic Scoring
+sentence-transformers
+
+# Audio I/O
+soundfile>=0.12.1
+ffmpeg-python
+
+# Computer Vision
+opencv-python
+mediapipe
+
+# Utilities
+numpy>=1.24.0,<2.0.0
+pandas
+psutil
+scipy>=1.11.0,<2.0.0
