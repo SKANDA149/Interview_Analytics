@@ -1,0 +1,653 @@
+{
+  "provenance": {
+    "video_duration_s": 1528.267,
+    "total_grid_frames": 7642,
+    "random_seed": 20260913,
+    "frozen_vad_params": {
+      "threshold": 0.5,
+      "min_speech_duration_ms": 250,
+      "min_silence_duration_ms": 100,
+      "speech_pad_ms": 0
+    },
+    "production_functions_imported": [
+      "select_frames_vad_gated",
+      "select_frames_matched_uniform",
+      "select_frames_random",
+      "dilate_and_merge",
+      "build_frame_grid",
+      "build_reference_intervals",
+      "interval_existence_recall",
+      "temporal_coverage_recall"
+    ],
+    "reimplemented_functions": []
+  },
+  "coupling": {
+    "definition_vad_active": "grid timestamp inside dilate_and_merge(raw_vad, 0ms, duration); identical to condition B's select_frames_vad_gated set",
+    "definition_visible": "frozen Condition-A YuNet present==True at that grid index (detector-defined visual availability, not human ground truth)",
+    "alignment": "index-aligned: reference file holds exactly one record per grid frame in grid order; VAD intervals are projected onto the 5-FPS grid by inclusive timestamp containment (iv.start <= t <= iv.end). No interpolation. The only rounding is frame_grid.build_frame_grid's round(i*0.2, 3) when the grid is built.",
+    "n_grid_frames": 7642,
+    "n_vad_active": 5170,
+    "n_vad_silent": 2472,
+    "n_visible": 7019,
+    "P_visible": 0.9185,
+    "P_visible_given_vad_active": 0.9402,
+    "P_visible_given_vad_silent": 0.873,
+    "H_visible_bits": 0.40752,
+    "I_visible_vad_bits": 0.00896,
+    "I_over_H_pct": 2.2,
+    "verification_vs_gap_analysis": "ALL MATCH"
+  },
+  "missed_intervals": {
+    "5170": {
+      "condition": "B",
+      "padding_ms": 0,
+      "strategies": {
+        "VAD": {
+          "n_missed": 24,
+          "min_s": 0.0,
+          "max_s": 2.0,
+          "median_s": 0.3,
+          "mean_s": 0.458,
+          "n_single_frame": 9,
+          "pct_single_frame": 37.5,
+          "n_multi_frame": 15,
+          "pct_multi_frame": 62.5,
+          "durations_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.2,
+            0.2,
+            0.2,
+            0.4,
+            0.4,
+            0.4,
+            0.4,
+            0.4,
+            0.6,
+            0.6,
+            0.8,
+            1.2,
+            1.2,
+            2.0,
+            2.0
+          ],
+          "existence_recall": 0.8345,
+          "n_reference_intervals": 145,
+          "n_hit": 121,
+          "missed_frame_span_s": [
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.4,
+            0.4,
+            0.4,
+            0.6,
+            0.6,
+            0.6,
+            0.6,
+            0.6,
+            0.8,
+            0.8,
+            1.0,
+            1.4,
+            1.4,
+            2.2,
+            2.2
+          ]
+        },
+        "uniform": {
+          "n_missed": 7,
+          "min_s": 0.0,
+          "max_s": 0.0,
+          "median_s": 0.0,
+          "mean_s": 0.0,
+          "n_single_frame": 7,
+          "pct_single_frame": 100.0,
+          "n_multi_frame": 0,
+          "pct_multi_frame": 0.0,
+          "durations_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "existence_recall": 0.9517,
+          "n_reference_intervals": 145,
+          "n_hit": 138,
+          "missed_frame_span_s": [
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ]
+        },
+        "random": {
+          "n_missed": 11,
+          "min_s": 0.0,
+          "max_s": 0.4,
+          "median_s": 0.0,
+          "mean_s": 0.055,
+          "n_single_frame": 9,
+          "pct_single_frame": 81.8,
+          "n_multi_frame": 2,
+          "pct_multi_frame": 18.2,
+          "durations_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.2,
+            0.4
+          ],
+          "existence_recall": 0.9241,
+          "n_reference_intervals": 145,
+          "n_hit": 134,
+          "missed_frame_span_s": [
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.4,
+            0.6
+          ]
+        }
+      }
+    },
+    "6315": {
+      "condition": "C",
+      "padding_ms": 250,
+      "strategies": {
+        "VAD": {
+          "n_missed": 14,
+          "min_s": 0.0,
+          "max_s": 2.0,
+          "median_s": 0.1,
+          "mean_s": 0.371,
+          "n_single_frame": 7,
+          "pct_single_frame": 50.0,
+          "n_multi_frame": 7,
+          "pct_multi_frame": 50.0,
+          "durations_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.2,
+            0.4,
+            0.4,
+            0.4,
+            0.6,
+            1.2,
+            2.0
+          ],
+          "existence_recall": 0.9034,
+          "n_reference_intervals": 145,
+          "n_hit": 131,
+          "missed_frame_span_s": [
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.4,
+            0.6,
+            0.6,
+            0.6,
+            0.8,
+            1.4,
+            2.2
+          ]
+        },
+        "uniform": {
+          "n_missed": 5,
+          "min_s": 0.0,
+          "max_s": 0.0,
+          "median_s": 0.0,
+          "mean_s": 0.0,
+          "n_single_frame": 5,
+          "pct_single_frame": 100.0,
+          "n_multi_frame": 0,
+          "pct_multi_frame": 0.0,
+          "durations_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "existence_recall": 0.9655,
+          "n_reference_intervals": 145,
+          "n_hit": 140,
+          "missed_frame_span_s": [
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ]
+        },
+        "random": {
+          "n_missed": 7,
+          "min_s": 0.0,
+          "max_s": 0.4,
+          "median_s": 0.0,
+          "mean_s": 0.086,
+          "n_single_frame": 5,
+          "pct_single_frame": 71.4,
+          "n_multi_frame": 2,
+          "pct_multi_frame": 28.6,
+          "durations_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.2,
+            0.4
+          ],
+          "existence_recall": 0.9517,
+          "n_reference_intervals": 145,
+          "n_hit": 138,
+          "missed_frame_span_s": [
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.4,
+            0.6
+          ]
+        }
+      }
+    },
+    "6815": {
+      "condition": "D",
+      "padding_ms": 500,
+      "strategies": {
+        "VAD": {
+          "n_missed": 9,
+          "min_s": 0.0,
+          "max_s": 2.0,
+          "median_s": 0.2,
+          "mean_s": 0.467,
+          "n_single_frame": 4,
+          "pct_single_frame": 44.4,
+          "n_multi_frame": 5,
+          "pct_multi_frame": 55.6,
+          "durations_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.2,
+            0.4,
+            0.4,
+            1.2,
+            2.0
+          ],
+          "existence_recall": 0.9379,
+          "n_reference_intervals": 145,
+          "n_hit": 136,
+          "missed_frame_span_s": [
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.4,
+            0.6,
+            0.6,
+            1.4,
+            2.2
+          ]
+        },
+        "uniform": {
+          "n_missed": 3,
+          "min_s": 0.0,
+          "max_s": 0.0,
+          "median_s": 0.0,
+          "mean_s": 0.0,
+          "n_single_frame": 3,
+          "pct_single_frame": 100.0,
+          "n_multi_frame": 0,
+          "pct_multi_frame": 0.0,
+          "durations_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "existence_recall": 0.9793,
+          "n_reference_intervals": 145,
+          "n_hit": 142,
+          "missed_frame_span_s": [
+            0.2,
+            0.2,
+            0.2
+          ]
+        },
+        "random": {
+          "n_missed": 5,
+          "min_s": 0.0,
+          "max_s": 0.4,
+          "median_s": 0.0,
+          "mean_s": 0.08,
+          "n_single_frame": 4,
+          "pct_single_frame": 80.0,
+          "n_multi_frame": 1,
+          "pct_multi_frame": 20.0,
+          "durations_s": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.4
+          ],
+          "existence_recall": 0.9655,
+          "n_reference_intervals": 145,
+          "n_hit": 140,
+          "missed_frame_span_s": [
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.6
+          ]
+        }
+      }
+    },
+    "7221": {
+      "condition": "E",
+      "padding_ms": 1000,
+      "strategies": {
+        "VAD": {
+          "n_missed": 3,
+          "min_s": 0.0,
+          "max_s": 0.4,
+          "median_s": 0.2,
+          "mean_s": 0.2,
+          "n_single_frame": 1,
+          "pct_single_frame": 33.3,
+          "n_multi_frame": 2,
+          "pct_multi_frame": 66.7,
+          "durations_s": [
+            0.0,
+            0.2,
+            0.4
+          ],
+          "existence_recall": 0.9793,
+          "n_reference_intervals": 145,
+          "n_hit": 142,
+          "missed_frame_span_s": [
+            0.2,
+            0.4,
+            0.6
+          ]
+        },
+        "uniform": {
+          "n_missed": 0,
+          "min_s": null,
+          "max_s": null,
+          "median_s": null,
+          "mean_s": null,
+          "n_single_frame": 0,
+          "pct_single_frame": null,
+          "n_multi_frame": 0,
+          "pct_multi_frame": null,
+          "durations_s": [],
+          "existence_recall": 1.0,
+          "n_reference_intervals": 145,
+          "n_hit": 145,
+          "missed_frame_span_s": []
+        },
+        "random": {
+          "n_missed": 2,
+          "min_s": 0.0,
+          "max_s": 0.0,
+          "median_s": 0.0,
+          "mean_s": 0.0,
+          "n_single_frame": 2,
+          "pct_single_frame": 100.0,
+          "n_multi_frame": 0,
+          "pct_multi_frame": 0.0,
+          "durations_s": [
+            0.0,
+            0.0
+          ],
+          "existence_recall": 0.9862,
+          "n_reference_intervals": 145,
+          "n_hit": 143,
+          "missed_frame_span_s": [
+            0.2,
+            0.2
+          ]
+        }
+      }
+    }
+  },
+  "multi_frame_sensitivity": {
+    "n_total_intervals": 145,
+    "n_single_frame": 28,
+    "n_multi_frame": 117,
+    "note": "Sensitivity analysis only. The all-interval metric is retained as primary.",
+    "budgets": {
+      "5170": {
+        "VAD": {
+          "all_145": 0.8345,
+          "multi_frame_117": 0.8718
+        },
+        "uniform": {
+          "all_145": 0.9517,
+          "multi_frame_117": 1.0
+        },
+        "random": {
+          "all_145": 0.9241,
+          "multi_frame_117": 0.9829
+        }
+      },
+      "6315": {
+        "VAD": {
+          "all_145": 0.9034,
+          "multi_frame_117": 0.9402
+        },
+        "uniform": {
+          "all_145": 0.9655,
+          "multi_frame_117": 1.0
+        },
+        "random": {
+          "all_145": 0.9517,
+          "multi_frame_117": 0.9829
+        }
+      },
+      "6815": {
+        "VAD": {
+          "all_145": 0.9379,
+          "multi_frame_117": 0.9573
+        },
+        "uniform": {
+          "all_145": 0.9793,
+          "multi_frame_117": 1.0
+        },
+        "random": {
+          "all_145": 0.9655,
+          "multi_frame_117": 0.9915
+        }
+      },
+      "7221": {
+        "VAD": {
+          "all_145": 0.9793,
+          "multi_frame_117": 0.9829
+        },
+        "uniform": {
+          "all_145": 1.0,
+          "multi_frame_117": 1.0
+        },
+        "random": {
+          "all_145": 0.9862,
+          "multi_frame_117": 1.0
+        }
+      }
+    }
+  },
+  "detector_invocation_cost": {
+    "A": {
+      "total_available_5fps_frames": 7642,
+      "detector_invocations": 7642,
+      "skipped_detector_invocations": 0,
+      "pct_skipped": 0.0,
+      "wall_time_s_mean": 52.35
+    },
+    "B": {
+      "total_available_5fps_frames": 7642,
+      "detector_invocations": 5170,
+      "skipped_detector_invocations": 2472,
+      "pct_skipped": 32.35,
+      "wall_time_s_mean": 46.24
+    },
+    "C": {
+      "total_available_5fps_frames": 7642,
+      "detector_invocations": 6315,
+      "skipped_detector_invocations": 1327,
+      "pct_skipped": 17.36,
+      "wall_time_s_mean": 49.17
+    },
+    "D": {
+      "total_available_5fps_frames": 7642,
+      "detector_invocations": 6815,
+      "skipped_detector_invocations": 827,
+      "pct_skipped": 10.82,
+      "wall_time_s_mean": 51.02
+    },
+    "E": {
+      "total_available_5fps_frames": 7642,
+      "detector_invocations": 7221,
+      "skipped_detector_invocations": 421,
+      "pct_skipped": 5.51,
+      "wall_time_s_mean": 53.07
+    },
+    "F_B": {
+      "total_available_5fps_frames": 7642,
+      "detector_invocations": 5170,
+      "skipped_detector_invocations": 2472,
+      "pct_skipped": 32.35,
+      "wall_time_s_mean": 48.45
+    },
+    "F_C": {
+      "total_available_5fps_frames": 7642,
+      "detector_invocations": 6315,
+      "skipped_detector_invocations": 1327,
+      "pct_skipped": 17.36,
+      "wall_time_s_mean": 50.72
+    },
+    "F_D": {
+      "total_available_5fps_frames": 7642,
+      "detector_invocations": 6815,
+      "skipped_detector_invocations": 827,
+      "pct_skipped": 10.82,
+      "wall_time_s_mean": 49.89
+    },
+    "F_E": {
+      "total_available_5fps_frames": 7642,
+      "detector_invocations": 7221,
+      "skipped_detector_invocations": 421,
+      "pct_skipped": 5.51,
+      "wall_time_s_mean": 51.08
+    },
+    "R_B": {
+      "total_available_5fps_frames": 7642,
+      "detector_invocations": 5170,
+      "skipped_detector_invocations": 2472,
+      "pct_skipped": 32.35,
+      "wall_time_s_mean": 51.17
+    },
+    "R_C": {
+      "total_available_5fps_frames": 7642,
+      "detector_invocations": 6315,
+      "skipped_detector_invocations": 1327,
+      "pct_skipped": 17.36,
+      "wall_time_s_mean": 51.53
+    },
+    "R_D": {
+      "total_available_5fps_frames": 7642,
+      "detector_invocations": 6815,
+      "skipped_detector_invocations": 827,
+      "pct_skipped": 10.82,
+      "wall_time_s_mean": 50.81
+    },
+    "R_E": {
+      "total_available_5fps_frames": 7642,
+      "detector_invocations": 7221,
+      "skipped_detector_invocations": 421,
+      "pct_skipped": 5.51,
+      "wall_time_s_mean": 49.35
+    }
+  },
+  "detector_invocation_cost_caveat": "Detector invocations are the primary, exact, deterministic cost unit. Skipped invocations MUST NOT be described as equivalent total pipeline speedup: the video is decoded sequentially in full for every condition, so decode cost is invariant to gating.",
+  "instrumentation_audit": {
+    "available_timing_fields": [
+      "covered_face_time_s",
+      "cpu_seconds",
+      "eligible_duration_s",
+      "reference_face_time_s",
+      "run_timestamp",
+      "vad_speech_duration_s",
+      "video_duration_s",
+      "wall_time_s"
+    ],
+    "can_separate_decode_vs_detect": false,
+    "reason": "runs.jsonl records only aggregate wall_time_s / cpu_time_s / peak RSS per run. No per-stage counters for decode, YuNet inference, or selection bookkeeping exist, so the decode-vs-detect split cannot be recovered from frozen data.",
+    "resolution": "New minimum micro-benchmark performed (decode_detect_split.json). Pilot runs.jsonl still cannot be decomposed retrospectively."
+  },
+  "statistical_design": {
+    "frame_selection_and_recall_are_deterministic": true,
+    "evidence": "across all 13 conditions x 3 timed repeats, processed_frames, interval_existence_recall and temporal_coverage_recall each take exactly ONE distinct value per condition; only wall/CPU time vary.",
+    "repeats_measure": "runtime variability only",
+    "recall_repeat_variance": "zero by construction; error bars on recall are not defined",
+    "padding_budget_confound": "The four VAD conditions vary padding (0/250/500/1000 ms) AND processed-frame budget (5170/6315/6815/7221) simultaneously, because budget is a deterministic consequence of padding. Padding and budget are therefore perfectly confounded within the VAD arm and their effects cannot be separated by this design. The matched controls are unaffected: they are defined by budget alone, so VAD-vs-control comparisons AT A FIXED BUDGET remain clean. What cannot be claimed is any statement attributing a VAD effect to padding per se.",
+    "significance_testing": "Not applicable and not performed. Recall metrics have no sampling distribution here (deterministic, single recording)."
+  },
+  "decode_detect_split": {
+    "hardware_caveat": "analysis container, NOT the pilot machine; ratio/order-of-magnitude only",
+    "n_grid_frames_benchmarked": 2000,
+    "frames_decoded": 12026,
+    "decode_only_s": 18.61,
+    "decode_plus_detect_s": 22.806,
+    "detect_attributable_s": 4.197,
+    "detect_share_pct": 18.4,
+    "decode_share_pct": 81.6,
+    "per_call_ms": 2.098,
+    "max_theoretical_saving_pct_at_32_35_skip": 6.0
+  }
+}

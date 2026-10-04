@@ -1,0 +1,98 @@
+
+=== role_swap : dose-response ===
+ severity |                WPM |          Silence % | Long pauses (count) |  Longest pause (s) |      Avg pause (s) |       Filler count | nlp_score
+----------------------------------------------------------------------------------------------------------------------------------------------------
+     0.00 |              180.4 |                9.9 |                  0 |               0.93 |               0.09 |                 70 | 5.73
+     0.10 |              182.0 |               10.3 |                  0 |               0.93 |               0.09 |                 64 | 0.0
+     0.25 |              184.1 |               11.4 |                  1 |               2.23 |                0.1 |                 60 | 4.99
+     0.50 |              188.1 |               12.5 |                  1 |               2.41 |               0.11 |                 47 | 0.0
+
+=== missed_speech : dose-response ===
+ severity |                WPM |          Silence % | Long pauses (count) |  Longest pause (s) |      Avg pause (s) |       Filler count | nlp_score
+----------------------------------------------------------------------------------------------------------------------------------------------------
+     0.00 |              180.4 |                9.9 |                  0 |               0.93 |               0.09 |                 70 | 5.73
+     0.10 |              197.9 |                9.9 |                  0 |               0.93 |               0.09 |                 68 | 5.73
+     0.25 |              232.3 |               10.0 |                  0 |               0.93 |               0.09 |                 64 | 5.73
+     0.50 |              314.9 |               10.1 |                  0 |               0.87 |               0.08 |                 58 | 4.34
+
+=== role_swap : % distortion vs severity-0 baseline ===
+ severity |                WPM |          Silence % | Long pauses (count) |  Longest pause (s) |      Avg pause (s) |       Filler count
+----------------------------------------------------------------------------------------------------------------------------------------
+     0.00 |              +0.0% |              +0.0% |                n/a |              +0.0% |              +0.0% |              +0.0%
+     0.10 |              +0.9% |              +4.0% |                n/a |              +0.0% |              +0.0% |              -8.6%
+     0.25 |              +2.1% |             +15.2% |                n/a |            +139.8% |             +11.1% |             -14.3%
+     0.50 |              +4.3% |             +26.3% |                n/a |            +159.1% |             +22.2% |             -32.9%
+
+=== missed_speech : % distortion vs severity-0 baseline ===
+ severity |                WPM |          Silence % | Long pauses (count) |  Longest pause (s) |      Avg pause (s) |       Filler count
+----------------------------------------------------------------------------------------------------------------------------------------
+     0.00 |              +0.0% |              +0.0% |                n/a |              +0.0% |              +0.0% |              +0.0%
+     0.10 |              +9.7% |              +0.0% |                n/a |              +0.0% |              +0.0% |              -2.9%
+     0.25 |             +28.8% |              +1.0% |                n/a |              +0.0% |              +0.0% |              -8.6%
+     0.50 |             +74.6% |              +2.0% |                n/a |              -6.5% |             -11.1% |             -17.1%
+
+=== Cross-operator comparison: distortion in WPM at each severity ===
+ severity |       role_swap |   missed_speech
+---------------------------------------------
+     0.00 |           +0.0% |           +0.0%
+     0.10 |           +0.9% |           +9.7%
+     0.25 |           +2.1% |          +28.8%
+     0.50 |           +4.3% |          +74.6%
+
+Steepest distortion-per-unit-severity (excluding severity 0):
+  role_swap       avg |distortion|/severity = 0.085
+  missed_speech   avg |distortion|/severity = 1.204
+
+=== Linearity check: WPM distortion vs severity ===
+  role_swap       successive slopes = [0.089, 0.077, 0.089] -> roughly linear
+  missed_speech   successive slopes = [0.97, 1.271, 1.832] -> roughly linear
+
+=== Cross-operator comparison: distortion in Silence % at each severity ===
+ severity |       role_swap |   missed_speech
+---------------------------------------------
+     0.00 |           +0.0% |           +0.0%
+     0.10 |           +4.0% |           +0.0%
+     0.25 |          +15.2% |           +1.0%
+     0.50 |          +26.3% |           +2.0%
+
+Steepest distortion-per-unit-severity (excluding severity 0):
+  role_swap       avg |distortion|/severity = 0.512
+  missed_speech   avg |distortion|/severity = 0.027
+
+=== Linearity check: Silence % distortion vs severity ===
+  role_swap       successive slopes = [0.404, 0.741, 0.444] -> roughly linear
+  missed_speech   successive slopes = [0.0, 0.067, 0.04] -> threshold-like / non-linear jump
+
+=== Cross-operator comparison: distortion in Filler count at each severity ===
+ severity |       role_swap |   missed_speech
+---------------------------------------------
+     0.00 |           +0.0% |           +0.0%
+     0.10 |           -8.6% |           -2.9%
+     0.25 |          -14.3% |           -8.6%
+     0.50 |          -32.9% |          -17.1%
+
+Steepest distortion-per-unit-severity (excluding severity 0):
+  role_swap       avg |distortion|/severity = 0.695
+  missed_speech   avg |distortion|/severity = 0.324
+
+=== Linearity check: Filler count distortion vs severity ===
+  role_swap       successive slopes = [-0.857, -0.381, -0.743] -> threshold-like / non-linear jump
+  missed_speech   successive slopes = [-0.286, -0.381, -0.343] -> roughly linear
+
+=== NLP semantic score floor-hit confirmation (research/debug_nlp_floor.py) ===
+role_swap raw cosine similarity (unclipped) vs floored score:
+  severity=0.00  raw=+0.0573  floored=5.73
+  severity=0.10  raw=-0.0043  floored=0.00
+  severity=0.25  raw=+0.0499  floored=4.99
+  severity=0.50  raw=-0.0094  floored=0.00
+
+CONFIRMED: negative raw cosine similarities at severity 0.1 and 0.5 are genuine
+(not a computation failure). evaluate_technical_answer() applies
+max(0.0, similarity) before scaling to 0-100, so these floor to exactly 0.0.
+This means role_swap can push the candidate-attributed transcript's semantic
+content far enough from the reference answer (by mixing in interviewer
+question text) that similarity crosses zero -- an abrupt, threshold-like
+collapse rather than smooth decay. missed_speech never shows this: its
+semantic score decays smoothly (5.73 -> 5.73 -> 5.73 -> 4.34) since it only
+removes candidate segments rather than contaminating them with interviewer
+content.

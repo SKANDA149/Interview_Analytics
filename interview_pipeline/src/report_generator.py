@@ -45,8 +45,12 @@ def generate_aggregated_report(outputs_dir: Path, reports_dir: Path):
             
             # Visual Analytics
             visual_analysis = data.get("visual_analysis", {})
-            visual_vis = visual_analysis.get("face_visibility_pct", 100.0)
-            visual_scores.append(visual_vis)
+            visual_vis = visual_analysis.get("face_visibility_pct", "N/A")
+            # "N/A" means no CANDIDATE speech (and therefore no visual samples) in
+            # this chunk's window - exclude it from the numeric average but still
+            # surface it as-is in the per-chunk CSV row below.
+            if isinstance(visual_vis, (int, float)):
+                visual_scores.append(visual_vis)
 
             # Aggregate totals
             total_fillers += filler_count

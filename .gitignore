@@ -2,7 +2,7 @@
 venv/
 .venv/
 
-# VS Code
+# VS Code / IDE
 .vscode/
 
 # Python cache
@@ -10,36 +10,47 @@ venv/
 *.py[cod]
 *$py.class
 
-# Speech models
+# Pytest
+.pytest_cache/
+
+# ── ML Model binaries ──
+# All model directories contain large binary files that should not be in git.
+# They must be downloaded separately (see README).
 models/vosk/
-interview_pipeline/models/vosk/
+models/yunet/
+models/pose_landmarker/
+models/silero_vad/
+models/wespeaker/
 
-# Jupyter
-.ipynb_checkpoints/
-
-# Operating System
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
-# Generated videos
+# ── Generated data / pipeline outputs ──
 data/chunks/
-data/input/
+data/audio/
 data/outputs/
+data/reports/
+data/diarization/
 data/youtube_test/
 
-
-# Large media files
+# ── Raw input videos (large media) ──
+data/input/
 data/*.mp4
 data/*.avi
 data/*.mov
 data/*.wav
 data/*.mp3
 
-# Generated audio
-data/audio/
+# ── Research heavy data & results (keep source, exclude artifacts) ──
+research_visual_gating/data/
+research_visual_gating/results/
 
-# Optional: generated JSON outputs
-# data/outputs/
+# ── Temporary / debug inspection files ──
+interview_pipeline/tests/tmp_visual_frames/
+
+# ── Jupyter ──
+.ipynb_checkpoints/
+
+# ── Operating System ──
+.DS_Store
+Thumbs.db
+
+# ── Logs ──
+*.log

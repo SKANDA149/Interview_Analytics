@@ -1,7 +1,12 @@
 vosk
 ffmpeg-python
 opencv-python
-mediapipe
+# Pinned: mediapipe>=1.0 hard-requires a system OpenGL/EGL library even for
+# CPU-only inference and can fail with "OSError: libEGL.so.1: cannot open
+# shared object file" on machines without display libraries - conflicts with
+# this project's CPU-only, no-GPU deployment target. 0.10.14 runs cleanly
+# CPU-only via the TFLite XNNPACK delegate. Don't bump without re-verifying.
+mediapipe==0.10.14
 sentence-transformers
 psutil
 numpy

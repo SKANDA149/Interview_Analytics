@@ -8,7 +8,12 @@ from interview_pipeline.src.filler_detection import detect_filler_words
 from interview_pipeline.src.speech_analysis import analyze_speech_fluency
 from interview_pipeline.src.report_generator import generate_aggregated_report
 from interview_pipeline.src.nlp_scoring import evaluate_technical_answer
-from interview_pipeline.src.visual_analytics import analyze_video_visuals
+from interview_pipeline.src.diarization import load_segments
+from interview_pipeline.src.visual_presence import (
+    run_visual_presence_analysis,
+    summarize_visual_metrics,
+    bucket_visual_results_by_chunk,
+)
 
 
 
@@ -50,7 +55,25 @@ def run_pipeline():
 
     print(f"\n--- STAGE 2: Audio Extraction ---")
     print(f"--- STAGE 3: Speech-to-Text ---")
-    
+
+    # Step 5: Visual Presence Analysis (whole-video, synced to diarization)
+    # Runs once against the full source video + diarization output, independent
+    # of chunking - visual_presence.py samples directly from the source video
+    # via timestamp seeking, so it does not need per-chunk video files.
+    print(f"\n--- STAGE 5: Visual Presence Analysis ---")
+    visual_start_time = time.time()
+    diarization_path = Path("data/diarization/segments.json")
+    if diarization_path.exists():
+        diarization_segments = load_segments(diarization_path)
+        visual_analysis_result = run_visual_presence_analysis(input_video, diarization_segments)
+        visual_summary = summarize_visual_metrics(visual_analysis_result)
+        print(f"[PIPELINE] Stage 5 completed in {time.time() - visual_start_time:.2f} seconds "
+              f"(presence={visual_summary.get('presence_pct')}%, "
+              f"full_visibility={visual_summary.get('face_visibility_pct')}%)")
+    else:
+        print(f"[PIPELINE] [WARNING] No diarization output found at {diarization_path} - skipping visual presence analysis.")
+        visual_analysis_result = None
+
     # Process each chunk inside this loop
     for i, chunk in enumerate(chunks, 1):
         chunk_start_time = time.time()
@@ -107,11 +130,20 @@ def run_pipeline():
         print(f"  -> NLP Evaluation completed in {time.time() - nlp_start_time:.2f} seconds (Score: {nlp_result['semantic_score']}%)")
         # --- END NEW CODE ---
 
-        # --- VISUAL ANALYTICS ---
-        visual_start_time = time.time()
-        visual_result = analyze_video_visuals(chunk)
-        transcript_result["visual_analysis"] = visual_result
-        print(f"  -> Visual Evaluation completed in {time.time() - visual_start_time:.2f}s (Face Visibility: {visual_result['face_visibility_pct']}%)")
+        # --- VISUAL ANALYTICS (bucketed from the whole-video Stage 5 result) ---
+        chunk_visual_start = time.time()
+        chunk_start_sec = (i - 1) * 10.0
+        chunk_end_sec = i * 10.0
+        if visual_analysis_result is not None:
+            chunk_visual_metrics = bucket_visual_results_by_chunk(
+                visual_analysis_result, chunk_start_sec, chunk_end_sec
+            )
+        else:
+            chunk_visual_metrics = {"face_visibility_pct": "N/A", "n_samples": 0}
+        transcript_result["visual_analysis"] = chunk_visual_metrics
+        print(f"  -> Visual Evaluation completed in {time.time() - chunk_visual_start:.2f}s "
+              f"(Face Visibility: {chunk_visual_metrics['face_visibility_pct']}%, "
+              f"samples={chunk_visual_metrics['n_samples']})")
         # Step 4: Save Output JSON
         with open(output_file, "w", encoding="utf-8") as f:
             json.dump(transcript_result, f, indent=2)

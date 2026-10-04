@@ -1,0 +1,189 @@
+{
+  "recording": "data (interview_visual)",
+  "conditions": [
+    {
+      "operator": "role_swap",
+      "severity": 0.0,
+      "seed": 42,
+      "elapsed_sec": 8.051,
+      "metrics": {
+        "words_per_minute": 180.4,
+        "silence_ratio_pct": 9.9,
+        "total_long_pauses": 0,
+        "longest_pause_sec": 0.93,
+        "average_pause_sec": 0.09,
+        "total_filler_words": 70
+      },
+      "nlp_semantic_score": 5.73,
+      "distortion_vs_baseline": {
+        "words_per_minute": 0.0,
+        "silence_ratio_pct": 0.0,
+        "total_long_pauses": null,
+        "longest_pause_sec": 0.0,
+        "average_pause_sec": 0.0,
+        "total_filler_words": 0.0
+      }
+    },
+    {
+      "operator": "role_swap",
+      "severity": 0.1,
+      "seed": 42,
+      "elapsed_sec": 0.145,
+      "metrics": {
+        "words_per_minute": 182.0,
+        "silence_ratio_pct": 10.3,
+        "total_long_pauses": 0,
+        "longest_pause_sec": 0.93,
+        "average_pause_sec": 0.09,
+        "total_filler_words": 64
+      },
+      "nlp_semantic_score": 0.0,
+      "distortion_vs_baseline": {
+        "words_per_minute": 0.0089,
+        "silence_ratio_pct": 0.0404,
+        "total_long_pauses": null,
+        "longest_pause_sec": 0.0,
+        "average_pause_sec": 0.0,
+        "total_filler_words": -0.0857
+      }
+    },
+    {
+      "operator": "role_swap",
+      "severity": 0.25,
+      "seed": 42,
+      "elapsed_sec": 0.178,
+      "metrics": {
+        "words_per_minute": 184.1,
+        "silence_ratio_pct": 11.4,
+        "total_long_pauses": 1,
+        "longest_pause_sec": 2.23,
+        "average_pause_sec": 0.1,
+        "total_filler_words": 60
+      },
+      "nlp_semantic_score": 4.99,
+      "distortion_vs_baseline": {
+        "words_per_minute": 0.0205,
+        "silence_ratio_pct": 0.1515,
+        "total_long_pauses": null,
+        "longest_pause_sec": 1.3978,
+        "average_pause_sec": 0.1111,
+        "total_filler_words": -0.1429
+      }
+    },
+    {
+      "operator": "role_swap",
+      "severity": 0.5,
+      "seed": 42,
+      "elapsed_sec": 0.16,
+      "metrics": {
+        "words_per_minute": 188.1,
+        "silence_ratio_pct": 12.5,
+        "total_long_pauses": 1,
+        "longest_pause_sec": 2.41,
+        "average_pause_sec": 0.11,
+        "total_filler_words": 47
+      },
+      "nlp_semantic_score": 0.0,
+      "distortion_vs_baseline": {
+        "words_per_minute": 0.0427,
+        "silence_ratio_pct": 0.2626,
+        "total_long_pauses": null,
+        "longest_pause_sec": 1.5914,
+        "average_pause_sec": 0.2222,
+        "total_filler_words": -0.3286
+      }
+    },
+    {
+      "operator": "missed_speech",
+      "severity": 0.0,
+      "seed": 42,
+      "elapsed_sec": 0.171,
+      "metrics": {
+        "words_per_minute": 180.4,
+        "silence_ratio_pct": 9.9,
+        "total_long_pauses": 0,
+        "longest_pause_sec": 0.93,
+        "average_pause_sec": 0.09,
+        "total_filler_words": 70
+      },
+      "nlp_semantic_score": 5.73,
+      "distortion_vs_baseline": {
+        "words_per_minute": 0.0,
+        "silence_ratio_pct": 0.0,
+        "total_long_pauses": null,
+        "longest_pause_sec": 0.0,
+        "average_pause_sec": 0.0,
+        "total_filler_words": 0.0
+      }
+    },
+    {
+      "operator": "missed_speech",
+      "severity": 0.1,
+      "seed": 42,
+      "elapsed_sec": 0.175,
+      "metrics": {
+        "words_per_minute": 197.9,
+        "silence_ratio_pct": 9.9,
+        "total_long_pauses": 0,
+        "longest_pause_sec": 0.93,
+        "average_pause_sec": 0.09,
+        "total_filler_words": 68
+      },
+      "nlp_semantic_score": 5.73,
+      "distortion_vs_baseline": {
+        "words_per_minute": 0.097,
+        "silence_ratio_pct": 0.0,
+        "total_long_pauses": null,
+        "longest_pause_sec": 0.0,
+        "average_pause_sec": 0.0,
+        "total_filler_words": -0.0286
+      }
+    },
+    {
+      "operator": "missed_speech",
+      "severity": 0.25,
+      "seed": 42,
+      "elapsed_sec": 0.175,
+      "metrics": {
+        "words_per_minute": 232.3,
+        "silence_ratio_pct": 10.0,
+        "total_long_pauses": 0,
+        "longest_pause_sec": 0.93,
+        "average_pause_sec": 0.09,
+        "total_filler_words": 64
+      },
+      "nlp_semantic_score": 5.73,
+      "distortion_vs_baseline": {
+        "words_per_minute": 0.2877,
+        "silence_ratio_pct": 0.0101,
+        "total_long_pauses": null,
+        "longest_pause_sec": 0.0,
+        "average_pause_sec": 0.0,
+        "total_filler_words": -0.0857
+      }
+    },
+    {
+      "operator": "missed_speech",
+      "severity": 0.5,
+      "seed": 42,
+      "elapsed_sec": 0.158,
+      "metrics": {
+        "words_per_minute": 314.9,
+        "silence_ratio_pct": 10.1,
+        "total_long_pauses": 0,
+        "longest_pause_sec": 0.87,
+        "average_pause_sec": 0.08,
+        "total_filler_words": 58
+      },
+      "nlp_semantic_score": 4.34,
+      "distortion_vs_baseline": {
+        "words_per_minute": 0.7456,
+        "silence_ratio_pct": 0.0202,
+        "total_long_pauses": null,
+        "longest_pause_sec": -0.0645,
+        "average_pause_sec": -0.1111,
+        "total_filler_words": -0.1714
+      }
+    }
+  ]
+}

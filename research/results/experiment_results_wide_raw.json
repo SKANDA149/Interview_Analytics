@@ -1,0 +1,3242 @@
+[
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.0,
+    "seed": 42,
+    "elapsed_sec": 8.477,
+    "metrics": {
+      "words_per_minute": 180.4,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.0,
+    "seed": 7,
+    "elapsed_sec": 0.17,
+    "metrics": {
+      "words_per_minute": 180.4,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.0,
+    "seed": 123,
+    "elapsed_sec": 0.172,
+    "metrics": {
+      "words_per_minute": 180.4,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.0,
+    "seed": 2024,
+    "elapsed_sec": 0.184,
+    "metrics": {
+      "words_per_minute": 180.4,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.0,
+    "seed": 99,
+    "elapsed_sec": 0.207,
+    "metrics": {
+      "words_per_minute": 180.4,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.05,
+    "seed": 42,
+    "elapsed_sec": 0.168,
+    "metrics": {
+      "words_per_minute": 180.8,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 22,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 68,
+      "total_speech_duration_sec": 513.3
+    },
+    "nlp_semantic_score": 47.61
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.05,
+    "seed": 7,
+    "elapsed_sec": 0.171,
+    "metrics": {
+      "words_per_minute": 180.5,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 25,
+      "longest_pause_sec": 0.87,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 69,
+      "total_speech_duration_sec": 538.4
+    },
+    "nlp_semantic_score": 51.75
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.05,
+    "seed": 123,
+    "elapsed_sec": 0.168,
+    "metrics": {
+      "words_per_minute": 180.8,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 26,
+      "longest_pause_sec": 1.38,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 550.5
+    },
+    "nlp_semantic_score": 50.75
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.05,
+    "seed": 2024,
+    "elapsed_sec": 0.173,
+    "metrics": {
+      "words_per_minute": 180.3,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 24,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 65,
+      "total_speech_duration_sec": 538.3
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.05,
+    "seed": 99,
+    "elapsed_sec": 0.187,
+    "metrics": {
+      "words_per_minute": 181.5,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 65,
+      "total_speech_duration_sec": 517.8
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.1,
+    "seed": 42,
+    "elapsed_sec": 0.182,
+    "metrics": {
+      "words_per_minute": 182.0,
+      "silence_ratio_pct": 10.3,
+      "total_long_pauses": 0,
+      "total_short_pauses": 25,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 64,
+      "total_speech_duration_sec": 477.7
+    },
+    "nlp_semantic_score": 47.92
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.1,
+    "seed": 7,
+    "elapsed_sec": 0.17,
+    "metrics": {
+      "words_per_minute": 179.4,
+      "silence_ratio_pct": 10.7,
+      "total_long_pauses": 0,
+      "total_short_pauses": 29,
+      "longest_pause_sec": 0.87,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 63,
+      "total_speech_duration_sec": 509.0
+    },
+    "nlp_semantic_score": 51.72
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.1,
+    "seed": 123,
+    "elapsed_sec": 0.203,
+    "metrics": {
+      "words_per_minute": 183.5,
+      "silence_ratio_pct": 10.6,
+      "total_long_pauses": 0,
+      "total_short_pauses": 31,
+      "longest_pause_sec": 1.38,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 67,
+      "total_speech_duration_sec": 536.6
+    },
+    "nlp_semantic_score": 53.63
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.1,
+    "seed": 2024,
+    "elapsed_sec": 0.166,
+    "metrics": {
+      "words_per_minute": 179.5,
+      "silence_ratio_pct": 10.3,
+      "total_long_pauses": 0,
+      "total_short_pauses": 27,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 64,
+      "total_speech_duration_sec": 528.7
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.1,
+    "seed": 99,
+    "elapsed_sec": 0.186,
+    "metrics": {
+      "words_per_minute": 183.2,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 26,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 63,
+      "total_speech_duration_sec": 506.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.15,
+    "seed": 42,
+    "elapsed_sec": 0.189,
+    "metrics": {
+      "words_per_minute": 182.6,
+      "silence_ratio_pct": 10.7,
+      "total_long_pauses": 1,
+      "total_short_pauses": 25,
+      "longest_pause_sec": 2.23,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 61,
+      "total_speech_duration_sec": 470.8
+    },
+    "nlp_semantic_score": 47.92
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.15,
+    "seed": 7,
+    "elapsed_sec": 0.188,
+    "metrics": {
+      "words_per_minute": 180.0,
+      "silence_ratio_pct": 11.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 32,
+      "longest_pause_sec": 0.9,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 59,
+      "total_speech_duration_sec": 488.2
+    },
+    "nlp_semantic_score": 49.77
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.15,
+    "seed": 123,
+    "elapsed_sec": 0.188,
+    "metrics": {
+      "words_per_minute": 184.2,
+      "silence_ratio_pct": 10.9,
+      "total_long_pauses": 1,
+      "total_short_pauses": 34,
+      "longest_pause_sec": 1.82,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 67,
+      "total_speech_duration_sec": 529.5
+    },
+    "nlp_semantic_score": 53.13
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.15,
+    "seed": 2024,
+    "elapsed_sec": 0.168,
+    "metrics": {
+      "words_per_minute": 179.7,
+      "silence_ratio_pct": 10.7,
+      "total_long_pauses": 0,
+      "total_short_pauses": 30,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 62,
+      "total_speech_duration_sec": 510.2
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.15,
+    "seed": 99,
+    "elapsed_sec": 0.203,
+    "metrics": {
+      "words_per_minute": 183.0,
+      "silence_ratio_pct": 10.2,
+      "total_long_pauses": 0,
+      "total_short_pauses": 26,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 63,
+      "total_speech_duration_sec": 500.4
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.2,
+    "seed": 42,
+    "elapsed_sec": 0.203,
+    "metrics": {
+      "words_per_minute": 184.0,
+      "silence_ratio_pct": 10.6,
+      "total_long_pauses": 1,
+      "total_short_pauses": 21,
+      "longest_pause_sec": 2.23,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 59,
+      "total_speech_duration_sec": 455.5
+    },
+    "nlp_semantic_score": 43.57
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.2,
+    "seed": 7,
+    "elapsed_sec": 0.188,
+    "metrics": {
+      "words_per_minute": 180.4,
+      "silence_ratio_pct": 11.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 33,
+      "longest_pause_sec": 0.87,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 54,
+      "total_speech_duration_sec": 484.9
+    },
+    "nlp_semantic_score": 47.11
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.2,
+    "seed": 123,
+    "elapsed_sec": 0.188,
+    "metrics": {
+      "words_per_minute": 184.7,
+      "silence_ratio_pct": 11.4,
+      "total_long_pauses": 2,
+      "total_short_pauses": 37,
+      "longest_pause_sec": 2.63,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 65,
+      "total_speech_duration_sec": 518.6
+    },
+    "nlp_semantic_score": 50.59
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.2,
+    "seed": 2024,
+    "elapsed_sec": 0.166,
+    "metrics": {
+      "words_per_minute": 181.6,
+      "silence_ratio_pct": 10.7,
+      "total_long_pauses": 0,
+      "total_short_pauses": 32,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 61,
+      "total_speech_duration_sec": 519.3
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.2,
+    "seed": 99,
+    "elapsed_sec": 0.187,
+    "metrics": {
+      "words_per_minute": 183.9,
+      "silence_ratio_pct": 10.6,
+      "total_long_pauses": 0,
+      "total_short_pauses": 30,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 60,
+      "total_speech_duration_sec": 478.4
+    },
+    "nlp_semantic_score": 51.43
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.25,
+    "seed": 42,
+    "elapsed_sec": 0.172,
+    "metrics": {
+      "words_per_minute": 184.1,
+      "silence_ratio_pct": 11.4,
+      "total_long_pauses": 1,
+      "total_short_pauses": 27,
+      "longest_pause_sec": 2.23,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 60,
+      "total_speech_duration_sec": 441.2
+    },
+    "nlp_semantic_score": 45.89
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.25,
+    "seed": 7,
+    "elapsed_sec": 0.187,
+    "metrics": {
+      "words_per_minute": 182.0,
+      "silence_ratio_pct": 11.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 32,
+      "longest_pause_sec": 0.87,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 50,
+      "total_speech_duration_sec": 452.6
+    },
+    "nlp_semantic_score": 43.71
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.25,
+    "seed": 123,
+    "elapsed_sec": 0.182,
+    "metrics": {
+      "words_per_minute": 184.8,
+      "silence_ratio_pct": 11.7,
+      "total_long_pauses": 2,
+      "total_short_pauses": 39,
+      "longest_pause_sec": 2.63,
+      "average_pause_sec": 0.11,
+      "total_filler_words": 66,
+      "total_speech_duration_sec": 506.2
+    },
+    "nlp_semantic_score": 51.6
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.25,
+    "seed": 2024,
+    "elapsed_sec": 0.168,
+    "metrics": {
+      "words_per_minute": 181.7,
+      "silence_ratio_pct": 11.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 32,
+      "longest_pause_sec": 1.05,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 54,
+      "total_speech_duration_sec": 472.8
+    },
+    "nlp_semantic_score": 52.04
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.25,
+    "seed": 99,
+    "elapsed_sec": 0.185,
+    "metrics": {
+      "words_per_minute": 183.7,
+      "silence_ratio_pct": 10.6,
+      "total_long_pauses": 0,
+      "total_short_pauses": 30,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 53,
+      "total_speech_duration_sec": 467.6
+    },
+    "nlp_semantic_score": 49.76
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.3,
+    "seed": 42,
+    "elapsed_sec": 0.193,
+    "metrics": {
+      "words_per_minute": 184.2,
+      "silence_ratio_pct": 11.8,
+      "total_long_pauses": 1,
+      "total_short_pauses": 27,
+      "longest_pause_sec": 2.23,
+      "average_pause_sec": 0.11,
+      "total_filler_words": 55,
+      "total_speech_duration_sec": 425.8
+    },
+    "nlp_semantic_score": 52.39
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.3,
+    "seed": 7,
+    "elapsed_sec": 0.179,
+    "metrics": {
+      "words_per_minute": 183.2,
+      "silence_ratio_pct": 11.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 31,
+      "longest_pause_sec": 0.87,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 48,
+      "total_speech_duration_sec": 427.0
+    },
+    "nlp_semantic_score": 40.98
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.3,
+    "seed": 123,
+    "elapsed_sec": 0.172,
+    "metrics": {
+      "words_per_minute": 184.5,
+      "silence_ratio_pct": 12.0,
+      "total_long_pauses": 2,
+      "total_short_pauses": 39,
+      "longest_pause_sec": 2.63,
+      "average_pause_sec": 0.11,
+      "total_filler_words": 66,
+      "total_speech_duration_sec": 479.1
+    },
+    "nlp_semantic_score": 51.6
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.3,
+    "seed": 2024,
+    "elapsed_sec": 0.188,
+    "metrics": {
+      "words_per_minute": 180.9,
+      "silence_ratio_pct": 11.3,
+      "total_long_pauses": 0,
+      "total_short_pauses": 35,
+      "longest_pause_sec": 1.05,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 55,
+      "total_speech_duration_sec": 461.9
+    },
+    "nlp_semantic_score": 51.01
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.3,
+    "seed": 99,
+    "elapsed_sec": 0.182,
+    "metrics": {
+      "words_per_minute": 182.9,
+      "silence_ratio_pct": 10.8,
+      "total_long_pauses": 0,
+      "total_short_pauses": 31,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 51,
+      "total_speech_duration_sec": 451.5
+    },
+    "nlp_semantic_score": 55.43
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.4,
+    "seed": 42,
+    "elapsed_sec": 0.188,
+    "metrics": {
+      "words_per_minute": 186.7,
+      "silence_ratio_pct": 12.0,
+      "total_long_pauses": 1,
+      "total_short_pauses": 30,
+      "longest_pause_sec": 2.23,
+      "average_pause_sec": 0.11,
+      "total_filler_words": 52,
+      "total_speech_duration_sec": 397.2
+    },
+    "nlp_semantic_score": 55.02
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.4,
+    "seed": 7,
+    "elapsed_sec": 0.185,
+    "metrics": {
+      "words_per_minute": 183.9,
+      "silence_ratio_pct": 11.6,
+      "total_long_pauses": 0,
+      "total_short_pauses": 30,
+      "longest_pause_sec": 0.94,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 42,
+      "total_speech_duration_sec": 392.4
+    },
+    "nlp_semantic_score": 42.34
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.4,
+    "seed": 123,
+    "elapsed_sec": 0.17,
+    "metrics": {
+      "words_per_minute": 184.7,
+      "silence_ratio_pct": 13.0,
+      "total_long_pauses": 4,
+      "total_short_pauses": 34,
+      "longest_pause_sec": 2.63,
+      "average_pause_sec": 0.12,
+      "total_filler_words": 51,
+      "total_speech_duration_sec": 408.7
+    },
+    "nlp_semantic_score": 49.31
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.4,
+    "seed": 2024,
+    "elapsed_sec": 0.17,
+    "metrics": {
+      "words_per_minute": 184.0,
+      "silence_ratio_pct": 11.3,
+      "total_long_pauses": 0,
+      "total_short_pauses": 34,
+      "longest_pause_sec": 1.05,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 49,
+      "total_speech_duration_sec": 443.7
+    },
+    "nlp_semantic_score": 45.04
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.4,
+    "seed": 99,
+    "elapsed_sec": 0.185,
+    "metrics": {
+      "words_per_minute": 185.8,
+      "silence_ratio_pct": 11.7,
+      "total_long_pauses": 1,
+      "total_short_pauses": 32,
+      "longest_pause_sec": 2.63,
+      "average_pause_sec": 0.11,
+      "total_filler_words": 46,
+      "total_speech_duration_sec": 412.4
+    },
+    "nlp_semantic_score": 58.82
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.5,
+    "seed": 42,
+    "elapsed_sec": 0.188,
+    "metrics": {
+      "words_per_minute": 188.1,
+      "silence_ratio_pct": 12.5,
+      "total_long_pauses": 1,
+      "total_short_pauses": 31,
+      "longest_pause_sec": 2.41,
+      "average_pause_sec": 0.11,
+      "total_filler_words": 47,
+      "total_speech_duration_sec": 381.8
+    },
+    "nlp_semantic_score": 53.12
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.5,
+    "seed": 7,
+    "elapsed_sec": 0.183,
+    "metrics": {
+      "words_per_minute": 183.8,
+      "silence_ratio_pct": 12.9,
+      "total_long_pauses": 2,
+      "total_short_pauses": 28,
+      "longest_pause_sec": 1.82,
+      "average_pause_sec": 0.11,
+      "total_filler_words": 35,
+      "total_speech_duration_sec": 366.0
+    },
+    "nlp_semantic_score": 37.37
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.5,
+    "seed": 123,
+    "elapsed_sec": 0.187,
+    "metrics": {
+      "words_per_minute": 186.1,
+      "silence_ratio_pct": 13.9,
+      "total_long_pauses": 4,
+      "total_short_pauses": 34,
+      "longest_pause_sec": 2.63,
+      "average_pause_sec": 0.12,
+      "total_filler_words": 45,
+      "total_speech_duration_sec": 370.1
+    },
+    "nlp_semantic_score": 52.76
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.5,
+    "seed": 2024,
+    "elapsed_sec": 0.193,
+    "metrics": {
+      "words_per_minute": 188.2,
+      "silence_ratio_pct": 12.0,
+      "total_long_pauses": 1,
+      "total_short_pauses": 33,
+      "longest_pause_sec": 1.82,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 46,
+      "total_speech_duration_sec": 442.8
+    },
+    "nlp_semantic_score": 38.04
+  },
+  {
+    "policy": "fallback",
+    "operator": "role_swap",
+    "severity": 0.5,
+    "seed": 99,
+    "elapsed_sec": 0.179,
+    "metrics": {
+      "words_per_minute": 187.6,
+      "silence_ratio_pct": 12.8,
+      "total_long_pauses": 2,
+      "total_short_pauses": 33,
+      "longest_pause_sec": 2.63,
+      "average_pause_sec": 0.12,
+      "total_filler_words": 34,
+      "total_speech_duration_sec": 390.5
+    },
+    "nlp_semantic_score": 50.11
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.0,
+    "seed": 42,
+    "elapsed_sec": 0.196,
+    "metrics": {
+      "words_per_minute": 180.4,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.0,
+    "seed": 7,
+    "elapsed_sec": 0.194,
+    "metrics": {
+      "words_per_minute": 180.4,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.0,
+    "seed": 123,
+    "elapsed_sec": 0.182,
+    "metrics": {
+      "words_per_minute": 180.4,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.0,
+    "seed": 2024,
+    "elapsed_sec": 0.192,
+    "metrics": {
+      "words_per_minute": 180.4,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.0,
+    "seed": 99,
+    "elapsed_sec": 0.201,
+    "metrics": {
+      "words_per_minute": 180.4,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.05,
+    "seed": 42,
+    "elapsed_sec": 0.172,
+    "metrics": {
+      "words_per_minute": 191.3,
+      "silence_ratio_pct": 9.8,
+      "total_long_pauses": 0,
+      "total_short_pauses": 20,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 507.8
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.05,
+    "seed": 7,
+    "elapsed_sec": 0.188,
+    "metrics": {
+      "words_per_minute": 191.9,
+      "silence_ratio_pct": 9.8,
+      "total_long_pauses": 0,
+      "total_short_pauses": 20,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 509.7
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.05,
+    "seed": 123,
+    "elapsed_sec": 0.198,
+    "metrics": {
+      "words_per_minute": 189.8,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.86,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 69,
+      "total_speech_duration_sec": 515.5
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.05,
+    "seed": 2024,
+    "elapsed_sec": 0.189,
+    "metrics": {
+      "words_per_minute": 187.7,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 20,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 514.6
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.05,
+    "seed": 99,
+    "elapsed_sec": 0.211,
+    "metrics": {
+      "words_per_minute": 188.9,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 69,
+      "total_speech_duration_sec": 512.1
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.1,
+    "seed": 42,
+    "elapsed_sec": 0.178,
+    "metrics": {
+      "words_per_minute": 197.9,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 20,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 68,
+      "total_speech_duration_sec": 488.7
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.1,
+    "seed": 7,
+    "elapsed_sec": 0.203,
+    "metrics": {
+      "words_per_minute": 200.7,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 20,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 487.2
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.1,
+    "seed": 123,
+    "elapsed_sec": 0.188,
+    "metrics": {
+      "words_per_minute": 200.3,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 22,
+      "longest_pause_sec": 0.86,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 67,
+      "total_speech_duration_sec": 483.1
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.1,
+    "seed": 2024,
+    "elapsed_sec": 0.188,
+    "metrics": {
+      "words_per_minute": 196.5,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 20,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 487.6
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.1,
+    "seed": 99,
+    "elapsed_sec": 0.192,
+    "metrics": {
+      "words_per_minute": 197.0,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 22,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 69,
+      "total_speech_duration_sec": 486.5
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.15,
+    "seed": 42,
+    "elapsed_sec": 0.186,
+    "metrics": {
+      "words_per_minute": 210.0,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 19,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 68,
+      "total_speech_duration_sec": 458.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.15,
+    "seed": 7,
+    "elapsed_sec": 0.203,
+    "metrics": {
+      "words_per_minute": 211.1,
+      "silence_ratio_pct": 9.7,
+      "total_long_pauses": 0,
+      "total_short_pauses": 19,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 459.7
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.15,
+    "seed": 123,
+    "elapsed_sec": 0.196,
+    "metrics": {
+      "words_per_minute": 207.9,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 21,
+      "longest_pause_sec": 0.86,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 67,
+      "total_speech_duration_sec": 461.2
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.15,
+    "seed": 2024,
+    "elapsed_sec": 0.194,
+    "metrics": {
+      "words_per_minute": 205.1,
+      "silence_ratio_pct": 10.2,
+      "total_long_pauses": 0,
+      "total_short_pauses": 20,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 68,
+      "total_speech_duration_sec": 460.2
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.15,
+    "seed": 99,
+    "elapsed_sec": 0.174,
+    "metrics": {
+      "words_per_minute": 205.6,
+      "silence_ratio_pct": 10.2,
+      "total_long_pauses": 0,
+      "total_short_pauses": 22,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 67,
+      "total_speech_duration_sec": 460.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.2,
+    "seed": 42,
+    "elapsed_sec": 0.218,
+    "metrics": {
+      "words_per_minute": 221.7,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 18,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 68,
+      "total_speech_duration_sec": 433.9
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.2,
+    "seed": 7,
+    "elapsed_sec": 0.173,
+    "metrics": {
+      "words_per_minute": 221.6,
+      "silence_ratio_pct": 9.8,
+      "total_long_pauses": 0,
+      "total_short_pauses": 18,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 69,
+      "total_speech_duration_sec": 434.2
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.2,
+    "seed": 123,
+    "elapsed_sec": 0.187,
+    "metrics": {
+      "words_per_minute": 217.7,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 21,
+      "longest_pause_sec": 0.86,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 66,
+      "total_speech_duration_sec": 434.3
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.2,
+    "seed": 2024,
+    "elapsed_sec": 0.194,
+    "metrics": {
+      "words_per_minute": 215.6,
+      "silence_ratio_pct": 10.3,
+      "total_long_pauses": 0,
+      "total_short_pauses": 19,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 66,
+      "total_speech_duration_sec": 431.1
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.2,
+    "seed": 99,
+    "elapsed_sec": 0.191,
+    "metrics": {
+      "words_per_minute": 212.6,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 22,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 64,
+      "total_speech_duration_sec": 433.7
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.25,
+    "seed": 42,
+    "elapsed_sec": 0.188,
+    "metrics": {
+      "words_per_minute": 232.3,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 18,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 64,
+      "total_speech_duration_sec": 406.3
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.25,
+    "seed": 7,
+    "elapsed_sec": 0.183,
+    "metrics": {
+      "words_per_minute": 231.7,
+      "silence_ratio_pct": 9.8,
+      "total_long_pauses": 0,
+      "total_short_pauses": 17,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 67,
+      "total_speech_duration_sec": 406.1
+    },
+    "nlp_semantic_score": 51.31
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.25,
+    "seed": 123,
+    "elapsed_sec": 0.184,
+    "metrics": {
+      "words_per_minute": 233.9,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 20,
+      "longest_pause_sec": 0.86,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 64,
+      "total_speech_duration_sec": 401.5
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.25,
+    "seed": 2024,
+    "elapsed_sec": 0.199,
+    "metrics": {
+      "words_per_minute": 227.9,
+      "silence_ratio_pct": 10.2,
+      "total_long_pauses": 0,
+      "total_short_pauses": 17,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 65,
+      "total_speech_duration_sec": 407.2
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.25,
+    "seed": 99,
+    "elapsed_sec": 0.187,
+    "metrics": {
+      "words_per_minute": 224.6,
+      "silence_ratio_pct": 10.2,
+      "total_long_pauses": 0,
+      "total_short_pauses": 22,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 62,
+      "total_speech_duration_sec": 404.5
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.3,
+    "seed": 42,
+    "elapsed_sec": 0.193,
+    "metrics": {
+      "words_per_minute": 248.2,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 16,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 64,
+      "total_speech_duration_sec": 377.6
+    },
+    "nlp_semantic_score": 50.51
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.3,
+    "seed": 7,
+    "elapsed_sec": 0.183,
+    "metrics": {
+      "words_per_minute": 244.7,
+      "silence_ratio_pct": 9.5,
+      "total_long_pauses": 0,
+      "total_short_pauses": 16,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 66,
+      "total_speech_duration_sec": 378.6
+    },
+    "nlp_semantic_score": 51.31
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.3,
+    "seed": 123,
+    "elapsed_sec": 0.188,
+    "metrics": {
+      "words_per_minute": 246.4,
+      "silence_ratio_pct": 10.2,
+      "total_long_pauses": 0,
+      "total_short_pauses": 20,
+      "longest_pause_sec": 0.86,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 64,
+      "total_speech_duration_sec": 377.9
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.3,
+    "seed": 2024,
+    "elapsed_sec": 0.191,
+    "metrics": {
+      "words_per_minute": 239.1,
+      "silence_ratio_pct": 10.2,
+      "total_long_pauses": 0,
+      "total_short_pauses": 18,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 62,
+      "total_speech_duration_sec": 379.9
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.3,
+    "seed": 99,
+    "elapsed_sec": 0.19,
+    "metrics": {
+      "words_per_minute": 238.5,
+      "silence_ratio_pct": 10.3,
+      "total_long_pauses": 0,
+      "total_short_pauses": 21,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 62,
+      "total_speech_duration_sec": 378.3
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.4,
+    "seed": 42,
+    "elapsed_sec": 0.175,
+    "metrics": {
+      "words_per_minute": 276.1,
+      "silence_ratio_pct": 9.8,
+      "total_long_pauses": 0,
+      "total_short_pauses": 14,
+      "longest_pause_sec": 0.87,
+      "average_pause_sec": 0.08,
+      "total_filler_words": 60,
+      "total_speech_duration_sec": 322.5
+    },
+    "nlp_semantic_score": 50.51
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.4,
+    "seed": 7,
+    "elapsed_sec": 0.186,
+    "metrics": {
+      "words_per_minute": 274.5,
+      "silence_ratio_pct": 9.7,
+      "total_long_pauses": 0,
+      "total_short_pauses": 15,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 61,
+      "total_speech_duration_sec": 322.9
+    },
+    "nlp_semantic_score": 51.56
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.4,
+    "seed": 123,
+    "elapsed_sec": 0.173,
+    "metrics": {
+      "words_per_minute": 265.5,
+      "silence_ratio_pct": 10.2,
+      "total_long_pauses": 0,
+      "total_short_pauses": 18,
+      "longest_pause_sec": 0.86,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 60,
+      "total_speech_duration_sec": 322.5
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.4,
+    "seed": 2024,
+    "elapsed_sec": 0.171,
+    "metrics": {
+      "words_per_minute": 268.6,
+      "silence_ratio_pct": 10.4,
+      "total_long_pauses": 0,
+      "total_short_pauses": 15,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 59,
+      "total_speech_duration_sec": 320.1
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.4,
+    "seed": 99,
+    "elapsed_sec": 0.207,
+    "metrics": {
+      "words_per_minute": 270.0,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 16,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 61,
+      "total_speech_duration_sec": 323.6
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.5,
+    "seed": 42,
+    "elapsed_sec": 0.196,
+    "metrics": {
+      "words_per_minute": 314.9,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 13,
+      "longest_pause_sec": 0.87,
+      "average_pause_sec": 0.08,
+      "total_filler_words": 58,
+      "total_speech_duration_sec": 271.1
+    },
+    "nlp_semantic_score": 50.51
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.5,
+    "seed": 7,
+    "elapsed_sec": 0.173,
+    "metrics": {
+      "words_per_minute": 314.2,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 14,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 59,
+      "total_speech_duration_sec": 269.6
+    },
+    "nlp_semantic_score": 51.56
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.5,
+    "seed": 123,
+    "elapsed_sec": 0.188,
+    "metrics": {
+      "words_per_minute": 299.9,
+      "silence_ratio_pct": 9.8,
+      "total_long_pauses": 0,
+      "total_short_pauses": 12,
+      "longest_pause_sec": 0.84,
+      "average_pause_sec": 0.08,
+      "total_filler_words": 55,
+      "total_speech_duration_sec": 267.3
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.5,
+    "seed": 2024,
+    "elapsed_sec": 0.182,
+    "metrics": {
+      "words_per_minute": 308.5,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 11,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 56,
+      "total_speech_duration_sec": 264.5
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "fallback",
+    "operator": "missed_speech",
+    "severity": 0.5,
+    "seed": 99,
+    "elapsed_sec": 0.188,
+    "metrics": {
+      "words_per_minute": 307.9,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 13,
+      "longest_pause_sec": 0.86,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 54,
+      "total_speech_duration_sec": 262.3
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.0,
+    "seed": 42,
+    "elapsed_sec": 0.193,
+    "metrics": {
+      "words_per_minute": 180.1,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.0,
+    "seed": 7,
+    "elapsed_sec": 0.205,
+    "metrics": {
+      "words_per_minute": 180.1,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.0,
+    "seed": 123,
+    "elapsed_sec": 0.191,
+    "metrics": {
+      "words_per_minute": 180.1,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.0,
+    "seed": 2024,
+    "elapsed_sec": 0.193,
+    "metrics": {
+      "words_per_minute": 180.1,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.0,
+    "seed": 99,
+    "elapsed_sec": 0.204,
+    "metrics": {
+      "words_per_minute": 180.1,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.05,
+    "seed": 42,
+    "elapsed_sec": 0.196,
+    "metrics": {
+      "words_per_minute": 180.5,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 22,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 68,
+      "total_speech_duration_sec": 513.3
+    },
+    "nlp_semantic_score": 47.61
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.05,
+    "seed": 7,
+    "elapsed_sec": 0.201,
+    "metrics": {
+      "words_per_minute": 180.2,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 25,
+      "longest_pause_sec": 0.87,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 69,
+      "total_speech_duration_sec": 538.4
+    },
+    "nlp_semantic_score": 51.75
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.05,
+    "seed": 123,
+    "elapsed_sec": 0.204,
+    "metrics": {
+      "words_per_minute": 180.7,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 26,
+      "longest_pause_sec": 1.38,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 550.5
+    },
+    "nlp_semantic_score": 50.75
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.05,
+    "seed": 2024,
+    "elapsed_sec": 0.218,
+    "metrics": {
+      "words_per_minute": 180.0,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 24,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 65,
+      "total_speech_duration_sec": 538.3
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.05,
+    "seed": 99,
+    "elapsed_sec": 0.203,
+    "metrics": {
+      "words_per_minute": 181.1,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 65,
+      "total_speech_duration_sec": 517.8
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.1,
+    "seed": 42,
+    "elapsed_sec": 0.204,
+    "metrics": {
+      "words_per_minute": 181.6,
+      "silence_ratio_pct": 10.3,
+      "total_long_pauses": 0,
+      "total_short_pauses": 25,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 64,
+      "total_speech_duration_sec": 477.7
+    },
+    "nlp_semantic_score": 47.92
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.1,
+    "seed": 7,
+    "elapsed_sec": 0.198,
+    "metrics": {
+      "words_per_minute": 179.1,
+      "silence_ratio_pct": 10.7,
+      "total_long_pauses": 0,
+      "total_short_pauses": 29,
+      "longest_pause_sec": 0.87,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 63,
+      "total_speech_duration_sec": 509.0
+    },
+    "nlp_semantic_score": 51.72
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.1,
+    "seed": 123,
+    "elapsed_sec": 0.172,
+    "metrics": {
+      "words_per_minute": 183.4,
+      "silence_ratio_pct": 10.6,
+      "total_long_pauses": 0,
+      "total_short_pauses": 31,
+      "longest_pause_sec": 1.38,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 67,
+      "total_speech_duration_sec": 536.6
+    },
+    "nlp_semantic_score": 53.63
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.1,
+    "seed": 2024,
+    "elapsed_sec": 0.198,
+    "metrics": {
+      "words_per_minute": 179.2,
+      "silence_ratio_pct": 10.3,
+      "total_long_pauses": 0,
+      "total_short_pauses": 27,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 64,
+      "total_speech_duration_sec": 528.7
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.1,
+    "seed": 99,
+    "elapsed_sec": 0.175,
+    "metrics": {
+      "words_per_minute": 182.8,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 26,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 63,
+      "total_speech_duration_sec": 506.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.15,
+    "seed": 42,
+    "elapsed_sec": 0.202,
+    "metrics": {
+      "words_per_minute": 182.2,
+      "silence_ratio_pct": 10.7,
+      "total_long_pauses": 1,
+      "total_short_pauses": 25,
+      "longest_pause_sec": 2.23,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 61,
+      "total_speech_duration_sec": 470.8
+    },
+    "nlp_semantic_score": 47.92
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.15,
+    "seed": 7,
+    "elapsed_sec": 0.204,
+    "metrics": {
+      "words_per_minute": 179.7,
+      "silence_ratio_pct": 11.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 32,
+      "longest_pause_sec": 0.9,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 59,
+      "total_speech_duration_sec": 488.2
+    },
+    "nlp_semantic_score": 49.77
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.15,
+    "seed": 123,
+    "elapsed_sec": 0.192,
+    "metrics": {
+      "words_per_minute": 184.2,
+      "silence_ratio_pct": 10.9,
+      "total_long_pauses": 1,
+      "total_short_pauses": 34,
+      "longest_pause_sec": 1.82,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 67,
+      "total_speech_duration_sec": 529.5
+    },
+    "nlp_semantic_score": 53.13
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.15,
+    "seed": 2024,
+    "elapsed_sec": 0.2,
+    "metrics": {
+      "words_per_minute": 179.3,
+      "silence_ratio_pct": 10.7,
+      "total_long_pauses": 0,
+      "total_short_pauses": 30,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 62,
+      "total_speech_duration_sec": 510.2
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.15,
+    "seed": 99,
+    "elapsed_sec": 0.185,
+    "metrics": {
+      "words_per_minute": 182.9,
+      "silence_ratio_pct": 10.2,
+      "total_long_pauses": 0,
+      "total_short_pauses": 26,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 63,
+      "total_speech_duration_sec": 500.4
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.2,
+    "seed": 42,
+    "elapsed_sec": 0.216,
+    "metrics": {
+      "words_per_minute": 183.6,
+      "silence_ratio_pct": 10.6,
+      "total_long_pauses": 1,
+      "total_short_pauses": 21,
+      "longest_pause_sec": 2.23,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 59,
+      "total_speech_duration_sec": 455.5
+    },
+    "nlp_semantic_score": 43.57
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.2,
+    "seed": 7,
+    "elapsed_sec": 0.199,
+    "metrics": {
+      "words_per_minute": 180.0,
+      "silence_ratio_pct": 11.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 33,
+      "longest_pause_sec": 0.87,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 54,
+      "total_speech_duration_sec": 484.9
+    },
+    "nlp_semantic_score": 47.11
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.2,
+    "seed": 123,
+    "elapsed_sec": 0.192,
+    "metrics": {
+      "words_per_minute": 184.7,
+      "silence_ratio_pct": 11.4,
+      "total_long_pauses": 2,
+      "total_short_pauses": 37,
+      "longest_pause_sec": 2.63,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 65,
+      "total_speech_duration_sec": 518.6
+    },
+    "nlp_semantic_score": 50.59
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.2,
+    "seed": 2024,
+    "elapsed_sec": 0.193,
+    "metrics": {
+      "words_per_minute": 181.3,
+      "silence_ratio_pct": 10.7,
+      "total_long_pauses": 0,
+      "total_short_pauses": 32,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 61,
+      "total_speech_duration_sec": 519.3
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.2,
+    "seed": 99,
+    "elapsed_sec": 0.207,
+    "metrics": {
+      "words_per_minute": 183.6,
+      "silence_ratio_pct": 10.6,
+      "total_long_pauses": 0,
+      "total_short_pauses": 30,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 60,
+      "total_speech_duration_sec": 478.4
+    },
+    "nlp_semantic_score": 51.43
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.25,
+    "seed": 42,
+    "elapsed_sec": 0.19,
+    "metrics": {
+      "words_per_minute": 183.9,
+      "silence_ratio_pct": 11.4,
+      "total_long_pauses": 1,
+      "total_short_pauses": 27,
+      "longest_pause_sec": 2.23,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 60,
+      "total_speech_duration_sec": 441.2
+    },
+    "nlp_semantic_score": 45.89
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.25,
+    "seed": 7,
+    "elapsed_sec": 0.187,
+    "metrics": {
+      "words_per_minute": 181.6,
+      "silence_ratio_pct": 11.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 32,
+      "longest_pause_sec": 0.87,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 50,
+      "total_speech_duration_sec": 452.6
+    },
+    "nlp_semantic_score": 43.71
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.25,
+    "seed": 123,
+    "elapsed_sec": 0.188,
+    "metrics": {
+      "words_per_minute": 184.8,
+      "silence_ratio_pct": 11.7,
+      "total_long_pauses": 2,
+      "total_short_pauses": 39,
+      "longest_pause_sec": 2.63,
+      "average_pause_sec": 0.11,
+      "total_filler_words": 66,
+      "total_speech_duration_sec": 506.2
+    },
+    "nlp_semantic_score": 51.6
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.25,
+    "seed": 2024,
+    "elapsed_sec": 0.187,
+    "metrics": {
+      "words_per_minute": 181.3,
+      "silence_ratio_pct": 11.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 32,
+      "longest_pause_sec": 1.05,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 54,
+      "total_speech_duration_sec": 472.8
+    },
+    "nlp_semantic_score": 52.04
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.25,
+    "seed": 99,
+    "elapsed_sec": 0.188,
+    "metrics": {
+      "words_per_minute": 183.5,
+      "silence_ratio_pct": 10.6,
+      "total_long_pauses": 0,
+      "total_short_pauses": 30,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 53,
+      "total_speech_duration_sec": 467.6
+    },
+    "nlp_semantic_score": 49.76
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.3,
+    "seed": 42,
+    "elapsed_sec": 0.172,
+    "metrics": {
+      "words_per_minute": 183.9,
+      "silence_ratio_pct": 11.8,
+      "total_long_pauses": 1,
+      "total_short_pauses": 27,
+      "longest_pause_sec": 2.23,
+      "average_pause_sec": 0.11,
+      "total_filler_words": 55,
+      "total_speech_duration_sec": 425.8
+    },
+    "nlp_semantic_score": 52.39
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.3,
+    "seed": 7,
+    "elapsed_sec": 0.179,
+    "metrics": {
+      "words_per_minute": 182.8,
+      "silence_ratio_pct": 11.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 31,
+      "longest_pause_sec": 0.87,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 48,
+      "total_speech_duration_sec": 427.0
+    },
+    "nlp_semantic_score": 40.98
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.3,
+    "seed": 123,
+    "elapsed_sec": 0.207,
+    "metrics": {
+      "words_per_minute": 184.5,
+      "silence_ratio_pct": 12.0,
+      "total_long_pauses": 2,
+      "total_short_pauses": 39,
+      "longest_pause_sec": 2.63,
+      "average_pause_sec": 0.11,
+      "total_filler_words": 66,
+      "total_speech_duration_sec": 479.1
+    },
+    "nlp_semantic_score": 51.6
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.3,
+    "seed": 2024,
+    "elapsed_sec": 0.195,
+    "metrics": {
+      "words_per_minute": 180.6,
+      "silence_ratio_pct": 11.3,
+      "total_long_pauses": 0,
+      "total_short_pauses": 35,
+      "longest_pause_sec": 1.05,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 55,
+      "total_speech_duration_sec": 461.9
+    },
+    "nlp_semantic_score": 51.01
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.3,
+    "seed": 99,
+    "elapsed_sec": 0.174,
+    "metrics": {
+      "words_per_minute": 182.7,
+      "silence_ratio_pct": 10.8,
+      "total_long_pauses": 0,
+      "total_short_pauses": 31,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 51,
+      "total_speech_duration_sec": 451.5
+    },
+    "nlp_semantic_score": 55.43
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.4,
+    "seed": 42,
+    "elapsed_sec": 0.189,
+    "metrics": {
+      "words_per_minute": 186.4,
+      "silence_ratio_pct": 12.0,
+      "total_long_pauses": 1,
+      "total_short_pauses": 30,
+      "longest_pause_sec": 2.23,
+      "average_pause_sec": 0.11,
+      "total_filler_words": 52,
+      "total_speech_duration_sec": 397.2
+    },
+    "nlp_semantic_score": 55.02
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.4,
+    "seed": 7,
+    "elapsed_sec": 0.166,
+    "metrics": {
+      "words_per_minute": 183.5,
+      "silence_ratio_pct": 11.6,
+      "total_long_pauses": 0,
+      "total_short_pauses": 30,
+      "longest_pause_sec": 0.94,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 42,
+      "total_speech_duration_sec": 392.4
+    },
+    "nlp_semantic_score": 42.34
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.4,
+    "seed": 123,
+    "elapsed_sec": 0.207,
+    "metrics": {
+      "words_per_minute": 184.7,
+      "silence_ratio_pct": 13.0,
+      "total_long_pauses": 4,
+      "total_short_pauses": 34,
+      "longest_pause_sec": 2.63,
+      "average_pause_sec": 0.12,
+      "total_filler_words": 51,
+      "total_speech_duration_sec": 408.7
+    },
+    "nlp_semantic_score": 49.31
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.4,
+    "seed": 2024,
+    "elapsed_sec": 0.198,
+    "metrics": {
+      "words_per_minute": 183.9,
+      "silence_ratio_pct": 11.3,
+      "total_long_pauses": 0,
+      "total_short_pauses": 34,
+      "longest_pause_sec": 1.05,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 49,
+      "total_speech_duration_sec": 443.7
+    },
+    "nlp_semantic_score": 45.04
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.4,
+    "seed": 99,
+    "elapsed_sec": 0.201,
+    "metrics": {
+      "words_per_minute": 185.6,
+      "silence_ratio_pct": 11.7,
+      "total_long_pauses": 1,
+      "total_short_pauses": 32,
+      "longest_pause_sec": 2.63,
+      "average_pause_sec": 0.11,
+      "total_filler_words": 46,
+      "total_speech_duration_sec": 412.4
+    },
+    "nlp_semantic_score": 58.82
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.5,
+    "seed": 42,
+    "elapsed_sec": 0.192,
+    "metrics": {
+      "words_per_minute": 187.8,
+      "silence_ratio_pct": 12.5,
+      "total_long_pauses": 1,
+      "total_short_pauses": 31,
+      "longest_pause_sec": 2.41,
+      "average_pause_sec": 0.11,
+      "total_filler_words": 47,
+      "total_speech_duration_sec": 381.8
+    },
+    "nlp_semantic_score": 53.12
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.5,
+    "seed": 7,
+    "elapsed_sec": 0.186,
+    "metrics": {
+      "words_per_minute": 183.6,
+      "silence_ratio_pct": 12.9,
+      "total_long_pauses": 2,
+      "total_short_pauses": 28,
+      "longest_pause_sec": 1.82,
+      "average_pause_sec": 0.11,
+      "total_filler_words": 35,
+      "total_speech_duration_sec": 366.0
+    },
+    "nlp_semantic_score": 37.37
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.5,
+    "seed": 123,
+    "elapsed_sec": 0.185,
+    "metrics": {
+      "words_per_minute": 186.1,
+      "silence_ratio_pct": 13.9,
+      "total_long_pauses": 4,
+      "total_short_pauses": 34,
+      "longest_pause_sec": 2.63,
+      "average_pause_sec": 0.12,
+      "total_filler_words": 45,
+      "total_speech_duration_sec": 370.1
+    },
+    "nlp_semantic_score": 52.76
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.5,
+    "seed": 2024,
+    "elapsed_sec": 0.186,
+    "metrics": {
+      "words_per_minute": 188.1,
+      "silence_ratio_pct": 12.0,
+      "total_long_pauses": 1,
+      "total_short_pauses": 33,
+      "longest_pause_sec": 1.82,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 46,
+      "total_speech_duration_sec": 442.8
+    },
+    "nlp_semantic_score": 38.04
+  },
+  {
+    "policy": "strict",
+    "operator": "role_swap",
+    "severity": 0.5,
+    "seed": 99,
+    "elapsed_sec": 0.203,
+    "metrics": {
+      "words_per_minute": 187.5,
+      "silence_ratio_pct": 12.8,
+      "total_long_pauses": 2,
+      "total_short_pauses": 33,
+      "longest_pause_sec": 2.63,
+      "average_pause_sec": 0.12,
+      "total_filler_words": 34,
+      "total_speech_duration_sec": 390.5
+    },
+    "nlp_semantic_score": 50.11
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.0,
+    "seed": 42,
+    "elapsed_sec": 0.207,
+    "metrics": {
+      "words_per_minute": 180.1,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.0,
+    "seed": 7,
+    "elapsed_sec": 0.194,
+    "metrics": {
+      "words_per_minute": 180.1,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.0,
+    "seed": 123,
+    "elapsed_sec": 0.176,
+    "metrics": {
+      "words_per_minute": 180.1,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.0,
+    "seed": 2024,
+    "elapsed_sec": 0.187,
+    "metrics": {
+      "words_per_minute": 180.1,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.0,
+    "seed": 99,
+    "elapsed_sec": 0.202,
+    "metrics": {
+      "words_per_minute": 180.1,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 70,
+      "total_speech_duration_sec": 543.0
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.05,
+    "seed": 42,
+    "elapsed_sec": 0.187,
+    "metrics": {
+      "words_per_minute": 180.4,
+      "silence_ratio_pct": 9.8,
+      "total_long_pauses": 0,
+      "total_short_pauses": 20,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 68,
+      "total_speech_duration_sec": 507.8
+    },
+    "nlp_semantic_score": 55.66
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.05,
+    "seed": 7,
+    "elapsed_sec": 0.187,
+    "metrics": {
+      "words_per_minute": 180.7,
+      "silence_ratio_pct": 9.8,
+      "total_long_pauses": 0,
+      "total_short_pauses": 21,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 66,
+      "total_speech_duration_sec": 509.7
+    },
+    "nlp_semantic_score": 50.93
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.05,
+    "seed": 123,
+    "elapsed_sec": 0.183,
+    "metrics": {
+      "words_per_minute": 179.9,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.86,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 65,
+      "total_speech_duration_sec": 515.5
+    },
+    "nlp_semantic_score": 46.79
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.05,
+    "seed": 2024,
+    "elapsed_sec": 0.187,
+    "metrics": {
+      "words_per_minute": 179.6,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 21,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 68,
+      "total_speech_duration_sec": 514.6
+    },
+    "nlp_semantic_score": 51.47
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.05,
+    "seed": 99,
+    "elapsed_sec": 0.173,
+    "metrics": {
+      "words_per_minute": 179.8,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 65,
+      "total_speech_duration_sec": 512.1
+    },
+    "nlp_semantic_score": 50.98
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.1,
+    "seed": 42,
+    "elapsed_sec": 0.183,
+    "metrics": {
+      "words_per_minute": 180.2,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 20,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 62,
+      "total_speech_duration_sec": 488.7
+    },
+    "nlp_semantic_score": 55.73
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.1,
+    "seed": 7,
+    "elapsed_sec": 0.184,
+    "metrics": {
+      "words_per_minute": 180.3,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 21,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 65,
+      "total_speech_duration_sec": 487.2
+    },
+    "nlp_semantic_score": 55.92
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.1,
+    "seed": 123,
+    "elapsed_sec": 0.192,
+    "metrics": {
+      "words_per_minute": 178.7,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 23,
+      "longest_pause_sec": 0.86,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 61,
+      "total_speech_duration_sec": 483.1
+    },
+    "nlp_semantic_score": 46.79
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.1,
+    "seed": 2024,
+    "elapsed_sec": 0.186,
+    "metrics": {
+      "words_per_minute": 178.4,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 21,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 67,
+      "total_speech_duration_sec": 487.6
+    },
+    "nlp_semantic_score": 54.77
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.1,
+    "seed": 99,
+    "elapsed_sec": 0.189,
+    "metrics": {
+      "words_per_minute": 179.1,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 22,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 62,
+      "total_speech_duration_sec": 486.5
+    },
+    "nlp_semantic_score": 50.98
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.15,
+    "seed": 42,
+    "elapsed_sec": 0.178,
+    "metrics": {
+      "words_per_minute": 180.1,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 19,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 61,
+      "total_speech_duration_sec": 458.0
+    },
+    "nlp_semantic_score": 50.64
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.15,
+    "seed": 7,
+    "elapsed_sec": 0.176,
+    "metrics": {
+      "words_per_minute": 180.1,
+      "silence_ratio_pct": 9.7,
+      "total_long_pauses": 0,
+      "total_short_pauses": 20,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 62,
+      "total_speech_duration_sec": 459.7
+    },
+    "nlp_semantic_score": 58.95
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.15,
+    "seed": 123,
+    "elapsed_sec": 0.183,
+    "metrics": {
+      "words_per_minute": 178.6,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 21,
+      "longest_pause_sec": 0.86,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 61,
+      "total_speech_duration_sec": 461.2
+    },
+    "nlp_semantic_score": 43.98
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.15,
+    "seed": 2024,
+    "elapsed_sec": 0.173,
+    "metrics": {
+      "words_per_minute": 177.2,
+      "silence_ratio_pct": 10.2,
+      "total_long_pauses": 0,
+      "total_short_pauses": 21,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 61,
+      "total_speech_duration_sec": 460.2
+    },
+    "nlp_semantic_score": 52.76
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.15,
+    "seed": 99,
+    "elapsed_sec": 0.162,
+    "metrics": {
+      "words_per_minute": 179.0,
+      "silence_ratio_pct": 10.2,
+      "total_long_pauses": 0,
+      "total_short_pauses": 22,
+      "longest_pause_sec": 0.94,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 59,
+      "total_speech_duration_sec": 460.0
+    },
+    "nlp_semantic_score": 49.43
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.2,
+    "seed": 42,
+    "elapsed_sec": 0.168,
+    "metrics": {
+      "words_per_minute": 180.3,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 18,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 61,
+      "total_speech_duration_sec": 433.9
+    },
+    "nlp_semantic_score": 54.11
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.2,
+    "seed": 7,
+    "elapsed_sec": 0.172,
+    "metrics": {
+      "words_per_minute": 180.2,
+      "silence_ratio_pct": 9.8,
+      "total_long_pauses": 0,
+      "total_short_pauses": 19,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 57,
+      "total_speech_duration_sec": 434.2
+    },
+    "nlp_semantic_score": 60.92
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.2,
+    "seed": 123,
+    "elapsed_sec": 0.167,
+    "metrics": {
+      "words_per_minute": 178.1,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 20,
+      "longest_pause_sec": 1.1,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 58,
+      "total_speech_duration_sec": 434.3
+    },
+    "nlp_semantic_score": 47.98
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.2,
+    "seed": 2024,
+    "elapsed_sec": 0.171,
+    "metrics": {
+      "words_per_minute": 178.4,
+      "silence_ratio_pct": 10.3,
+      "total_long_pauses": 0,
+      "total_short_pauses": 20,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 55,
+      "total_speech_duration_sec": 431.1
+    },
+    "nlp_semantic_score": 56.37
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.2,
+    "seed": 99,
+    "elapsed_sec": 0.194,
+    "metrics": {
+      "words_per_minute": 179.7,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 22,
+      "longest_pause_sec": 0.94,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 55,
+      "total_speech_duration_sec": 433.7
+    },
+    "nlp_semantic_score": 48.82
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.25,
+    "seed": 42,
+    "elapsed_sec": 0.16,
+    "metrics": {
+      "words_per_minute": 180.6,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 18,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 57,
+      "total_speech_duration_sec": 406.3
+    },
+    "nlp_semantic_score": 54.11
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.25,
+    "seed": 7,
+    "elapsed_sec": 0.157,
+    "metrics": {
+      "words_per_minute": 178.2,
+      "silence_ratio_pct": 9.8,
+      "total_long_pauses": 0,
+      "total_short_pauses": 18,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 53,
+      "total_speech_duration_sec": 406.1
+    },
+    "nlp_semantic_score": 63.4
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.25,
+    "seed": 123,
+    "elapsed_sec": 0.16,
+    "metrics": {
+      "words_per_minute": 178.0,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 19,
+      "longest_pause_sec": 1.1,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 55,
+      "total_speech_duration_sec": 401.5
+    },
+    "nlp_semantic_score": 47.98
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.25,
+    "seed": 2024,
+    "elapsed_sec": 0.159,
+    "metrics": {
+      "words_per_minute": 179.9,
+      "silence_ratio_pct": 10.2,
+      "total_long_pauses": 0,
+      "total_short_pauses": 19,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 54,
+      "total_speech_duration_sec": 407.2
+    },
+    "nlp_semantic_score": 60.12
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.25,
+    "seed": 99,
+    "elapsed_sec": 0.155,
+    "metrics": {
+      "words_per_minute": 179.2,
+      "silence_ratio_pct": 10.2,
+      "total_long_pauses": 0,
+      "total_short_pauses": 22,
+      "longest_pause_sec": 0.94,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 45,
+      "total_speech_duration_sec": 404.5
+    },
+    "nlp_semantic_score": 52.81
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.3,
+    "seed": 42,
+    "elapsed_sec": 0.166,
+    "metrics": {
+      "words_per_minute": 178.6,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 16,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 53,
+      "total_speech_duration_sec": 377.6
+    },
+    "nlp_semantic_score": 58.88
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.3,
+    "seed": 7,
+    "elapsed_sec": 0.153,
+    "metrics": {
+      "words_per_minute": 178.0,
+      "silence_ratio_pct": 9.5,
+      "total_long_pauses": 0,
+      "total_short_pauses": 17,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 50,
+      "total_speech_duration_sec": 378.6
+    },
+    "nlp_semantic_score": 63.4
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.3,
+    "seed": 123,
+    "elapsed_sec": 0.151,
+    "metrics": {
+      "words_per_minute": 177.5,
+      "silence_ratio_pct": 10.2,
+      "total_long_pauses": 0,
+      "total_short_pauses": 19,
+      "longest_pause_sec": 1.1,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 52,
+      "total_speech_duration_sec": 377.9
+    },
+    "nlp_semantic_score": 53.52
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.3,
+    "seed": 2024,
+    "elapsed_sec": 0.155,
+    "metrics": {
+      "words_per_minute": 180.0,
+      "silence_ratio_pct": 10.2,
+      "total_long_pauses": 0,
+      "total_short_pauses": 19,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 49,
+      "total_speech_duration_sec": 379.9
+    },
+    "nlp_semantic_score": 55.99
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.3,
+    "seed": 99,
+    "elapsed_sec": 0.151,
+    "metrics": {
+      "words_per_minute": 179.4,
+      "silence_ratio_pct": 10.3,
+      "total_long_pauses": 0,
+      "total_short_pauses": 21,
+      "longest_pause_sec": 0.94,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 41,
+      "total_speech_duration_sec": 378.3
+    },
+    "nlp_semantic_score": 51.91
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.4,
+    "seed": 42,
+    "elapsed_sec": 0.155,
+    "metrics": {
+      "words_per_minute": 177.9,
+      "silence_ratio_pct": 9.8,
+      "total_long_pauses": 0,
+      "total_short_pauses": 15,
+      "longest_pause_sec": 0.87,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 40,
+      "total_speech_duration_sec": 322.5
+    },
+    "nlp_semantic_score": 59.66
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.4,
+    "seed": 7,
+    "elapsed_sec": 0.146,
+    "metrics": {
+      "words_per_minute": 178.2,
+      "silence_ratio_pct": 9.7,
+      "total_long_pauses": 0,
+      "total_short_pauses": 16,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 44,
+      "total_speech_duration_sec": 322.9
+    },
+    "nlp_semantic_score": 62.09
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.4,
+    "seed": 123,
+    "elapsed_sec": 0.141,
+    "metrics": {
+      "words_per_minute": 176.9,
+      "silence_ratio_pct": 10.2,
+      "total_long_pauses": 0,
+      "total_short_pauses": 17,
+      "longest_pause_sec": 1.1,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 44,
+      "total_speech_duration_sec": 322.5
+    },
+    "nlp_semantic_score": 52.9
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.4,
+    "seed": 2024,
+    "elapsed_sec": 0.152,
+    "metrics": {
+      "words_per_minute": 180.5,
+      "silence_ratio_pct": 10.4,
+      "total_long_pauses": 0,
+      "total_short_pauses": 16,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 44,
+      "total_speech_duration_sec": 320.1
+    },
+    "nlp_semantic_score": 51.65
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.4,
+    "seed": 99,
+    "elapsed_sec": 0.155,
+    "metrics": {
+      "words_per_minute": 179.5,
+      "silence_ratio_pct": 9.9,
+      "total_long_pauses": 0,
+      "total_short_pauses": 16,
+      "longest_pause_sec": 0.95,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 37,
+      "total_speech_duration_sec": 323.6
+    },
+    "nlp_semantic_score": 46.03
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.5,
+    "seed": 42,
+    "elapsed_sec": 0.151,
+    "metrics": {
+      "words_per_minute": 176.8,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 14,
+      "longest_pause_sec": 0.87,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 34,
+      "total_speech_duration_sec": 271.1
+    },
+    "nlp_semantic_score": 61.44
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.5,
+    "seed": 7,
+    "elapsed_sec": 0.135,
+    "metrics": {
+      "words_per_minute": 179.4,
+      "silence_ratio_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_short_pauses": 15,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 38,
+      "total_speech_duration_sec": 269.6
+    },
+    "nlp_semantic_score": 60.13
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.5,
+    "seed": 123,
+    "elapsed_sec": 0.159,
+    "metrics": {
+      "words_per_minute": 178.5,
+      "silence_ratio_pct": 9.8,
+      "total_long_pauses": 0,
+      "total_short_pauses": 13,
+      "longest_pause_sec": 0.84,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 39,
+      "total_speech_duration_sec": 267.3
+    },
+    "nlp_semantic_score": 49.06
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.5,
+    "seed": 2024,
+    "elapsed_sec": 0.146,
+    "metrics": {
+      "words_per_minute": 181.0,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 12,
+      "longest_pause_sec": 0.93,
+      "average_pause_sec": 0.09,
+      "total_filler_words": 33,
+      "total_speech_duration_sec": 264.5
+    },
+    "nlp_semantic_score": 44.15
+  },
+  {
+    "policy": "strict",
+    "operator": "missed_speech",
+    "severity": 0.5,
+    "seed": 99,
+    "elapsed_sec": 0.138,
+    "metrics": {
+      "words_per_minute": 179.1,
+      "silence_ratio_pct": 10.1,
+      "total_long_pauses": 0,
+      "total_short_pauses": 13,
+      "longest_pause_sec": 0.95,
+      "average_pause_sec": 0.1,
+      "total_filler_words": 30,
+      "total_speech_duration_sec": 262.3
+    },
+    "nlp_semantic_score": 48.76
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "hardware_caveat": "analysis container, NOT the pilot machine; ratio/order-of-magnitude only",
+  "n_grid_frames_benchmarked": 2000,
+  "frames_decoded": 12026,
+  "decode_only_s": 18.61,
+  "decode_plus_detect_s": 22.806,
+  "detect_attributable_s": 4.197,
+  "detect_share_pct": 18.4,
+  "decode_share_pct": 81.6,
+  "per_call_ms": 2.098,
+  "max_theoretical_saving_pct_at_32_35_skip": 6.0
+}

@@ -1,0 +1,32 @@
+Qualitative filler-word examples: baseline vs role_swap severity=0.5 (seed=42)
+================================================================================
+
+Baseline (severity=0.0) candidate filler words, first 8 (of 70 total):
+  so    @ 53.04s
+  like  @ 80.73s
+  so    @ 92.46s
+  like  @ 117.06s
+  so    @ 124.35s
+  so    @ 141.27s
+  like  @ 177.60s
+  so    @ 193.05s
+
+role_swap severity=0.5, seed=42 candidate filler words, first 8 (of 47 total):
+  like  @ 80.73s
+  so    @ 92.46s
+  so    @ 124.35s
+  so    @ 141.27s
+  like  @ 177.60s
+  so    @ 201.51s
+  like  @ 201.78s
+  like  @ 207.03s
+
+Observation: the filler at 53.04s and 117.06s disappear entirely from the
+corrupted run's candidate-attributed speech -- the diarization segments
+covering those timestamps were flipped from CANDIDATE to INTERVIEWER by
+role_swap, so the words are still transcribed (nothing is deleted from the
+underlying transcript) but are no longer counted as candidate fillers. This
+concretely illustrates the mechanism behind the filler-count distortion
+reported in the dose-response tables: role_swap does not remove speech, it
+misattributes it, silently erasing real behavioral signal from whichever
+speaker's segments get flipped away.
