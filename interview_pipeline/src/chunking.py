@@ -1,6 +1,14 @@
 from pathlib import Path
+import re
 import subprocess
 import time
+
+
+def _chunk_sort_key(path: Path) -> int:
+    """Extract the numeric index from a chunk filename for reliable sorting.
+    e.g. chunk_042.mp4 → 42.  Falls back to 0 if the name doesn't match."""
+    m = re.search(r"chunk_(\d+)", path.stem)
+    return int(m.group(1)) if m else 0
 
 
 def split_video_into_chunks(input_path: Path, output_dir: Path, chunk_duration: int = 10):
@@ -11,39 +19,43 @@ def split_video_into_chunks(input_path: Path, output_dir: Path, chunk_duration: 
         input_path (Path): Path to input video file
         output_dir (Path): Directory where chunks will be saved
         chunk_duration (int): Duration of each chunk in seconds
-    """
 
+    Returns:
+        List[Path]: chunk file paths sorted in numeric order.
+    """
+    input_path = Path(input_path)
     if not input_path.exists():
         raise FileNotFoundError(f"Input video not found: {input_path}")
 
+    output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
     output_pattern = output_dir / "chunk_%03d.mp4"
 
     command = [
-    "ffmpeg",
-    "-i", str(input_path),
-    "-c", "copy",
-    "-f", "segment",
-    "-segment_time", str(chunk_duration),
-    "-reset_timestamps", "1",
-    str(output_pattern)
-]
+        "ffmpeg",
+        "-i", str(input_path),
+        "-c", "copy",
+        "-f", "segment",
+        "-segment_time", str(chunk_duration),
+        "-reset_timestamps", "1",
+        str(output_pattern)
+    ]
 
     print(f"[INFO] Starting chunking: {input_path}")
     start_time = time.time()
 
-    try:
-        subprocess.run(command, check=True)
-    except subprocess.CalledProcessError as e:
-        print("[ERROR] FFmpeg failed")
-        raise e
+    result = subprocess.run(command, capture_output=True, text=True)
+    if result.returncode != 0:
+        raise RuntimeError(
+            f"FFmpeg chunking failed (exit {result.returncode}).\n"
+            f"stderr: {result.stderr[-500:] if result.stderr else '(empty)'}"
+        )
 
-    end_time = time.time()
+    elapsed = time.time() - start_time
+    print(f"[INFO] Chunking completed in {elapsed:.2f} seconds")
 
-    print(f"[INFO] Chunking completed in {end_time - start_time:.2f} seconds")
-
-    chunks = list(output_dir.glob("chunk_*.mp4"))
+    chunks = sorted(output_dir.glob("chunk_*.mp4"), key=_chunk_sort_key)
     print(f"[INFO] Generated {len(chunks)} chunks")
 
     return chunks

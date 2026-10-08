@@ -12,7 +12,7 @@ Developed at **Department of Computer Science & Engineering, SJB Institute of Te
 
 ---
 
-## 📌 Project Overview
+## 📖 Project Overview
 
 Traditional automated interview analysis tools rely heavily on cloud APIs (e.g., OpenAI, Google Cloud) or high-end GPU infrastructure, introducing high operational costs, privacy risks, and network latency bottlenecks.
 
@@ -24,10 +24,11 @@ This project delivers a **local-first, memory-optimized architecture** that proc
 
 - **⚡ Sub-Second Video Chunking**: Utilizes FFmpeg stream copy (`-c copy`) to segment long interview recordings into 10-second intervals in **~0.06 seconds** without CPU-intensive re-encoding.
 - **🎙️ 100% Offline Speech-to-Text**: Employs the Vosk Kaldi speech recognition engine for fast, on-device audio transcription with word-level timestamps (`start`, `end`).
-- **💬 Speech Fluency & Filler Detection**: Detects common vocal fillers (`um`, `uh`, `like`, `so`, `you know`), calculates Words Per Minute (WPM) pacing, and flags hesitation silence gaps ($\ge 1.5$ seconds).
+- **🗣️ Speech Fluency & Filler Detection**: Detects common vocal fillers (`um`, `uh`, `like`, `so`, `you know`), calculates Words Per Minute (WPM) pacing, and flags hesitation silence gaps ($\ge 1.5$ seconds).
 - **🧠 Semantic NLP Answer Scoring**: Uses MiniLM sentence vector embeddings (`all-MiniLM-L6-v2`) and Cosine Similarity to evaluate candidate answer accuracy against recruiter benchmark keys.
-- **👁️ Visual Posture & Face Analytics**: Uses OpenCV face detection to evaluate head posture stability and face visibility across video frames.
-- **🚀 Skip-Logic Caching**: Automatically skips already processed video/audio chunks, avoiding redundant computations during repeated runs.
+- **👀 Visual Posture & Face Analytics**: Uses OpenCV face detection to evaluate head posture stability and face visibility across video frames.
+- **👥 Automatic Speaker Diarization**: Uses WeSpeaker and Silero VAD to cluster speakers and automatically distinguish the Candidate from the Interviewer based on speech duration, restricting visual analytics to Candidate-only segments.
+- **⏭️ Skip-Logic Caching**: Automatically skips already processed video/audio chunks, avoiding redundant computations during repeated runs.
 - **📊 Multi-Format Reporting & Dashboard**: Exports structured `final_aggregated_report.json` and `interview_timeline.csv`, paired with an interactive Web Analytics Studio.
 
 ---
@@ -49,12 +50,17 @@ Interview_project/
 │       ├── stt.py               # Vosk offline speech-to-text engine
 │       ├── filler_detection.py  # Vocal filler pattern detector
 │       ├── speech_analysis.py   # WPM pacing & silence gap calculator
-│       ├── visual_analytics.py # OpenCV face visibility & posture analyzer
+│       ├── visual_analytics.py  # OpenCV face visibility & posture analyzer
 │       ├── nlp_scoring.py       # MiniLM vector cosine similarity scorer
-│       ├── report_generator.py # JSON/CSV report aggregator
-│       └── pipeline.py         # Master pipeline orchestrator
+│       ├── diarization.py       # WeSpeaker embeddings & clustering
+│       ├── vad.py               # Silero VAD wrapper
+│       ├── speaker_roles.py     # Candidate/Interviewer role assignment heuristic
+│       ├── report_generator.py  # JSON/CSV report aggregator
+│       └── pipeline.py          # Master pipeline orchestrator
 ├── models/
 │   └── vosk/                # Offline Vosk speech model (vosk-model-small-en-us-0.15)
+│   └── wespeaker/           # WeSpeaker ResNet34 ONNX
+│   └── silero_vad/          # Silero VAD ONNX
 ├── dashboard/               # Interactive Web Analytics Studio UI
 │   ├── index.html
 │   ├── styles.css
@@ -66,7 +72,7 @@ Interview_project/
 
 ---
 
-## 🛠️ Installation & Setup
+## 🚀 Installation & Setup
 
 ### Prerequisites
 - **Python 3.10+**
@@ -92,24 +98,39 @@ Interview_project/
    pip install -r requirements.txt
    ```
 
-4. **Download Vosk Offline Model** (Automatic or Manual):
+4. **Download Models** (Automatic or Manual):
    Download the small English model [vosk-model-small-en-us-0.15](https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip) and extract it into `models/vosk/vosk-model-small-en-us-0.15`.
+   The `silero_vad.onnx` and `voxceleb_resnet34_LM.onnx` models should be placed in their respective `models/` subdirectories.
 
 ---
 
-## 🚀 How to Run
+## 🏃 How to Run
 
-### Basic Execution:
-Place your recorded interview `.mp4` file in `data/input/sample.mp4` and run:
+### Diarization & Role Assignment
+The pipeline identifies Candidate vs. Interviewer speech to focus the visual analysis.
+- **Automatic Mode**: Triggered automatically if `--diarization` is omitted. The pipeline extracts full audio, runs Silero VAD, extracts speaker embeddings via WeSpeaker, clusters them via scikit-learn, and assigns the Candidate role to the speaker with the longest duration.
+  *LIMITATION*: The duration heuristic assumes a typical interview where the candidate dominates talk time. It will mislabel speakers in highly conversational scenarios or pre-screening interviews where the interviewer speaks longer.
+- **Precomputed Mode**: If you provide an existing JSON via `--diarization`, it skips automatic extraction and uses the provided segments.
+
+### Basic Execution (Automatic Diarization & Visuals):
+To run the full pipeline, automatically generating diarization and visual analytics:
 ```bash
-python cli.py
+python cli.py --input data/input/sample.mp4
 ```
 
-### Force Re-Processing & Launch Web Dashboard:
-To bypass cache, re-process all chunks, and automatically open the interactive Web Analytics Dashboard in your browser:
+### Precomputed Diarization:
+To bypass automatic diarization and use an existing JSON:
 ```bash
-python cli.py --force --dashboard
+python cli.py --input data/input/sample.mp4 --diarization data/diarization/segments.json
 ```
+
+### Custom Output Directory:
+To save outputs (chunks, audio, JSONs, reports) in a custom folder instead of the default `data/` directory:
+```bash
+python cli.py --input data/input/sample.mp4 --output-dir results/interview_1/
+```
+
+*Note: Dashboard and UI capabilities are planned for a future release.*
 
 ---
 
@@ -144,5 +165,5 @@ python cli.py --force --dashboard
 
 ---
 
-## 📜 License
+## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
