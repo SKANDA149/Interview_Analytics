@@ -167,3 +167,56 @@ python cli.py --input data/input/sample.mp4 --output-dir results/interview_1/
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+---
+
+## ?? API Backend (Phase 3)
+
+The project includes a FastAPI backend that exposes the interview analysis pipeline over HTTP, allowing seamless integration with future frontends. 
+
+### Starting the API Locally
+Run the server using Uvicorn:
+``powershell
+& ".\venv\Scripts\uvicorn.exe" interview_pipeline.api.main:app --host 127.0.0.1 --port 8000
+``
+
+**Swagger/OpenAPI UI**: http://127.0.0.1:8000/docs
+
+### API Endpoints
+All API jobs run in strictly isolated output directories (data/api_runs/{job_id}). Note that processing is highly CPU-intensive and typically takes several minutes to complete for a long video.
+
+**1. Upload a Video**
+Upload an interview video (up to 500 MB by default) via multipart/form-data.
+``powershell
+Invoke-WebRequest -Uri "http://127.0.0.1:8000/api/v1/interviews" -Method Post -Form @{file=(Get-Item .\data\input\sample.mp4)}
+``
+*Returns HTTP 202 Accepted with a unique job_id.*
+
+**2. Poll Job Status**
+``powershell
+Invoke-RestMethod -Uri "http://127.0.0.1:8000/api/v1/interviews/{job_id}"
+``
+*Returns the job state: queued, unning, completed, or ailed.*
+
+**3. Retrieve Final Report (JSON)**
+Available only when the job is completed. If still running, returns HTTP 409 Conflict.
+``powershell
+Invoke-RestMethod -Uri "http://127.0.0.1:8000/api/v1/interviews/{job_id}/report"
+``
+
+**4. Download Timeline (CSV)**
+``powershell
+Invoke-WebRequest -Uri "http://127.0.0.1:8000/api/v1/interviews/{job_id}/timeline" -OutFile "timeline.csv"
+``
+
+**5. View Processing Logs**
+Check live logs for debugging.
+``powershell
+Invoke-RestMethod -Uri "http://127.0.0.1:8000/api/v1/interviews/{job_id}/logs"
+``
+
+### Configuration & Limitations
+- **CORS**: Controlled by the INTERVIEW_API_ALLOWED_ORIGINS environment variable (Defaults to http://localhost:3000,http://127.0.0.1:3000).
+- **Upload Size**: Hard-limited to 500 MB in main.py (MAX_UPLOAD_SIZE = 500 * 1024 * 1024).
+- **In-Memory State**: Job statuses are currently tracked in memory and will reset if the Uvicorn server restarts (though completed files persist in data/api_runs/). Database persistence is planned for a future phase.
+- **Concurrency**: Restricted to 1 active pipeline execution at a time to prevent CPU saturation. Additional uploads will be safely queued.
+

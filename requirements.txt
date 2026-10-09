@@ -11,3 +11,6 @@ sentence-transformers
 psutil
 numpy
 pandas
+fastapi
+uvicorn
+python-multipart
