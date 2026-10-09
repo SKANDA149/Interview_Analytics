@@ -220,3 +220,34 @@ Invoke-RestMethod -Uri "http://127.0.0.1:8000/api/v1/interviews/{job_id}/logs"
 - **In-Memory State**: Job statuses are currently tracked in memory and will reset if the Uvicorn server restarts (though completed files persist in data/api_runs/). Database persistence is planned for a future phase.
 - **Concurrency**: Restricted to 1 active pipeline execution at a time to prevent CPU saturation. Additional uploads will be safely queued.
 
+---
+
+## ?? SQLite Database & Persistence (Phase 4)
+
+The API now features a local SQLite persistence layer (data/interview_analytics.db). The database ensures job statuses and output metadata survive API restarts. 
+
+### Start/Restart Behavior
+When Uvicorn is restarted:
+- **queued jobs** with accessible video files are safely requeued for processing.
+- **unning jobs** that were interrupted by the restart are marked as ailed to prevent false completions.
+- **completed jobs** and their reports remain queryable forever.
+
+*Note: Large output artifacts (videos, JSON reports, CSV timelines) are still stored efficiently on disk in data/api_runs/{job_id}, and only their metadata and safe paths are persisted in SQLite.*
+
+### Interview History Endpoint
+Retrieve a paginated list of all interviews processed by the API, sorted newest first:
+
+``powershell
+Invoke-RestMethod -Uri "http://127.0.0.1:8000/api/v1/interviews?limit=10&offset=0"
+``
+*Response Includes:*
+- Job IDs, statuses, and timestamps
+- Original video filenames
+- A has_report boolean flag confirming available outputs
+
+### Database Inspection
+Since it's a standard SQLite database, you can inspect it manually with any SQLite viewer:
+``bash
+sqlite3 data/interview_analytics.db
+sqlite> SELECT * FROM interviews;
+``
