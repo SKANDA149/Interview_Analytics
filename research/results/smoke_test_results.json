@@ -1,0 +1,97 @@
+{
+  "recording": "data",
+  "conditions": [
+    {
+      "operator": "role_swap",
+      "severity": 0.0,
+      "seed": 42,
+      "elapsed_sec": 0.373,
+      "metrics": {
+        "words_per_minute": 156.5,
+        "silence_ratio_pct": 16.1,
+        "total_long_pauses": 1,
+        "longest_pause_sec": 2.18,
+        "average_pause_sec": 0.3,
+        "total_filler_words": 23
+      },
+      "nlp_overall_score": null,
+      "distortion_vs_baseline": {
+        "words_per_minute": 0.0,
+        "silence_ratio_pct": 0.0,
+        "total_long_pauses": 0.0,
+        "longest_pause_sec": 0.0,
+        "average_pause_sec": 0.0,
+        "total_filler_words": 0.0
+      }
+    },
+    {
+      "operator": "role_swap",
+      "severity": 0.25,
+      "seed": 42,
+      "elapsed_sec": 0.32,
+      "metrics": {
+        "words_per_minute": 165.0,
+        "silence_ratio_pct": 16.8,
+        "total_long_pauses": 2,
+        "longest_pause_sec": 2.34,
+        "average_pause_sec": 0.3,
+        "total_filler_words": 16
+      },
+      "nlp_overall_score": null,
+      "distortion_vs_baseline": {
+        "words_per_minute": 0.0543,
+        "silence_ratio_pct": 0.0435,
+        "total_long_pauses": 1.0,
+        "longest_pause_sec": 0.0734,
+        "average_pause_sec": 0.0,
+        "total_filler_words": -0.3043
+      }
+    },
+    {
+      "operator": "missed_speech",
+      "severity": 0.0,
+      "seed": 42,
+      "elapsed_sec": 0.302,
+      "metrics": {
+        "words_per_minute": 156.5,
+        "silence_ratio_pct": 16.1,
+        "total_long_pauses": 1,
+        "longest_pause_sec": 2.18,
+        "average_pause_sec": 0.3,
+        "total_filler_words": 23
+      },
+      "nlp_overall_score": null,
+      "distortion_vs_baseline": {
+        "words_per_minute": 0.0,
+        "silence_ratio_pct": 0.0,
+        "total_long_pauses": 0.0,
+        "longest_pause_sec": 0.0,
+        "average_pause_sec": 0.0,
+        "total_filler_words": 0.0
+      }
+    },
+    {
+      "operator": "missed_speech",
+      "severity": 0.25,
+      "seed": 42,
+      "elapsed_sec": 0.292,
+      "metrics": {
+        "words_per_minute": 201.1,
+        "silence_ratio_pct": 17.1,
+        "total_long_pauses": 1,
+        "longest_pause_sec": 2.18,
+        "average_pause_sec": 0.29,
+        "total_filler_words": 21
+      },
+      "nlp_overall_score": null,
+      "distortion_vs_baseline": {
+        "words_per_minute": 0.285,
+        "silence_ratio_pct": 0.0621,
+        "total_long_pauses": 0.0,
+        "longest_pause_sec": 0.0,
+        "average_pause_sec": -0.0333,
+        "total_filler_words": -0.087
+      }
+    }
+  ]
+}
