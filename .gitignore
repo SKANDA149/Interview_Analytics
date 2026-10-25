@@ -23,6 +23,7 @@ models/silero_vad/
 models/wespeaker/
 
 # ── Generated data / pipeline outputs ──
+data/
 data/chunks/
 data/audio/
 data/outputs/
@@ -58,5 +59,12 @@ data/api_runs/
 
 # SQLite Database
 data/*.db
-
 *.db
+
+# Frontend (Dashboard)
+dashboard/node_modules/
+dashboard/dist/
+dashboard/.env.local
+
+#Phase Reports
+/local_reports/

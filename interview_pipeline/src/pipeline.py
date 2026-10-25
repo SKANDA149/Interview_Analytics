@@ -12,7 +12,7 @@ import sys
 import time
 
 from interview_pipeline.src.chunking import split_video_into_chunks, _chunk_sort_key
-from interview_pipeline.src.audio_extract import extract_audio
+from interview_pipeline.src.audio_extract import extract_audio, get_media_duration
 from interview_pipeline.src.stt import transcribe_audio
 from interview_pipeline.src.filler_detection import detect_filler_words
 from interview_pipeline.src.speech_analysis import analyze_speech_fluency
@@ -222,6 +222,9 @@ def run_pipeline(
             audio_path = extract_audio(chunk, audio_dir)
             print(f"  -> Audio extracted.")
 
+        # ── Measure actual chunk duration ──
+        actual_chunk_dur = get_media_duration(audio_path, default_sec=float(chunk_duration))
+
         # ── Vosk STT ──
         transcript_result = transcribe_audio(audio_path, model_path)
         if not transcript_result.get("words"):
@@ -231,7 +234,7 @@ def run_pipeline(
         filler_result = detect_filler_words(transcript_result)
 
         # ── Speech fluency ──
-        fluency_result = analyze_speech_fluency(transcript_result, chunk_duration_sec=float(chunk_duration))
+        fluency_result = analyze_speech_fluency(transcript_result, chunk_duration_sec=actual_chunk_dur)
 
         transcript_result["speech_analysis"] = {
             "filler_count": filler_result["filler_count"],
@@ -240,6 +243,8 @@ def run_pipeline(
             "total_silence_sec": fluency_result["total_silence_sec"],
             "silence_ratio_pct": fluency_result["silence_ratio_pct"],
             "long_pauses_count": fluency_result["long_pauses_count"],
+            "actual_chunk_duration_sec": fluency_result["actual_chunk_duration_sec"],
+            "active_speech_duration_sec": fluency_result["active_speech_duration_sec"],
         }
 
         # ── NLP scoring ──
@@ -248,7 +253,7 @@ def run_pipeline(
 
         # ── Visual bucketing ──
         chunk_start_sec = chunk_idx * float(chunk_duration)
-        chunk_end_sec = (chunk_idx + 1) * float(chunk_duration)
+        chunk_end_sec = chunk_start_sec + actual_chunk_dur
         if visual_analysis_result is not None:
             chunk_visual = bucket_visual_results_by_chunk(
                 visual_analysis_result, chunk_start_sec, chunk_end_sec

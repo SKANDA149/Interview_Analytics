@@ -138,3 +138,14 @@ def test_history_endpoint():
     # Ensure newest first (job2 was created after job1)
     assert data["items"][0]["job_id"] == "job2"
     assert data["items"][1]["job_id"] == "job1"
+
+def test_root_endpoint():
+    response = client.get("/")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["service"] == "Interview Analytics API"
+    assert data["version"] == "1.0.0"
+    assert data["health_url"] == "/health"
+    assert data["docs_url"] == "/docs"
+    assert data["dashboard_url"] == "http://127.0.0.1:3000"
+

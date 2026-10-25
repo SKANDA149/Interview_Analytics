@@ -1,9 +1,110 @@
-Chunk_ID,Transcript,Filler_Words,Long_Pauses,Silence_Seconds,WPM,Visual_Stability
-chunk_000,so of has some tides it's to review resumes i get some interesting experience here but i guess,1,0,6.96,108.0,47.2%
-chunk_001,just a kid this off for first question is you know why investment banking weiner consulting why not near going into corporate job why the accent while my last summer internship was on the fixed income trading desk,1,0,1.38,228.0,36.1%
-chunk_002,the yes i try to get a corporate finance job and investment banking job this was kind of the next best,0,0,5.08,126.0,94.4%
-chunk_003,the but i had a lot of exposure to the flow and lot exposure to the aftermarket as well once a deal prices sabine that i i i want to be the guy kind of advising the companies are structuring is transaction,0,0,2.22,252.0,100.0%
-chunk_004,since i want to have exposed and many as well i read a lot about the a many transactions that you're from is doing they seem incredibly interesting i have a lot of friends who work in investment banking so i kind of know what i'm getting and,1,0,2.53,288.0,100.0%
-chunk_005,the went to the the fast pace of of a deal what's a deal goes live on multiple projects are different,0,0,5.01,126.0,100.0%
-chunk_006,the parts the video process of the collegial varma in the camaraderie i have a few friends a consulting they are they work on in a one project in a lot of detail,0,1,2.95,198.0,100.0%
-chunk_007,for a very long period of time they don't get a lot of exposure to different types of businesses or products so that's kind of when i'm interested in,1,0,4.18,174.0,55.9%
+Chunk_ID,Transcript,Filler_Words,Long_Pauses,Silence_Seconds,WPM,Visual_Stability,Semantic_Score
+chunk_000,so of has some tides it's to review resumes i get some interesting experience here but i guess,1,0,6.96,108.0,47.2%,2.18%
+chunk_001,just a kid this off for first question is you know why investment banking weiner consulting why not near going into corporate job why the accent while my last summer internship was on the fixed income trading desk,1,0,1.38,228.0,36.1%,0.0%
+chunk_002,the yes i try to get a corporate finance job and investment banking job this was kind of the next best,0,0,5.08,126.0,94.4%,5.43%
+chunk_003,the but i had a lot of exposure to the flow and lot exposure to the aftermarket as well once a deal prices sabine that i i i want to be the guy kind of advising the companies are structuring is transaction,0,0,2.22,252.0,100.0%,5.95%
+chunk_004,since i want to have exposed and many as well i read a lot about the a many transactions that you're from is doing they seem incredibly interesting i have a lot of friends who work in investment banking so i kind of know what i'm getting and,1,0,2.53,288.0,100.0%,5.43%
+chunk_005,the went to the the fast pace of of a deal what's a deal goes live on multiple projects are different,0,0,5.01,126.0,100.0%,11.95%
+chunk_006,the parts the video process of the collegial varma in the camaraderie i have a few friends a consulting they are they work on in a one project in a lot of detail,0,1,2.95,198.0,100.0%,9.85%
+chunk_007,for a very long period of time they don't get a lot of exposure to different types of businesses or products so that's kind of when i'm interested in,1,0,4.18,174.0,55.9%,5.12%
+chunk_008,,0,0,0.0,0.0,N/A,N/A
+chunk_009,,0,0,0.0,0.0,N/A,N/A
+chunk_010,,0,0,0.0,0.0,N/A,N/A
+chunk_011,,0,0,0.0,0.0,N/A,N/A
+chunk_012,,0,0,0.0,0.0,N/A,N/A
+chunk_013,,0,0,0.0,0.0,N/A,N/A
+chunk_014,,0,0,0.0,0.0,N/A,N/A
+chunk_015,,0,0,0.0,0.0,N/A,N/A
+chunk_016,,0,0,0.0,0.0,N/A,N/A
+chunk_017,,0,0,0.0,0.0,N/A,N/A
+chunk_018,,0,0,0.0,0.0,N/A,N/A
+chunk_019,,0,0,0.0,0.0,N/A,N/A
+chunk_020,,0,0,0.0,0.0,N/A,N/A
+chunk_021,,0,0,0.0,0.0,N/A,N/A
+chunk_022,,0,0,0.0,0.0,N/A,N/A
+chunk_023,,0,0,0.0,0.0,N/A,N/A
+chunk_024,,0,0,0.0,0.0,N/A,N/A
+chunk_025,,0,0,0.0,0.0,N/A,N/A
+chunk_026,,0,0,0.0,0.0,N/A,N/A
+chunk_027,,0,0,0.0,0.0,N/A,N/A
+chunk_028,,0,0,0.0,0.0,N/A,N/A
+chunk_029,,0,0,0.0,0.0,N/A,N/A
+chunk_030,,0,0,0.0,0.0,N/A,N/A
+chunk_031,,0,0,0.0,0.0,N/A,N/A
+chunk_032,,0,0,0.0,0.0,N/A,N/A
+chunk_033,,0,0,0.0,0.0,N/A,N/A
+chunk_034,,0,0,0.0,0.0,N/A,N/A
+chunk_035,,0,0,0.0,0.0,N/A,N/A
+chunk_036,,0,0,0.0,0.0,N/A,N/A
+chunk_037,,0,0,0.0,0.0,N/A,N/A
+chunk_038,,0,0,0.0,0.0,N/A,N/A
+chunk_039,,0,0,0.0,0.0,N/A,N/A
+chunk_040,,0,0,0.0,0.0,N/A,N/A
+chunk_041,,0,0,0.0,0.0,N/A,N/A
+chunk_042,,0,0,0.0,0.0,N/A,N/A
+chunk_043,,0,0,0.0,0.0,N/A,N/A
+chunk_044,,0,0,0.0,0.0,N/A,N/A
+chunk_045,,0,0,0.0,0.0,N/A,N/A
+chunk_046,,0,0,0.0,0.0,N/A,N/A
+chunk_047,,0,0,0.0,0.0,N/A,N/A
+chunk_048,,0,0,0.0,0.0,N/A,N/A
+chunk_049,,0,0,0.0,0.0,N/A,N/A
+chunk_050,,0,0,0.0,0.0,N/A,N/A
+chunk_051,,0,0,0.0,0.0,N/A,N/A
+chunk_052,,0,0,0.0,0.0,N/A,N/A
+chunk_053,,0,0,0.0,0.0,N/A,N/A
+chunk_054,,0,0,0.0,0.0,N/A,N/A
+chunk_055,,0,0,0.0,0.0,N/A,N/A
+chunk_056,,0,0,0.0,0.0,N/A,N/A
+chunk_057,,0,0,0.0,0.0,N/A,N/A
+chunk_058,,0,0,0.0,0.0,N/A,N/A
+chunk_059,,0,0,0.0,0.0,N/A,N/A
+chunk_060,,0,0,0.0,0.0,N/A,N/A
+chunk_061,,0,0,0.0,0.0,N/A,N/A
+chunk_062,,0,0,0.0,0.0,N/A,N/A
+chunk_063,,0,0,0.0,0.0,N/A,N/A
+chunk_064,,0,0,0.0,0.0,N/A,N/A
+chunk_065,,0,0,0.0,0.0,N/A,N/A
+chunk_066,,0,0,0.0,0.0,N/A,N/A
+chunk_067,,0,0,0.0,0.0,N/A,N/A
+chunk_068,,0,0,0.0,0.0,N/A,N/A
+chunk_069,,0,0,0.0,0.0,N/A,N/A
+chunk_070,,0,0,0.0,0.0,N/A,N/A
+chunk_071,,0,0,0.0,0.0,N/A,N/A
+chunk_072,,0,0,0.0,0.0,N/A,N/A
+chunk_073,,0,0,0.0,0.0,N/A,N/A
+chunk_074,,0,0,0.0,0.0,N/A,N/A
+chunk_075,,0,0,0.0,0.0,N/A,N/A
+chunk_076,,0,0,0.0,0.0,N/A,N/A
+chunk_077,,0,0,0.0,0.0,N/A,N/A
+chunk_078,,0,0,0.0,0.0,N/A,N/A
+chunk_079,,0,0,0.0,0.0,N/A,N/A
+chunk_080,,0,0,0.0,0.0,N/A,N/A
+chunk_081,,0,0,0.0,0.0,N/A,N/A
+chunk_082,,0,0,0.0,0.0,N/A,N/A
+chunk_083,,0,0,0.0,0.0,N/A,N/A
+chunk_084,,0,0,0.0,0.0,N/A,N/A
+chunk_085,,0,0,0.0,0.0,N/A,N/A
+chunk_086,,0,0,0.0,0.0,N/A,N/A
+chunk_087,,0,0,0.0,0.0,N/A,N/A
+chunk_088,,0,0,0.0,0.0,N/A,N/A
+chunk_089,,0,0,0.0,0.0,N/A,N/A
+chunk_090,,0,0,0.0,0.0,N/A,N/A
+chunk_091,,0,0,0.0,0.0,N/A,N/A
+chunk_092,,0,0,0.0,0.0,N/A,N/A
+chunk_093,,0,0,0.0,0.0,N/A,N/A
+chunk_094,,0,0,0.0,0.0,N/A,N/A
+chunk_095,,0,0,0.0,0.0,N/A,N/A
+chunk_096,,0,0,0.0,0.0,N/A,N/A
+chunk_097,,0,0,0.0,0.0,N/A,N/A
+chunk_098,,0,0,0.0,0.0,N/A,N/A
+chunk_099,,0,0,0.0,0.0,N/A,N/A
+chunk_100,,0,0,0.0,0.0,N/A,N/A
+chunk_101,,0,0,0.0,0.0,N/A,N/A
+chunk_102,,0,0,0.0,0.0,N/A,N/A
+chunk_103,,0,0,0.0,0.0,N/A,N/A
+chunk_104,,0,0,0.0,0.0,N/A,N/A
+chunk_105,,0,0,0.0,0.0,N/A,N/A
+chunk_106,,0,0,0.0,0.0,N/A,N/A
+chunk_107,,0,0,0.0,0.0,N/A,N/A
+chunk_108,,0,0,0.0,0.0,N/A,N/A

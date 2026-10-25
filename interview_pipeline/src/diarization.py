@@ -11,11 +11,85 @@ class DiarizationSegment:
     end: float
     speaker: str
 
+def cluster_embeddings(
+    embeddings_matrix: np.ndarray,
+    valid_segments: list,
+    n_speakers: int = 2,
+    linkage: str = "complete"
+) -> list:
+    """
+    Cluster speaker embeddings into speaker labels.
+    
+    Args:
+        embeddings_matrix: (N, D) numpy array of L2-normalized embeddings.
+        valid_segments: List of dicts [{"start": float, "end": float}, ...] of length N.
+        n_speakers: Target number of speakers to cluster (default 2).
+        linkage: Agglomerative clustering linkage ('complete' recommended to prevent chaining collapse).
+        
+    Returns:
+        List of DiarizationSegment objects with speaker labels ("SPEAKER_00", "SPEAKER_01", etc.).
+    """
+    N = len(embeddings_matrix)
+    if N == 0 or len(valid_segments) == 0:
+        return []
+        
+    # Guard: check for non-finite values in matrix
+    if not np.isfinite(embeddings_matrix).all():
+        print("[DIARIZATION] Warning: Non-finite values detected in embeddings matrix.")
+        valid_mask = np.isfinite(embeddings_matrix).all(axis=1)
+        if not np.any(valid_mask):
+            return []
+        embeddings_matrix = embeddings_matrix[valid_mask]
+        valid_segments = [seg for i, seg in enumerate(valid_segments) if valid_mask[i]]
+        N = len(embeddings_matrix)
+        
+    def _get_seg_bounds(s):
+        if isinstance(s, dict):
+            return float(s['start']), float(s['end'])
+        return float(s.start), float(s.end)
+
+    if N <= 1 or n_speakers <= 1:
+        labels = np.zeros(N, dtype=int)
+    else:
+        from sklearn.cluster import AgglomerativeClustering
+        clustering = AgglomerativeClustering(
+            n_clusters=min(n_speakers, N),
+            metric='cosine',
+            linkage=linkage
+        )
+        labels = clustering.fit_predict(embeddings_matrix)
+
+        # Cluster separation diagnostics
+        unique_labels = np.unique(labels)
+        if len(unique_labels) >= 2:
+            durations = [_get_seg_bounds(seg)[1] - _get_seg_bounds(seg)[0] for seg in valid_segments]
+            counts = [int(np.sum(labels == lbl)) for lbl in unique_labels]
+            total_durs = [sum(durations[i] for i in range(N) if labels[i] == lbl) for lbl in unique_labels]
+            print(f"[DIARIZATION] Clustered {N} segments with linkage='{linkage}':")
+            for lbl, c, d in zip(unique_labels, counts, total_durs):
+                print(f"  -> SPEAKER_{lbl:02d}: {c} segments ({d:.1f}s)")
+            
+            # Check for degenerate/outlier cluster
+            if min(counts) <= 1 and max(counts) > 10:
+                print(f"[DIARIZATION] [WARNING] Degenerate cluster detected ({min(counts)} vs {max(counts)} segments).")
+
+    results = []
+    for seg, label in zip(valid_segments, labels):
+        s_start, s_end = _get_seg_bounds(seg)
+        results.append(DiarizationSegment(
+            start=s_start,
+            end=s_end,
+            speaker=f'SPEAKER_{label:02d}'
+        ))
+    return results
+
+
 def run_diarization(
     audio_path: Path,
     speech_segments: list,
     model_path: Path,
-    n_speakers: int = 2
+    n_speakers: int = 2,
+    linkage: str = "complete"
 ) -> list:
     """
     Extract speaker embeddings and cluster into speakers.
@@ -25,6 +99,7 @@ def run_diarization(
         speech_segments: Output from run_vad() — list of {"start", "end"} dicts.
         model_path: Path to WeSpeaker ResNet34 ONNX model file.
         n_speakers: Number of speakers to cluster (default 2).
+        linkage: Clustering linkage ('complete' default, prevents outlier chaining).
     
     Returns:
         List of DiarizationSegment objects with speaker labels ("SPEAKER_00", "SPEAKER_01", etc).
@@ -43,7 +118,6 @@ def run_diarization(
         import soundfile as sf
         import torch
         import torchaudio.compliance.kaldi as kaldi
-        from sklearn.cluster import AgglomerativeClustering
     except ImportError as e:
         print(f"[DIARIZATION] Missing dependency: {e}")
         return []
@@ -92,9 +166,18 @@ def run_diarization(
         
         outputs = session.run([output_name], {input_name: fbank_np})
         raw_emb = outputs[0][0]
+
+        # Guard against non-finite or invalid embeddings
+        if not np.isfinite(raw_emb).all():
+            print(f"[DIARIZATION] Skipping segment {start:.2f}-{end:.2f} (non-finite embedding values)")
+            continue
+
         norm = np.linalg.norm(raw_emb)
-        embedding = raw_emb / norm if norm > 0 else raw_emb
-        
+        if norm <= 0 or not np.isfinite(norm):
+            print(f"[DIARIZATION] Skipping segment {start:.2f}-{end:.2f} (zero or invalid embedding norm)")
+            continue
+
+        embedding = raw_emb / norm
         all_embeddings.append(embedding)
         valid_segments.append(seg)
         
@@ -109,24 +192,12 @@ def run_diarization(
         return []
         
     embeddings_matrix = np.stack(all_embeddings)
-    
-    if N <= 1:
-        labels = np.zeros(N, dtype=int)
-    else:
-        clustering = AgglomerativeClustering(
-            n_clusters=min(n_speakers, N),
-            metric='cosine',
-            linkage='average'
-        )
-        labels = clustering.fit_predict(embeddings_matrix)
-        
-    results = []
-    for seg, label in zip(valid_segments, labels):
-        results.append(DiarizationSegment(
-            start=seg['start'],
-            end=seg['end'],
-            speaker=f'SPEAKER_{label:02d}'
-        ))
+    results = cluster_embeddings(
+        embeddings_matrix,
+        valid_segments,
+        n_speakers=n_speakers,
+        linkage=linkage
+    )
         
     del session
     gc.collect()

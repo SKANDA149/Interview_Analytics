@@ -61,10 +61,10 @@ Interview_project/
 │   └── vosk/                # Offline Vosk speech model (vosk-model-small-en-us-0.15)
 │   └── wespeaker/           # WeSpeaker ResNet34 ONNX
 │   └── silero_vad/          # Silero VAD ONNX
-├── dashboard/               # Interactive Web Analytics Studio UI
-│   ├── index.html
-│   ├── styles.css
-│   └── app.js
+├── dashboard/               # React + TypeScript + Vite Frontend Dashboard
+│   ├── src/                 # Pages, components, api client, and utils
+│   ├── package.json         # Dashboard dependencies and build scripts
+│   └── README.md            # Frontend setup and usage guide
 ├── cli.py                   # Command-line interface entry point
 ├── requirements.txt         # Project dependencies
 └── README.md                # Project documentation
@@ -245,9 +245,35 @@ Invoke-RestMethod -Uri "http://127.0.0.1:8000/api/v1/interviews?limit=10&offset=
 - Original video filenames
 - A has_report boolean flag confirming available outputs
 
-### Database Inspection
-Since it's a standard SQLite database, you can inspect it manually with any SQLite viewer:
-``bash
+```bash
 sqlite3 data/interview_analytics.db
 sqlite> SELECT * FROM interviews;
-``
+```
+
+---
+
+## 🖥️ Web Frontend Dashboard (Phase 5)
+
+A standalone React + TypeScript + Vite web dashboard is located in `dashboard/`. It provides an intuitive GUI for drag-and-drop video uploads, live background job progress tracking, interview history browsing, deep-dive metric visualizations, and official report downloads.
+
+### Quick Run
+
+1. **Start the FastAPI Backend:**
+   ```powershell
+   .\.venv\Scripts\uvicorn.exe interview_pipeline.api.main:app --host 127.0.0.1 --port 8000
+   ```
+
+2. **Launch the Dashboard:**
+   ```powershell
+   cd dashboard
+   npm install
+   npm run dev
+   ```
+
+3. Open your browser at:
+   ```
+   http://127.0.0.1:3000
+   ```
+
+For detailed architecture, configuration, and testing commands, see [`dashboard/README.md`](dashboard/README.md).
+

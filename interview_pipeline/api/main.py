@@ -161,6 +161,17 @@ def run_interview_pipeline(job_id: str, video_path: Path, output_dir: Path, log_
         )
 
 
+@app.get("/")
+def root():
+    return {
+        "service": "Interview Analytics API",
+        "version": "1.0.0",
+        "health_url": "/health",
+        "docs_url": "/docs",
+        "dashboard_url": "http://127.0.0.1:3000"
+    }
+
+
 @app.get("/health")
 def health_check():
     return {"status": "ok", "service": "Interview Analytics API"}
