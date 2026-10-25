@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Memory-Optimized Asynchronous Multimedia Pipeline for Edge-Based Interview Analytics
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
@@ -277,3 +278,6 @@ A standalone React + TypeScript + Vite web dashboard is located in `dashboard/`.
 
 For detailed architecture, configuration, and testing commands, see [`dashboard/README.md`](dashboard/README.md).
 
+=======
+# Interview_Analytics
+>>>>>>> 3550f28779db2f43d1b521a4506c96ab5063423e
