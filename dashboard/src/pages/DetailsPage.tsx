@@ -13,6 +13,7 @@ import {
   formatPercentage,
   formatNumber,
 } from '../utils/formatters';
+import { getSemanticEvaluationDisplay } from '../utils/semanticEvaluation';
 import {
   ArrowLeft,
   Download,
@@ -42,6 +43,10 @@ export const DetailsPage: React.FC<Props> = ({ jobId, onBack }) => {
   const [error, setError] = useState<string | null>(null);
   const [transcriptCopied, setTranscriptCopied] = useState(false);
   const [isDownloading, setIsDownloading] = useState(false);
+  const semanticDisplay = getSemanticEvaluationDisplay(
+    report?.overall_metrics.average_semantic_score,
+    report?.overall_metrics.semantic_evaluation,
+  );
 
   const loadData = useCallback(async () => {
     try {
@@ -283,22 +288,22 @@ export const DetailsPage: React.FC<Props> = ({ jobId, onBack }) => {
                 value={metrics?.total_filler_words}
                 unit="words"
                 description="Detected hesitation markers"
-                tooltip="Matches vocal filler patterns: um, uh, like, so, and you know."
+                tooltip="Rule-based detection of vocal fillers and context-dependent hesitation markers. Ordinary uses of like, so, and you know are not automatically counted."
               />
 
               <MetricCard
                 title="Total Silence"
                 value={formatDurationSeconds(metrics?.total_silence_seconds)}
                 description="Aggregated pause duration"
-                tooltip="Sum of silent intervals between detected speech phrases."
+                tooltip="Transcript-derived silence across all speakers, including leading and trailing silence within each chunk."
               />
 
               <MetricCard
                 title="Long Pauses"
                 value={metrics?.total_long_pauses}
                 unit="instances"
-                description="Hesitation gaps ≥ 1.5s"
-                tooltip="Number of pauses exceeding 1.5 seconds during candidate responses."
+                description="Word gaps ≥ 1.5s"
+                tooltip="Number of gaps of at least 1.5 seconds between recognized words across all speakers, measured within each chunk."
               />
 
               <MetricCard
@@ -314,7 +319,7 @@ export const DetailsPage: React.FC<Props> = ({ jobId, onBack }) => {
                 value={visual?.presence_pct}
                 unit="%"
                 description="Candidate in camera frame"
-                tooltip="Percentage of candidate speech duration where candidate face was detected by YuNet."
+                tooltip="Percentage of scored frames sampled during estimated candidate speech intervals where a face was detected by YuNet. Speaker roles are assigned heuristically."
               />
             </div>
           </div>
@@ -327,7 +332,7 @@ export const DetailsPage: React.FC<Props> = ({ jobId, onBack }) => {
                 <div className="flex items-center gap-2">
                   <Eye className="w-4 h-4 text-emerald-600" />
                   <h4 className="text-sm font-semibold text-slate-900 dark:text-white">
-                    Visual Presence & Posture Analysis
+                    Visual Presence & Visibility
                   </h4>
                 </div>
                 <span className="text-[11px] font-medium px-2 py-0.5 rounded bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
@@ -376,38 +381,38 @@ export const DetailsPage: React.FC<Props> = ({ jobId, onBack }) => {
                 <div className="flex items-center gap-2">
                   <MessageSquare className="w-4 h-4 text-blue-600" />
                   <h4 className="text-sm font-semibold text-slate-900 dark:text-white">
-                    Semantic Content Evaluation
+                    Rubric Reference Evaluation
                   </h4>
                 </div>
                 <span className="text-[11px] font-medium px-2 py-0.5 rounded bg-amber-50 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-800">
-                  Context-Limited
+                  {semanticDisplay.showProgress ? 'Rubric Supplied' : 'Unavailable'}
                 </span>
               </div>
 
               <div className="p-3 rounded-lg bg-slate-50 dark:bg-slate-800/60 space-y-1">
                 <div className="flex items-baseline justify-between">
-                  <span className="text-xs text-slate-500">Average Chunk Similarity:</span>
+                  <span className="text-xs text-slate-500">{semanticDisplay.label}:</span>
                   <span className="text-lg font-bold text-slate-900 dark:text-white">
-                    {formatPercentage(metrics?.average_semantic_score)}
+                    {semanticDisplay.value}
                   </span>
                 </div>
-                <div className="w-full bg-slate-200 dark:bg-slate-700 h-2 rounded-full overflow-hidden">
-                  <div
-                    className="bg-blue-600 h-full rounded-full transition-all"
-                    style={{
-                      width: `${Math.min(100, Math.max(0, metrics?.average_semantic_score || 0))}%`,
-                    }}
-                  />
-                </div>
+                {semanticDisplay.showProgress && (
+                  <div className="w-full bg-slate-200 dark:bg-slate-700 h-2 rounded-full overflow-hidden">
+                    <div
+                      className="bg-blue-600 h-full rounded-full transition-all"
+                      style={{ width: `${Math.min(100, Math.max(0, metrics?.average_semantic_score ?? 0))}%` }}
+                    />
+                  </div>
+                )}
               </div>
 
               <div className="p-3 rounded-lg border border-amber-200 dark:border-amber-800/60 bg-amber-50/50 dark:bg-amber-950/20 text-xs text-amber-900 dark:text-amber-300 leading-relaxed space-y-1">
                 <div className="font-semibold flex items-center gap-1.5">
                   <AlertTriangle className="w-3.5 h-3.5 text-amber-600 shrink-0" />
-                  Technical Limitation Note:
+                  Evaluation status:
                 </div>
                 <p className="text-[11px] opacity-90">
-                  Sentence-Transformers (MiniLM-L6-v2) currently compares chunks against a static benchmark answer ("Data structures..."). This metric indicates vocabulary alignment with technical keys, not overall human conversational intelligence.
+                  {semanticDisplay.reason}
                 </p>
               </div>
             </div>

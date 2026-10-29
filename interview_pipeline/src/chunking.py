@@ -2,6 +2,10 @@ from pathlib import Path
 import re
 import subprocess
 import time
+import csv
+import math
+
+from interview_pipeline.src.audio_extract import get_media_duration
 
 
 def _chunk_sort_key(path: Path) -> int:
@@ -38,6 +42,8 @@ def split_video_into_chunks(input_path: Path, output_dir: Path, chunk_duration: 
         "-c", "copy",
         "-f", "segment",
         "-segment_time", str(chunk_duration),
+        "-segment_list", str(output_dir / "chunk_times.csv"),
+        "-segment_list_type", "csv",
         "-reset_timestamps", "1",
         str(output_pattern)
     ]
@@ -59,3 +65,38 @@ def split_video_into_chunks(input_path: Path, output_dir: Path, chunk_duration: 
     print(f"[INFO] Generated {len(chunks)} chunks")
 
     return chunks
+
+
+def get_chunk_time_ranges(chunks: list, chunk_duration: float = 10.0) -> dict:
+    """Return original-video time windows, preferring FFmpeg's segment list.
+
+    Legacy cached chunks without a manifest use cumulative measured media
+    durations; that fallback is approximate because container/audio padding
+    can differ from the original video timestamps.
+    """
+    if not chunks:
+        return {}
+    manifest = Path(chunks[0]).parent / "chunk_times.csv"
+    try:
+        with manifest.open(newline="", encoding="utf-8") as source:
+            rows = list(csv.reader(source))
+        windows = {}
+        previous_end = 0.0
+        for row in rows:
+            name, start, end = Path(row[0]).name, float(row[1]), float(row[2])
+            if not (math.isfinite(start) and math.isfinite(end) and start >= previous_end and end > start):
+                raise ValueError("Invalid segment bounds")
+            windows[name] = (start, end)
+            previous_end = end
+        if set(windows) != {Path(chunk).name for chunk in chunks}:
+            raise ValueError("Segment list does not match chunk files")
+        return windows
+    except (OSError, ValueError, IndexError):
+        print("[PIPELINE] No valid segment time manifest; using cumulative measured durations for cached chunks.")
+        windows = {}
+        start = 0.0
+        for chunk in chunks:
+            duration = get_media_duration(chunk, default_sec=float(chunk_duration))
+            windows[Path(chunk).name] = (start, start + duration)
+            start += duration
+        return windows

@@ -92,7 +92,7 @@ export const TimelineTable: React.FC<Props> = ({ rows }) => {
               <th className="py-2.5 px-3 text-right">Silence (s)</th>
               <th className="py-2.5 px-3 text-right">Pauses</th>
               <th className="py-2.5 px-3 text-right">Face Visibility</th>
-              <th className="py-2.5 px-3 text-right">Semantic Score</th>
+              <th className="py-2.5 px-3 text-right">Reference Alignment</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-100 dark:divide-slate-800/60">
@@ -174,12 +174,17 @@ export const TimelineTable: React.FC<Props> = ({ rows }) => {
                         )}
                       </td>
                       <td className="py-2.5 px-3 text-right font-medium">
-                        {r.semantic_score !== 'N/A' ? (
-                          <span className="text-slate-700 dark:text-slate-300">
-                            {r.semantic_score}
+                        {r.semantic_status === 'not_evaluated' ? (
+                          <span className="text-slate-400" title={r.semantic_reason || 'No rubric provided'}>
+                            Not evaluated
                           </span>
                         ) : (
-                          <span className="text-slate-400">N/A</span>
+                          <span
+                            className="text-slate-700 dark:text-slate-300"
+                            title={r.semantic_status === 'legacy_similarity' ? 'Historical similarity; rubric unknown.' : 'Alignment with supplied rubric.'}
+                          >
+                            {r.semantic_score}
+                          </span>
                         )}
                       </td>
                     </tr>

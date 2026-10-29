@@ -71,7 +71,7 @@ export const OverviewPage: React.FC<Props> = ({
       <div className="bg-gradient-to-r from-blue-700 via-blue-600 to-indigo-700 rounded-2xl p-6 sm:p-8 text-white shadow-lg relative overflow-hidden">
         <div className="relative z-10 max-w-2xl">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/15 backdrop-blur-sm text-xs font-medium mb-3">
-            <Cpu className="w-3.5 h-3.5" /> Edge-Optimized O(1) Memory Architecture
+            <Cpu className="w-3.5 h-3.5" /> Local CPU Multimedia Processing
           </div>
           <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">
             Automated Video Interview Analytics
@@ -237,7 +237,7 @@ export const OverviewPage: React.FC<Props> = ({
             <Cpu className="w-4 h-4 text-blue-600" /> Micro-Chunk Pipelining
           </div>
           <p className="text-xs text-slate-500 leading-relaxed">
-            10-second FFmpeg stream segments keep peak RAM footprint at ~170MB, enabling processing on consumer laptops.
+            FFmpeg splits recordings into chunks for processing on consumer laptops. Memory use varies with recording length, models, and visual samples.
           </p>
         </div>
 
@@ -246,7 +246,7 @@ export const OverviewPage: React.FC<Props> = ({
             <Layers className="w-4 h-4 text-purple-600" /> Automatic Diarization
           </div>
           <p className="text-xs text-slate-500 leading-relaxed">
-            WeSpeaker ResNet34 and Silero VAD isolate the candidate from the interviewer before visual scoring.
+            WeSpeaker ResNet34 and Silero VAD group speech into speakers. A duration heuristic assigns candidate and interviewer roles before visual sampling.
           </p>
         </div>
       </div>

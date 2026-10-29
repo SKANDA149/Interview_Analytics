@@ -11,13 +11,13 @@ import json
 import sys
 import time
 
-from interview_pipeline.src.chunking import split_video_into_chunks, _chunk_sort_key
+from interview_pipeline.src.chunking import split_video_into_chunks, _chunk_sort_key, get_chunk_time_ranges
 from interview_pipeline.src.audio_extract import extract_audio, get_media_duration
 from interview_pipeline.src.stt import transcribe_audio
 from interview_pipeline.src.filler_detection import detect_filler_words
 from interview_pipeline.src.speech_analysis import analyze_speech_fluency
 from interview_pipeline.src.report_generator import generate_final_report
-from interview_pipeline.src.nlp_scoring import evaluate_technical_answer
+from interview_pipeline.src.nlp_scoring import evaluate_chunk_without_rubric
 from interview_pipeline.src.diarization import load_segments
 from interview_pipeline.src.visual_presence import (
     run_visual_presence_analysis,
@@ -102,6 +102,7 @@ def run_pipeline(
 
     stage_timings["chunking"] = round(time.time() - t0, 2)
     print(f"[PIPELINE] Stage 1 completed in {stage_timings['chunking']:.2f}s")
+    chunk_time_ranges = get_chunk_time_ranges(chunks, chunk_duration)
 
     if not chunks:
         print("[ERROR] No chunks produced — video may be empty or unreadable.", file=sys.stderr)
@@ -192,17 +193,7 @@ def run_pipeline(
     print(f"\n--- STAGES 2-4: Audio / STT / Speech / NLP / Visual bucketing ---")
     t0 = time.time()
 
-    # Hard-coded ideal answer placeholder for NLP scoring.
-    # NOTE: Comparing every 10-second chunk against one ideal answer is a known
-    # semantic limitation. Kept for backward compatibility; a per-question
-    # scoring approach should replace this in a future phase.
-    ideal_answer = (
-        "Data structures are used to organize, store, and manage data "
-        "efficiently so it can be accessed and modified easily."
-    )
-
     for i, chunk in enumerate(chunks):
-        chunk_idx = i  # 0-based
         chunk_start_time = time.time()
         print(f"\n[PIPELINE] Processing chunk {i + 1}/{len(chunks)}: {chunk.name}")
 
@@ -247,13 +238,18 @@ def run_pipeline(
             "active_speech_duration_sec": fluency_result["active_speech_duration_sec"],
         }
 
-        # ── NLP scoring ──
-        nlp_result = evaluate_technical_answer(transcript_result["transcript"], ideal_answer)
-        transcript_result["content_analysis"] = nlp_result
+        # ── Semantic evaluation availability ──
+        # Chunk transcripts cannot reliably identify interviewer questions,
+        # candidate response turns, or their question-specific rubrics. Do
+        # not turn a generic chunk comparison into an answer-quality score.
+        transcript_result["content_analysis"] = evaluate_chunk_without_rubric(
+            transcript_result["transcript"]
+        )
 
         # ── Visual bucketing ──
-        chunk_start_sec = chunk_idx * float(chunk_duration)
-        chunk_end_sec = chunk_start_sec + actual_chunk_dur
+        chunk_start_sec, chunk_end_sec = chunk_time_ranges[chunk.name]
+        transcript_result["chunk_start_sec"] = chunk_start_sec
+        transcript_result["chunk_end_sec"] = chunk_end_sec
         if visual_analysis_result is not None:
             chunk_visual = bucket_visual_results_by_chunk(
                 visual_analysis_result, chunk_start_sec, chunk_end_sec

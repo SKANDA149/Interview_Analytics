@@ -44,4 +44,26 @@ chunk_000,"testing face visibility",0,0,2.5,120.0,92.5%,92.5%,15.0%`;
     expect(rows[0].face_visibility_val).toBe(92.5);
     expect(rows[0].visual_stability).toBe('92.5%');
   });
+
+  it('preserves explicit unavailable semantic evaluation metadata', () => {
+    const csv = `Chunk_ID,Transcript,Filler_Words,Long_Pauses,Silence_Seconds,WPM,Face_Visibility,Visual_Stability,Semantic_Score,Semantic_Status,Semantic_Reason
+chunk_000,"interviewer question",0,0,2.5,120.0,92.5%,92.5%,N/A,not_evaluated,No rubric provided`;
+
+    const rows = parseTimelineCsv(csv);
+
+    expect(rows[0].semantic_score_val).toBeNull();
+    expect(rows[0].semantic_status).toBe('not_evaluated');
+    expect(rows[0].semantic_reason).toBe('No rubric provided');
+  });
+
+  it('reads exports with measured time columns without changing metric parsing', () => {
+    const csv = `Chunk_ID,Transcript,Filler_Words,Long_Pauses,Silence_Seconds,WPM,Face_Visibility,Visual_Stability,Semantic_Score,Semantic_Status,Semantic_Reason,Start_Seconds,End_Seconds
+chunk_001,"a response",1,0,1.2,140.0,N/A,N/A,N/A,not_evaluated,No rubric provided,12.233333,20.433333`;
+    const [row] = parseTimelineCsv(csv);
+    expect(row.chunk_id).toBe('chunk_001');
+    expect(row.wpm).toBe(140);
+    expect(row.filler_words).toBe(1);
+    expect(row.face_visibility_val).toBeNull();
+    expect(row.semantic_status).toBe('not_evaluated');
+  });
 });

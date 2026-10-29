@@ -141,13 +141,17 @@ def update_job_status(
         raise
 
 def list_jobs(limit: int = 20, offset: int = 0, db_path: Optional[Path] = None) -> List[Dict[str, Any]]:
-    """List jobs with pagination, newest first."""
+    """List jobs newest first, breaking timestamp ties by job_id descending.
+
+    Job IDs provide a stable tie-breaker, not an insertion-time guarantee.
+    Apply pagination after both sort keys so tied records have a fixed order.
+    """
     conn = get_connection(db_path)
     cursor = conn.cursor()
     cursor.execute("""
         SELECT job_id, original_filename, status, created_at, completed_at, report_path
         FROM interviews
-        ORDER BY created_at DESC
+        ORDER BY created_at DESC, job_id DESC
         LIMIT ? OFFSET ?
     """, (limit, offset))
     

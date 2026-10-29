@@ -245,7 +245,7 @@ def upload_interview(request: Request, file: UploadFile = File(...)):
     }
 
 @app.get("/api/v1/interviews", response_model=JobHistoryList)
-def get_interviews_history(limit: int = Query(20, le=100), offset: int = Query(0, ge=0)):
+def get_interviews_history(limit: int = Query(20, ge=1, le=100), offset: int = Query(0, ge=0)):
     items = list_jobs(limit=limit, offset=offset)
     return {
         "items": items,

@@ -64,9 +64,18 @@ export interface OverallMetrics {
   overall_video_wpm?: number | null;
   active_speech_wpm?: number | null;
   average_words_per_minute?: number; // Deprecated backward-compatible alias for average_active_chunk_wpm
-  average_face_visibility_pct?: number;
-  average_visual_stability?: number; // Deprecated backward-compatible alias for average_face_visibility_pct
-  average_semantic_score: number;
+  average_face_visibility_pct?: number | null;
+  average_visual_stability?: number | null; // Deprecated backward-compatible alias for average_face_visibility_pct
+  // Null when no trustworthy response/rubric evaluation was available.
+  average_semantic_score: number | null;
+  semantic_evaluation?: SemanticEvaluation;
+}
+
+export type SemanticEvaluationStatus = 'evaluated' | 'not_evaluated' | 'legacy_similarity';
+
+export interface SemanticEvaluation {
+  status: SemanticEvaluationStatus;
+  reason: string | null;
 }
 
 export interface AbsenceRun {
@@ -110,5 +119,7 @@ export interface TimelineRow {
   visual_stability_val: number | null; // Deprecated backward-compatible alias
   semantic_score: string;
   semantic_score_val: number | null;
+  semantic_status: SemanticEvaluationStatus;
+  semantic_reason: string | null;
 }
 

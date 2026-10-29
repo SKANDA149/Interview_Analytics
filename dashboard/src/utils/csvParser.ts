@@ -55,6 +55,8 @@ export function parseTimelineCsv(csvText: string): TimelineRow[] {
       ? headers.indexOf('face_visibility')
       : headers.indexOf('visual_stability');
   const semanticIdx = headers.indexOf('semantic_score');
+  const semanticStatusIdx = headers.indexOf('semantic_status');
+  const semanticReasonIdx = headers.indexOf('semantic_reason');
 
   const rows: TimelineRow[] = [];
 
@@ -76,6 +78,10 @@ export function parseTimelineCsv(csvText: string): TimelineRow[] {
     const semantic_raw = semanticIdx >= 0 ? fields[semanticIdx] || 'N/A' : 'N/A';
     const semantic_num = parseFloat(semantic_raw.replace('%', ''));
     const semantic_score_val = isNaN(semantic_num) ? null : semantic_num;
+    const semantic_status = semanticStatusIdx >= 0
+      ? fields[semanticStatusIdx] || 'not_evaluated'
+      : semantic_score_val === null ? 'not_evaluated' : 'legacy_similarity';
+    const semantic_reason = semanticReasonIdx >= 0 ? fields[semanticReasonIdx] || null : null;
 
     rows.push({
       chunk_id,
@@ -90,6 +96,8 @@ export function parseTimelineCsv(csvText: string): TimelineRow[] {
       visual_stability_val: visual_val,
       semantic_score: semantic_raw,
       semantic_score_val,
+      semantic_status: semantic_status as TimelineRow['semantic_status'],
+      semantic_reason,
     });
   }
 

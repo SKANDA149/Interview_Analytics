@@ -40,6 +40,8 @@ def generate_final_report(
     wpm_list = []
     visual_scores = []
     semantic_scores = []
+    semantic_statuses = []
+    semantic_reasons = []
     
     csv_rows = []
 
@@ -88,9 +90,23 @@ def generate_final_report(
 
             # NLP / Content Analytics
             content_analysis = data.get("content_analysis", {})
-            semantic_score = content_analysis.get("semantic_score", "N/A")
-            if isinstance(semantic_score, (int, float)) and semantic_score > 0:
+            semantic_score = content_analysis.get("semantic_score")
+            scoring_status = content_analysis.get("scoring_status")
+            scoring_reason = content_analysis.get("scoring_reason")
+            # Reports created before Phase 6.4 lack status metadata. Preserve
+            # their numeric values for compatibility, but mark them as legacy
+            # similarity rather than validated answer evaluation.
+            is_legacy_score = scoring_status is None and isinstance(semantic_score, (int, float))
+            if scoring_status == "evaluated" and isinstance(semantic_score, (int, float)):
                 semantic_scores.append(semantic_score)
+                semantic_statuses.append("evaluated")
+            elif is_legacy_score:
+                semantic_scores.append(semantic_score)
+                semantic_statuses.append("legacy_similarity")
+            elif scoring_status == "not_evaluated":
+                semantic_statuses.append("not_evaluated")
+                if scoring_reason:
+                    semantic_reasons.append(str(scoring_reason))
 
             # Aggregate totals
             total_fillers += filler_count
@@ -102,6 +118,8 @@ def generate_final_report(
             # Add to CSV row
             csv_rows.append({
                 "Chunk_ID": chunk_id,
+                "Start_Seconds": data.get("chunk_start_sec", ""),
+                "End_Seconds": data.get("chunk_end_sec", ""),
                 "Transcript": transcript,
                 "Filler_Words": filler_count,
                 "Long_Pauses": pauses,
@@ -109,7 +127,9 @@ def generate_final_report(
                 "WPM": wpm,
                 "Face_Visibility": f"{visual_vis}%" if str(visual_vis) != "N/A" else "N/A",
                 "Visual_Stability": f"{visual_vis}%" if str(visual_vis) != "N/A" else "N/A",
-                "Semantic_Score": f"{semantic_score}%" if str(semantic_score) != "N/A" else "N/A",
+                "Semantic_Score": f"{semantic_score}%" if isinstance(semantic_score, (int, float)) else "N/A",
+                "Semantic_Status": scoring_status or ("legacy_similarity" if is_legacy_score else "not_evaluated"),
+                "Semantic_Reason": scoring_reason or "",
             })
 
     # Calculate overall averages
@@ -126,11 +146,21 @@ def generate_final_report(
     )
 
     average_face_visibility = (
-        round(sum(visual_scores) / len(visual_scores), 1) if visual_scores else 100.0
+        round(sum(visual_scores) / len(visual_scores), 1) if visual_scores else None
     )
-    average_semantic = (
-        round(sum(semantic_scores) / len(semantic_scores), 1) if semantic_scores else 0.0
-    )
+    average_semantic = round(sum(semantic_scores) / len(semantic_scores), 1) if semantic_scores else None
+    if "evaluated" in semantic_statuses:
+        semantic_evaluation = {"status": "evaluated", "reason": None}
+    elif "legacy_similarity" in semantic_statuses:
+        semantic_evaluation = {
+            "status": "legacy_similarity",
+            "reason": "Historical similarity score; rubric and response pairing are unknown.",
+        }
+    else:
+        semantic_evaluation = {
+            "status": "not_evaluated",
+            "reason": semantic_reasons[0] if semantic_reasons else "No rubric provided",
+        }
     
     # 1. Create Final Aggregated JSON (One authoritative schema)
     final_summary = {
@@ -152,7 +182,8 @@ def generate_final_report(
             "average_words_per_minute": average_active_chunk_wpm,  # Deprecated backward-compatible alias
             "average_face_visibility_pct": average_face_visibility,
             "average_visual_stability": average_face_visibility,  # Deprecated backward-compatible alias
-            "average_semantic_score": average_semantic
+            "average_semantic_score": average_semantic,
+            "semantic_evaluation": semantic_evaluation,
         },
         "visual_summary_whole_video": visual_summary or {},
         "full_interview_transcript": " ".join(full_transcript)
@@ -167,7 +198,8 @@ def generate_final_report(
     csv_report_path = reports_dir / "interview_timeline.csv"
     csv_headers = [
         "Chunk_ID", "Transcript", "Filler_Words", "Long_Pauses", 
-        "Silence_Seconds", "WPM", "Face_Visibility", "Visual_Stability", "Semantic_Score"
+        "Silence_Seconds", "WPM", "Face_Visibility", "Visual_Stability", "Semantic_Score",
+        "Semantic_Status", "Semantic_Reason", "Start_Seconds", "End_Seconds"
     ]
     
     with open(csv_report_path, "w", newline="", encoding="utf-8") as f:

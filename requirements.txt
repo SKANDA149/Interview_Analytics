@@ -14,3 +14,11 @@ pandas
 fastapi
 uvicorn
 python-multipart
+
+# Direct dependencies of VAD, speaker embeddings and clustering
+torch
+torchaudio
+silero-vad
+soundfile
+onnxruntime
+scikit-learn
