@@ -1,12 +1,10 @@
 vosk
 ffmpeg-python
 opencv-python
-# Pinned: mediapipe>=1.0 hard-requires a system OpenGL/EGL library even for
-# CPU-only inference and can fail with "OSError: libEGL.so.1: cannot open
-# shared object file" on machines without display libraries - conflicts with
-# this project's CPU-only, no-GPU deployment target. 0.10.14 runs cleanly
-# CPU-only via the TFLite XNNPACK delegate. Don't bump without re-verifying.
-mediapipe==0.10.14
+# Windows demo environment verified by Phase 6.5 real inference.
+mediapipe==1.0.1; sys_platform == "win32"
+# Retain the historical non-Windows pin; not revalidated in this phase.
+mediapipe==0.10.14; sys_platform != "win32"
 sentence-transformers
 psutil
 numpy
@@ -22,3 +20,6 @@ silero-vad
 soundfile
 onnxruntime
 scikit-learn
+
+# Requirement/version checks in scripts/demo_preflight.py
+packaging
