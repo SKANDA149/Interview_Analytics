@@ -70,6 +70,17 @@ def test_unknown_job_404():
     response = client.get("/api/v1/interviews/not-a-real-job")
     assert response.status_code == 404
 
+
+def test_job_status_includes_original_filename_without_changing_report_metadata(tmp_path):
+    db_module.create_job('named-job', 'Original Interview.mp4', str(tmp_path), 'log', 'report', 'timeline')
+    response = client.get('/api/v1/interviews/named-job')
+    assert response.status_code == 200
+    payload = response.json()
+    assert payload['job_id'] == 'named-job'
+    assert payload['original_filename'] == 'Original Interview.mp4'
+    assert payload['status'] == 'queued'
+    assert payload['submission_time']
+
 def test_report_not_ready(tmp_path):
     job_id = "fake-job-id"
     db_module.create_job(job_id, "file.mp4", str(tmp_path), str(tmp_path), str(tmp_path), str(tmp_path))

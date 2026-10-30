@@ -18,6 +18,7 @@ export interface JobUploadResponse {
 
 export interface JobStatusResponse {
   job_id: string;
+  original_filename?: string | null;
   status: JobStatus;
   submission_time: string;
   start_time: string | null;

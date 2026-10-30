@@ -50,13 +50,24 @@ async function handleResponse<T>(res: Response): Promise<T> {
   return res.json() as Promise<T>;
 }
 
+async function fetchApi(url: string, options?: RequestInit): Promise<Response> {
+  try {
+    return await fetch(url, options);
+  } catch {
+    throw new ApiError(
+      `Unable to reach the backend at ${API_BASE_URL}. Start the API and check the dashboard connection.`,
+      0,
+    );
+  }
+}
+
 export const apiClient = {
   getBaseUrl(): string {
     return API_BASE_URL;
   },
 
   async checkHealth(): Promise<HealthResponse> {
-    const res = await fetch(`${API_BASE_URL}/health`);
+    const res = await fetchApi(`${API_BASE_URL}/health`);
     return handleResponse<HealthResponse>(res);
   },
 
@@ -65,7 +76,7 @@ export const apiClient = {
     formData.append('file', file);
 
     // Let the browser set the multipart/form-data boundary automatically!
-    const res = await fetch(`${API_BASE_URL}/api/v1/interviews`, {
+    const res = await fetchApi(`${API_BASE_URL}/api/v1/interviews`, {
       method: 'POST',
       body: formData,
     });
@@ -73,7 +84,7 @@ export const apiClient = {
   },
 
   async getJobStatus(jobId: string): Promise<JobStatusResponse> {
-    const res = await fetch(`${API_BASE_URL}/api/v1/interviews/${encodeURIComponent(jobId)}`);
+    const res = await fetchApi(`${API_BASE_URL}/api/v1/interviews/${encodeURIComponent(jobId)}`);
     return handleResponse<JobStatusResponse>(res);
   },
 
@@ -82,17 +93,17 @@ export const apiClient = {
       limit: String(limit),
       offset: String(offset),
     });
-    const res = await fetch(`${API_BASE_URL}/api/v1/interviews?${params.toString()}`);
+    const res = await fetchApi(`${API_BASE_URL}/api/v1/interviews?${params.toString()}`);
     return handleResponse<JobHistoryResponse>(res);
   },
 
   async getJobReport(jobId: string): Promise<FinalReport> {
-    const res = await fetch(`${API_BASE_URL}/api/v1/interviews/${encodeURIComponent(jobId)}/report`);
+    const res = await fetchApi(`${API_BASE_URL}/api/v1/interviews/${encodeURIComponent(jobId)}/report`);
     return handleResponse<FinalReport>(res);
   },
 
   async getJobTimelineCsv(jobId: string): Promise<string> {
-    const res = await fetch(`${API_BASE_URL}/api/v1/interviews/${encodeURIComponent(jobId)}/timeline`);
+    const res = await fetchApi(`${API_BASE_URL}/api/v1/interviews/${encodeURIComponent(jobId)}/timeline`);
     if (!res.ok) {
       let detail = `Failed to download timeline (status ${res.status})`;
       try {
@@ -107,7 +118,7 @@ export const apiClient = {
   },
 
   async getJobLogs(jobId: string, maxLines = 500): Promise<JobLogsResponse> {
-    const res = await fetch(
+    const res = await fetchApi(
       `${API_BASE_URL}/api/v1/interviews/${encodeURIComponent(jobId)}/logs?max_lines=${maxLines}`
     );
     return handleResponse<JobLogsResponse>(res);

@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { apiClient } from '../api/client';
+import { apiClient, ApiError } from '../api/client';
 import { JobStatusResponse } from '../api/types';
 import { StatusBadge } from '../components/StatusBadge';
 import { LogViewer } from '../components/LogViewer';
 import { formatFileSize } from '../utils/formatters';
+import { readActiveJob, saveActiveJob, clearActiveJob, jobElapsedSeconds } from '../utils/activeJob';
 import {
   UploadCloud,
   FileVideo,
@@ -31,9 +32,12 @@ export const UploadPage: React.FC<Props> = ({ onViewReport }) => {
   const [uploadError, setUploadError] = useState<string | null>(null);
 
   // Active Job Tracking
-  const [activeJobId, setActiveJobId] = useState<string | null>(null);
+  const [savedJob] = useState(() => readActiveJob(apiClient.getBaseUrl()));
+  const [activeJobId, setActiveJobId] = useState<string | null>(savedJob?.job_id ?? null);
   const [jobStatus, setJobStatus] = useState<JobStatusResponse | null>(null);
-  const [elapsedSeconds, setElapsedSeconds] = useState(0);
+  const [elapsedSeconds, setElapsedSeconds] = useState(() => savedJob ? jobElapsedSeconds({ ...savedJob, completion_time: null }) : 0);
+  const [pollError, setPollError] = useState<string | null>(null);
+  const [pollVersion, setPollVersion] = useState(0);
   const [failedLogs, setFailedLogs] = useState<string[]>([]);
   const [loadingLogs, setLoadingLogs] = useState(false);
 
@@ -95,11 +99,14 @@ export const UploadPage: React.FC<Props> = ({ onViewReport }) => {
       setElapsedSeconds(0);
 
       const res = await apiClient.uploadInterview(selectedFile);
+      const submissionTime = new Date().toISOString();
+      saveActiveJob(apiClient.getBaseUrl(), { job_id: res.job_id, submission_time: submissionTime });
+      setPollError(null);
       setActiveJobId(res.job_id);
       setJobStatus({
         job_id: res.job_id,
         status: res.status,
-        submission_time: new Date().toISOString(),
+        submission_time: submissionTime,
         start_time: null,
         completion_time: null,
         error: null,
@@ -116,7 +123,7 @@ export const UploadPage: React.FC<Props> = ({ onViewReport }) => {
     if (!activeJobId) return;
 
     let mounted = true;
-    let pollInterval: ReturnType<typeof setInterval> | null = null;
+    let pollTimeout: ReturnType<typeof setTimeout> | null = null;
     let timerInterval: ReturnType<typeof setInterval> | null = null;
 
     // Increment elapsed timer while job is queued or running
@@ -125,14 +132,18 @@ export const UploadPage: React.FC<Props> = ({ onViewReport }) => {
     }, 1000);
 
     const poll = async () => {
+      let terminal = false;
       try {
         const statusData = await apiClient.getJobStatus(activeJobId);
         if (!mounted) return;
         setJobStatus(statusData);
+        setPollError(null);
+        setElapsedSeconds(jobElapsedSeconds(statusData));
 
         // If job completed or failed, stop polling
         if (statusData.status === 'completed' || statusData.status === 'failed') {
-          if (pollInterval) clearInterval(pollInterval);
+          terminal = true;
+          clearActiveJob(apiClient.getBaseUrl());
           if (timerInterval) clearInterval(timerInterval);
 
           // If failed, auto-fetch logs for debugging
@@ -147,24 +158,39 @@ export const UploadPage: React.FC<Props> = ({ onViewReport }) => {
               if (mounted) setLoadingLogs(false);
             }
           }
+        } else {
+          saveActiveJob(apiClient.getBaseUrl(), { job_id: statusData.job_id, submission_time: statusData.submission_time });
         }
       } catch (err) {
-        console.warn('Status poll failed temporarily:', err);
+        if (!mounted) return;
+        if (err instanceof ApiError && err.status === 404) {
+          terminal = true;
+          clearActiveJob(apiClient.getBaseUrl());
+          if (timerInterval) clearInterval(timerInterval);
+          setActiveJobId(null);
+          setJobStatus(null);
+          setUploadError('The previous analysis is no longer available. Select a video to start another analysis.');
+        } else {
+          setPollError(err instanceof Error ? err.message : 'Unable to check analysis status.');
+        }
+      } finally {
+        if (mounted && !terminal) pollTimeout = setTimeout(poll, 3000);
       }
     };
 
     poll();
-    pollInterval = setInterval(poll, 3000);
 
     return () => {
       mounted = false;
-      if (pollInterval) clearInterval(pollInterval);
+      if (pollTimeout) clearTimeout(pollTimeout);
       if (timerInterval) clearInterval(timerInterval);
     };
-  }, [activeJobId]);
+  }, [activeJobId, pollVersion]);
 
   const resetForm = () => {
     setSelectedFile(null);
+    clearActiveJob(apiClient.getBaseUrl());
+    setPollError(null);
     setFileError(null);
     setUploadError(null);
     setActiveJobId(null);
@@ -290,6 +316,13 @@ export const UploadPage: React.FC<Props> = ({ onViewReport }) => {
       ) : (
         /* Real-Time Processing Status Screen */
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm space-y-6">
+          {!jobStatus && <p role="status" className="text-sm text-slate-500">Restoring your analysis status...</p>}
+          {pollError && (
+            <div role="alert" className="p-4 rounded-xl border border-amber-300 bg-amber-50 text-amber-900 text-sm space-y-2">
+              <p>{pollError} Status checks will retry automatically.</p>
+              <button type="button" onClick={() => setPollVersion((version) => version + 1)} className="underline font-medium">Retry status check</button>
+            </div>
+          )}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100 dark:border-slate-800">
             <div>
               <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">

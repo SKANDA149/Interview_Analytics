@@ -11,7 +11,7 @@ A local, CPU-oriented application for reviewing interview recordings through tra
 - Heuristic candidate/interviewer roles; 5 FPS visual sampling during estimated candidate speech with YuNet and MediaPipe pose landmarks.
 - Speaking-rate variants, transcript-derived silence/long pauses, context-aware fillers and JSON/CSV reports.
 - FastAPI uploads, one worker, isolated job outputs, logs and SQLite history across restarts.
-- React dashboard: uploads, polling, history, charts, searchable chunk timelines, expandable transcripts and downloads.
+- React dashboard: uploads, refresh-safe job tracking, history, charts, searchable chunk timelines, expandable transcripts and downloads.
 - Default semantic evaluation: **Not evaluated — No rubric provided**. An explicit response/rubric helper exists; reliable question/answer pairing and rubric-entry UI/API do not.
 
 Chunking reduces some processing working sets, but visual sampling currently retains frames in memory. Memory is not guaranteed constant with recording length. No fixed RAM or runtime guarantee is made.
@@ -123,7 +123,7 @@ Speech metrics include all recognized speakers. Visual metrics describe sampled 
 | GET | /, /health, /docs, /openapi.json | Metadata, health and API docs |
 | POST | /api/v1/interviews | Multipart file upload, HTTP 202 and job ID |
 | GET | /api/v1/interviews?limit=10&offset=0 | History: timestamp descending, then job ID descending |
-| GET | /api/v1/interviews/{job_id} | Status and timestamps |
+| GET | /api/v1/interviews/{job_id} | Status, timestamps and original filename |
 | GET | /api/v1/interviews/{job_id}/report | JSON; HTTP 409 while pending |
 | GET | /api/v1/interviews/{job_id}/timeline | CSV download |
 | GET | /api/v1/interviews/{job_id}/logs | Processing logs |
@@ -131,6 +131,8 @@ Speech metrics include all recognized speakers. Visual metrics describe sampled 
 Validation accepts MP4/MOV/AVI/MKV/WAV/MP3 up to 500 MiB. Acceptance does not guarantee codec/audio-only support; MP4 video with speech is rehearsed. Malformed media fails with diagnostics. Jobs run serially.
 
 VITE_API_BASE_URL defaults to http://127.0.0.1:8000; restart Vite after changing it. INTERVIEW_API_ALLOWED_ORIGINS defaults to http://localhost:3000,http://127.0.0.1:3000. Use --strictPort to prevent Vite silently switching to an origin CORS rejects.
+
+Vite now enables strict port selection by default for development and preview. Acknowledged active jobs are remembered in this browser tab's session storage, scoped to the API URL, so refresh or navigation can resume polling without submitting another upload. Only the job ID and submission timestamp are saved; terminal/missing jobs clear that reference. Disabled browser storage prevents refresh recovery but does not stop live analysis. Connection failures show recovery guidance, and timeline failures show a separate retry action without hiding the report. Report titles/downloads prefer the original uploaded filename.
 
 ## Verification
 
@@ -145,6 +147,8 @@ npm run build
 ~~~
 
 Phase 6.5 recorded 145 backend and 16 frontend tests passing, a successful build and fresh upload/download/restart checks. Read the latest local phase report for subsequent results. The existing Starlette/httpx deprecation warning is separate from test failures.
+
+Phase 6.7 final polish: 146 backend tests and 25 frontend tests passed, the production build passed, and controlled browser checks covered refresh recovery, connection errors, timeline retry, original filenames and strict-port behavior. These UI fixtures reused an existing report; they were not new inference/accuracy evaluations.
 
 From the root, run another deliberate real-inference check:
 

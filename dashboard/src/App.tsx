@@ -81,12 +81,9 @@ export const App: React.FC = () => {
         )}
       </main>
 
-      {/* Academic Footer */}
+      {/* Footer */}
       <footer className="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-6 text-center text-xs text-slate-500">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p>
-            Department of Computer Science & Engineering • <strong>SJB Institute of Technology</strong>, Bengaluru
-          </p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center">
           <p className="font-mono text-[11px] text-slate-400">
             Local-First Edge Architecture • CPU-Only Offline Evaluation
           </p>

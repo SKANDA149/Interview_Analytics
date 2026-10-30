@@ -58,4 +58,25 @@ describe('ApiClient', () => {
     await expect(apiClient.getJobReport('job-pending')).rejects.toThrow(ApiError);
     await expect(apiClient.getJobReport('job-pending')).rejects.toThrow('Processing is not yet complete.');
   });
+
+  it('explains unreachable-backend errors for uploads and timeline retries', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new TypeError('Failed to fetch')));
+    const file = new File(['video'], 'interview.mp4');
+    for (const request of [() => apiClient.uploadInterview(file), () => apiClient.getJobTimelineCsv('job')]) {
+      await expect(request()).rejects.toMatchObject({
+        status: 0,
+        message: expect.stringContaining('Unable to reach the backend at http://127.0.0.1:8000'),
+      });
+      await expect(request()).rejects.toThrow('Start the API');
+    }
+  });
+
+  it('preserves timeline HTTP diagnostics instead of mislabeling them as connection errors', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: false, status: 404, json: async () => ({detail: 'Timeline CSV file is not available for this job.'}),
+    }));
+    await expect(apiClient.getJobTimelineCsv('job')).rejects.toMatchObject({
+      status: 404, message: 'Timeline CSV file is not available for this job.',
+    });
+  });
 });

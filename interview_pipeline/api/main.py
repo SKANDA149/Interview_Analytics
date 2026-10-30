@@ -93,6 +93,7 @@ app.add_middleware(
 
 class JobStatusResponse(BaseModel):
     job_id: str
+    original_filename: str | None = None
     status: str
     submission_time: str
     start_time: str | None = None
@@ -261,6 +262,7 @@ def get_job_status(job_id: str):
         
     return {
         "job_id": job["job_id"],
+        "original_filename": job["original_filename"],
         "status": job["status"],
         "submission_time": job["created_at"],
         "start_time": job["started_at"],

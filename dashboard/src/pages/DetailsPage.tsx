@@ -37,16 +37,33 @@ export const DetailsPage: React.FC<Props> = ({ jobId, onBack }) => {
   const [jobStatus, setJobStatus] = useState<JobStatusResponse | null>(null);
   const [report, setReport] = useState<FinalReport | null>(null);
   const [timelineRows, setTimelineRows] = useState<TimelineRow[]>([]);
+  const [timelineError, setTimelineError] = useState<string | null>(null);
+  const [timelineLoading, setTimelineLoading] = useState(false);
   const [logs, setLogs] = useState<string[]>([]);
 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [transcriptCopied, setTranscriptCopied] = useState(false);
   const [isDownloading, setIsDownloading] = useState(false);
+  const originalFilename = jobStatus?.original_filename || report?.metadata?.input_video;
   const semanticDisplay = getSemanticEvaluationDisplay(
     report?.overall_metrics.average_semantic_score,
     report?.overall_metrics.semantic_evaluation,
   );
+
+  const loadTimeline = useCallback(async () => {
+    setTimelineLoading(true);
+    try {
+      const csvText = await apiClient.getJobTimelineCsv(jobId);
+      setTimelineRows(parseTimelineCsv(csvText));
+      setTimelineError(null);
+    } catch (err) {
+      setTimelineRows([]);
+      setTimelineError(err instanceof Error ? err.message : 'Unable to load the timeline.');
+    } finally {
+      setTimelineLoading(false);
+    }
+  }, [jobId]);
 
   const loadData = useCallback(async () => {
     try {
@@ -62,13 +79,7 @@ export const DetailsPage: React.FC<Props> = ({ jobId, onBack }) => {
         const reportData = await apiClient.getJobReport(jobId);
         setReport(reportData);
 
-        try {
-          const csvText = await apiClient.getJobTimelineCsv(jobId);
-          const parsed = parseTimelineCsv(csvText);
-          setTimelineRows(parsed);
-        } catch (csvErr) {
-          console.warn('Failed to fetch timeline CSV:', csvErr);
-        }
+        await loadTimeline();
       } else if (statusData.status === 'failed') {
         // If failed, fetch logs
         try {
@@ -83,7 +94,7 @@ export const DetailsPage: React.FC<Props> = ({ jobId, onBack }) => {
     } finally {
       setLoading(false);
     }
-  }, [jobId]);
+  }, [jobId, loadTimeline]);
 
   useEffect(() => {
     loadData();
@@ -93,8 +104,8 @@ export const DetailsPage: React.FC<Props> = ({ jobId, onBack }) => {
   const handleDownloadJson = async () => {
     try {
       setIsDownloading(true);
-      const filename = report?.metadata?.input_video
-        ? `final_report_${report.metadata.input_video.replace(/\.[^/.]+$/, '')}.json`
+      const filename = originalFilename
+        ? `final_report_${originalFilename.replace(/\.[^/.]+$/, '')}.json`
         : `final_report_${jobId}.json`;
       await apiClient.downloadReportJson(jobId, filename);
     } catch (err) {
@@ -107,8 +118,8 @@ export const DetailsPage: React.FC<Props> = ({ jobId, onBack }) => {
   const handleDownloadCsv = async () => {
     try {
       setIsDownloading(true);
-      const filename = report?.metadata?.input_video
-        ? `interview_timeline_${report.metadata.input_video.replace(/\.[^/.]+$/, '')}.csv`
+      const filename = originalFilename
+        ? `interview_timeline_${originalFilename.replace(/\.[^/.]+$/, '')}.csv`
         : `interview_timeline_${jobId}.csv`;
       await apiClient.downloadTimelineCsv(jobId, filename);
     } catch (err) {
@@ -182,7 +193,7 @@ export const DetailsPage: React.FC<Props> = ({ jobId, onBack }) => {
           <div>
             <div className="flex items-center gap-2.5">
               <h1 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white tracking-tight">
-                {report?.metadata?.input_video || `Interview ${jobId.slice(0, 8)}`}
+                {originalFilename || `Interview ${jobId.slice(0, 8)}`}
               </h1>
               <StatusBadge status={jobStatus.status} size="sm" />
             </div>
@@ -419,6 +430,15 @@ export const DetailsPage: React.FC<Props> = ({ jobId, onBack }) => {
           </div>
 
           {/* Section 3: Time-Series Chart */}
+          {timelineError && (
+            <div role="alert" className="p-4 rounded-xl border border-amber-300 bg-amber-50 text-amber-900 text-sm space-y-2">
+              <p className="font-semibold">Timeline unavailable</p>
+              <p>{timelineError}</p>
+              <button type="button" onClick={loadTimeline} disabled={timelineLoading} className="underline font-medium disabled:opacity-50">
+                {timelineLoading ? 'Loading timeline...' : 'Retry timeline'}
+              </button>
+            </div>
+          )}
           {timelineRows.length > 0 && <TimelineChart rows={timelineRows} />}
 
           {/* Section 4: Chunk-by-Chunk Timeline Table */}
